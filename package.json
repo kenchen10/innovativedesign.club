@@ -36,6 +36,7 @@
     "react-headroom": "^2.1.2",
     "react-key-handler": "^0.2.0",
     "react-maskedinput": "^3.2.3",
+    "react-masonry-component": "^6.0.1",
     "react-responsive-grid": "^0.3.0",
     "react-router": "^2.0.1",
     "superagent": "^2.3.0",
@@ -58,6 +59,8 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "compressImages": "./node_modules/.bin/gulp images --verbose",
     "deploy": "gatsby build --prefix-links && cp ./CNAME ./public/CNAME && gh-pages -d public"
