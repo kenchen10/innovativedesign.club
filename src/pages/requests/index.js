@@ -5,7 +5,10 @@ import DocumentTitle from 'react-document-title';
 import Dropdown from 'react-dropdown';
 import MaskedInput from 'react-maskedinput';
 import moment from 'moment';
-import request from 'superagent';
+
+// gatsby@1.9.128 mishandles isomorphic imports for
+// the `build` command, so this is commented out for now.
+// import request from 'superagent';
 
 import Link from 'gatsby-link';
 
