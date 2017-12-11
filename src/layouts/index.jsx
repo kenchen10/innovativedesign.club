@@ -22,7 +22,7 @@ export default class Navigation extends React.Component {
   }
 
   _handleHamburger(e) {
-    e.preventDefault();
+    if (e) e.preventDefault();
     this.setState({
       navOpen: !this.state.navOpen
     });
@@ -85,6 +85,8 @@ export default class Navigation extends React.Component {
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
           />
+          <script src="/pace.js"></script>
+          <link href="/pace.css" rel="stylesheet" />
         </Helmet>
         <Headroom
           wrapperStyle={{
@@ -135,13 +137,13 @@ export default class Navigation extends React.Component {
                   />
                 </a>
               </div>
-              <Link className="nav__item nav__link" to='/about'>
+              <Link className="nav__item nav__link" to='/about' onClick={() => this._handleHamburger()}>
                 about
               </Link>
-              <Link className="nav__item nav__link" to='/events/'>
+              <Link className="nav__item nav__link" to='/events/' onClick={() => this._handleHamburger()}>
                 events
               </Link>
-              <Link className="nav__item nav__link" to='/decal/'>
+              <Link className="nav__item nav__link" to='/decal/' onClick={() => this._handleHamburger()}>
                 decals
               </Link>
             </div>
