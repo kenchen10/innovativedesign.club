@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "widgets"
+    label: "Components"
+    files:
+    - file: "src/md-store/apply-widget.md"
+      label: "Application Widget"
+      name: "apply-widget"
+      fields:
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "apply-widget"}
+        - {label: "Apply Message", name: apply_message, widget: string}
+        - {label: Application Types, name: apply_types, widget: list, fields: [
+            {label: "Application open?", name: open, widget: select, default: "closed", options: [
+              {label: "Yes", value: "open"},
+              {label: "No", value: "closed"}
+            ]},
+            {label: Heading, name: heading, widget: string},
+            {label: Description, name: description, widget: string},
+            {label: "Infosession Information (Date/Time and Location)", name: infosession, widget: markdown},
+            {label: "Application Due Date", name: apply-deadline, widget: date},
+            {label: "Linked Learn More Page", name: linked_page, widget: relation, collection: pages, searchFields: [label, name], valueField: name},
+            {label: "Application Link", name: apply_link, widget: string}
+        ]}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/md-store/index.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: ""}
+          - {label: "Path", name: "path", widget: "hidden", default: "/"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
