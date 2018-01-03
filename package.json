@@ -40,6 +40,7 @@
     "react-headroom": "^2.2.2",
     "react-helmet": "^5.2.0",
     "react-key-handler": "^1.0.1",
+    "react-load-script": "0.0.6",
     "react-maskedinput": "^4.0.0",
     "react-masonry-component": "^6.0.1",
     "react-responsive-grid": "^0.3.0",
@@ -65,7 +66,9 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
+    "build": "npm run build:site && npm run build:admin",
+    "build:site": "gatsby build",
+    "build:admin": "cd admin && npm install && npm run build",
     "develop": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "compressImages": "./node_modules/.bin/gulp images --verbose",
