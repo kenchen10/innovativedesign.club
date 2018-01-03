@@ -1,33 +1,15 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import FontAwesome from 'react-fontawesome';
-import Headroom from 'react-headroom';
-import classNames from 'classnames';
 import $ from 'jquery';
 import DocumentTitle from 'react-document-title';
 import { Helmet } from 'react-helmet';
+import Navbar from '../components/Navbar';
 
 import '../css/_index.scss';
 
 const navbarHeight = 60;
 
-export default class Navigation extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      navOpen: false
-    };
-
-    this._handleHamburger = this._handleHamburger.bind(this);
-  }
-
-  _handleHamburger(e) {
-    if (e) e.preventDefault();
-    this.setState({
-      navOpen: !this.state.navOpen
-    });
-  }
-
+export default class RootLayout extends React.Component {
   render() {
     return (
       <DocumentTitle title='Innovative Design'>
@@ -88,67 +70,7 @@ export default class Navigation extends React.Component {
           <script src="/pace.js"></script>
           <link href="/pace.css" rel="stylesheet" />
         </Helmet>
-        <Headroom
-          wrapperStyle={{
-            maxHeight: navbarHeight
-          }}
-          style={{
-            background: 'rgba(255, 255, 255, 0.99)'
-          }}
-        >
-          <div
-            className={classNames("nav", {
-              "nav--open": this.state.navOpen
-            })}
-          >
-            <div className="nav__wrapper">
-              <Link className="nav__item nav__logo" to='/'>
-                <img src='/img/logo-icon.png'/>
-              </Link>
-              <div
-                className={classNames("nav__item", "nav__hamburger", {
-                  "nav__hamburger--active": this.state.navOpen
-                })}
-                onClick={this._handleHamburger}
-              >
-                <div className="hamburger__bar bar--1"></div>
-                <div className="hamburger__bar bar--2"></div>
-              </div>
-              <Link className="nav__item nav__cta" to='/requests/'>
-                requests
-              </Link>
-              <div className="nav__item nav__media">
-                <a href="https://www.facebook.com/InnovativeDesignUCB/" target="_blank">
-                  <FontAwesome
-                    className="media__icon fb"
-                    name="facebook"
-                  />
-                </a>
-                <a href="https://twitter.com/innodatcal" target="_blank">
-                  <FontAwesome
-                    className="media__icon twitter"
-                    name="twitter"
-                  />
-                </a>
-                <a href="https://www.instagram.com/innodatcal/" target="_blank">
-                  <FontAwesome
-                    className="media__icon ig"
-                    name="instagram"
-                  />
-                </a>
-              </div>
-              <Link className="nav__item nav__link" to='/about' onClick={() => this._handleHamburger()}>
-                about
-              </Link>
-              <Link className="nav__item nav__link" to='/events/' onClick={() => this._handleHamburger()}>
-                events
-              </Link>
-              <Link className="nav__item nav__link" to='/decal/' onClick={() => this._handleHamburger()}>
-                decals
-              </Link>
-            </div>
-          </div>
-        </Headroom>
+        <Navbar />
         <div className="content">
           { this.props.children() }
         </div>

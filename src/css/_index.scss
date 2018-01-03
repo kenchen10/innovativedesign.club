@@ -9,3 +9,21 @@
 @import "_base";
 @import "components/index";
 @import "pages/index";
+
+@font-face {
+  font-family: "Museo Sans";
+  font-weight: 300;
+  src: url("/fonts/museosanscyrl.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  font-weight: 400;
+  src: url("/fonts/museosanscyrl_0.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans";
+  font-weight: 500;
+  src: url("/fonts/museosanscyrl_1.woff") format("woff");
+}

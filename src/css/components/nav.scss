@@ -29,22 +29,21 @@
       padding: 0 20px;
     }
 
+    .nav__links {
+      float: right;
+    }
+
     .nav__item {
       float: left;
       margin: 0 24px;
       vertical-align: middle;
-      color: $grey;
-      font-family: "Raleway";
+      color: $dark-grey;
+      font-family: "Museo Sans";
+      font-weight: 500;
       font-size: 14px;
       line-height: $navbar-height;
-      text-transform: uppercase;
-      letter-spacing: 3px;
       transition: color 200ms ease-in-out;
       text-decoration: none;
-
-      &:visited {
-        color: $grey;
-      }
 
       &:hover {
         color: $blue;
@@ -94,7 +93,6 @@
       }
 
       &.nav__cta {
-        float: right;
         font-size: 14px;
         line-height: $navbar-height * 0.55;
         height: $navbar-height * 0.55;
