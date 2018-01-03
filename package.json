@@ -66,7 +66,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "npm run build:site && npm run build:admin",
+    "build": "npm run build:admin && npm run build:site",
     "build:site": "gatsby build",
     "build:admin": "cd admin && npm install && npm run build",
     "develop": "gatsby develop",
