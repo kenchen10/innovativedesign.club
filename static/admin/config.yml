@@ -34,7 +34,7 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: ""}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index"}
           - {label: "Path", name: "path", widget: "hidden", default: "/"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
