@@ -3,6 +3,7 @@ module.exports = {
     title: `Innovative Design`,
   },
   plugins: [
+    `gatsby-plugin-react-next`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
@@ -19,7 +20,6 @@ module.exports = {
         name: 'images'
       }
     },
-    `gatsby-plugin-react-next`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
