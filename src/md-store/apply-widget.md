@@ -1,7 +1,7 @@
 ---
 apply_message: Interested in joining us? Recruitment is open!
 apply_types:
-  - apply-deadline: 2018-01-27T16:58:01-08:00
+  - apply_deadline: 2018-01-27T00:00:00-08:00
     apply_link: 'https://apply.innovativedesign.club'
     description: >-
       Develop your creative skills and use state-of-the art tools in one of the
@@ -13,7 +13,7 @@ apply_types:
 
       Jacobs Hall
     linked_page: home
-  - apply-deadline: 2018-02-02T17:01:28-08:00
+  - apply_deadline: 2018-02-02T00:00:00-08:00
     apply_link: 'https://apply.innovativedesign.club'
     description: >-
       Join our creative agency as a graphic designer, photographer, or web
