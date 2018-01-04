@@ -7,7 +7,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       allMarkdownRemark {
         edges {
           node {
-            excerpt(pruneLength: 400)
             html
             id
             frontmatter {
@@ -24,6 +23,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       return Promise.reject(result.errors);
     }
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      if (!node.frontmatter.path) return;
       createPage({
         path: node.frontmatter.path,
         component: path.resolve(`src/templates/${String(node.frontmatter.templateKey)}.js`),
