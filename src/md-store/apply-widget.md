@@ -1,4 +1,5 @@
 ---
+templateKey: apply-widget
 apply_message: Interested in joining us? Recruitment is open!
 apply_types:
   - apply_deadline: 2018-01-27T00:00:00-08:00
