@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import Datepicker from 'react-datepicker';
+import DatePicker from 'react-datepicker';
 import DocumentTitle from 'react-document-title';
 import Dropdown from 'react-dropdown';
 import MaskedInput from 'react-maskedinput';
@@ -141,6 +141,7 @@ export default class Index extends React.Component {
         </div>
         <div className="input__container input__container--half">
           <Dropdown
+            name="campus"
             options={campusTypes}
             onChange={this._handleCampusChange}
             value={this.state.selectedCampusType}
@@ -149,6 +150,7 @@ export default class Index extends React.Component {
         </div>
         <div className="input__container input__container--half last">
           <Dropdown
+            name="type"
             options={projectTypes}
             onChange={this._handleProjectTypeChange}
             value={this.state.selectedProjectType}
@@ -156,7 +158,7 @@ export default class Index extends React.Component {
           />
         </div>
         <div className="input__container input__container--half">
-          <Datepicker
+          <DatePicker
             name="deadline" {...dateProps}
             placeholderText="deadline" id="deadline"
             minDate={moment().add(14, 'days')}
@@ -243,16 +245,16 @@ export default class Index extends React.Component {
 
     const jsonPayload = {
       'form-name': 'request-form',
-      Name: this.refs.name.value,
-      Email: this.refs.email.value,
-      Phone: this.state.enteredPhone,
-      Organization: this.refs.organization.value,
-      OrgDescription: this.refs.description.value,
-      Campus: this.state.selectedCampusType,
-      Type: this.state.selectedProjectType,
-      Deadline: this.state.selectedDate.format("MM/DD/YYYY"),
-      ProjectDescription: this.refs.project.value,
-      Additional: this.refs.questions.value
+      name: this.refs.name.value,
+      email: this.refs.email.value,
+      phone: this.state.enteredPhone,
+      organization: this.refs.organization.value,
+      description: this.refs.description.value,
+      campus: this.state.selectedCampusType,
+      type: this.state.selectedProjectType,
+      deadline: this.state.selectedDate.format("MM/DD/YYYY"),
+      project: this.refs.project.value,
+      questions: this.refs.questions.value
     };
 
     if (!submissionIsValid(jsonPayload)) {
