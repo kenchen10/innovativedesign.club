@@ -242,7 +242,7 @@ export default class Index extends React.Component {
     e.preventDefault();
 
     const jsonPayload = {
-      'form-name': 'requests',
+      'form-name': 'request-form',
       Name: this.refs.name.value,
       Email: this.refs.email.value,
       Phone: this.state.enteredPhone,
