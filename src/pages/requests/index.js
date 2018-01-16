@@ -89,6 +89,8 @@ export default class Index extends React.Component {
         <div className="input__container input__container--half">
           <span style={{display: "none"}}>
             <input name="bot-field" />
+            <input name="campus" />
+            <input name="type" />
           </span>
           <input
             ref="name"
