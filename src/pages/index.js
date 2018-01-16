@@ -35,3 +35,26 @@ export default class IndexPage extends React.Component {
     </div>);
   }
 }
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark(
+      filter: { frontmatter: { templateKey: {regex: "/.*-widget/g"}} }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            apply_types {
+              apply_deadline
+              apply_link
+              description
+              heading
+              infosession
+              linked_page
+            }
+          }
+        }
+      }
+    }
+  }
+`;
