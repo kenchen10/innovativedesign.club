@@ -6,10 +6,6 @@ import Dropdown from 'react-dropdown';
 import MaskedInput from 'react-maskedinput';
 import moment from 'moment';
 
-// gatsby@1.9.128 mishandles isomorphic imports for
-// the `build` command, so this is commented out for now.
-// import request from 'superagent';
-
 import Link from 'gatsby-link';
 
 import $ from 'jquery';
@@ -23,8 +19,8 @@ const campusTypes = [
 
 const projectTypes = [
   'Graphic Design',
-  'Photography'
-  // 'Web Design'
+  'Photography',
+  'Web Design'
 ];
 
 function submissionIsValid(properties) {
@@ -89,9 +85,11 @@ export default class Index extends React.Component {
     );
 
     return (
-      <form id="request-form" onSubmit={this._handleSubmit}>
-        <span> Requests have closed for the <b>Fall 2017</b> semester. Check back next semester! </span>
+      <form id="request-form" onSubmit={this._handleSubmit} netlify="true" netlify-honeypot="bot-field">
         <div className="input__container input__container--half">
+          <span style={{display: "none"}}>
+            <input name="bot-field" />
+          </span>
           <input
             ref="name"
             id="name"
@@ -162,7 +160,7 @@ export default class Index extends React.Component {
             name="deadline" {...dateProps}
             placeholderText="deadline" id="deadline"
             minDate={moment().add(14, 'days')}
-            maxDate={moment('2017-12-15')}
+            maxDate={moment('2018-05-15')}
           />
         </div>
         <div className="input__container">
@@ -243,38 +241,41 @@ export default class Index extends React.Component {
   _handleSubmit(e) {
     e.preventDefault();
 
-    // const jsonPayload = {
-    //   Name: this.refs.name.value,
-    //   Email: this.refs.email.value,
-    //   Phone: this.state.enteredPhone,
-    //   Organization: this.refs.organization.value,
-    //   OrgDescription: this.refs.description.value,
-    //   Campus: this.state.selectedCampusType,
-    //   Type: this.state.selectedProjectType,
-    //   Deadline: this.state.selectedDate.format("MM/DD/YYYY"),
-    //   ProjectDescription: this.refs.project.value,
-    //   Additional: this.refs.questions.value
-    // };
+    const jsonPayload = {
+      'form-name': 'requests',
+      Name: this.refs.name.value,
+      Email: this.refs.email.value,
+      Phone: this.state.enteredPhone,
+      Organization: this.refs.organization.value,
+      OrgDescription: this.refs.description.value,
+      Campus: this.state.selectedCampusType,
+      Type: this.state.selectedProjectType,
+      Deadline: this.state.selectedDate.format("MM/DD/YYYY"),
+      ProjectDescription: this.refs.project.value,
+      Additional: this.refs.questions.value
+    };
 
-    // if (!submissionIsValid(jsonPayload)) {
-    //   return;
-    // }
+    if (!submissionIsValid(jsonPayload)) {
+      return;
+    }
 
-    // this.setState({
-    //   sending: true,
-    //   request: jsonPayload
-    // });
+    this.setState({
+      sending: true,
+      request: jsonPayload
+    });
 
-    // request
-    //   .post('https://warm-lowlands-41134.herokuapp.com')
-    //   .send(jsonPayload)
-    //   .end((err, res) => {
-    //     if (err) {
-    //       this._handleSubmissionError(err);
-    //     } else {
-    //       this._handleSubmissionSuccess();
-    //     }
-    // });
+    const body = Object.keys(jsonPayload).map((key) => {
+      return encodeURIComponent(key) + '=' + encodeURIComponent(jsonPayload[key]);
+    }).join('&');
+
+    fetch('/requests', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body
+    }).then(res => this._handleSubmissionSuccess())
+      .catch(err => this._handleSubmissionError(err));
   }
 
   _handleSubmissionError(error) {
