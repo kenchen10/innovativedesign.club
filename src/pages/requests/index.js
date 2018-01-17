@@ -7,9 +7,25 @@ import MaskedInput from 'react-maskedinput';
 import moment from 'moment';
 
 import Link from 'gatsby-link';
+import Input from '../components/Input';
 
 import $ from 'jquery';
 import _ from 'lodash';
+
+import 'react-datepicker/dist/react-datepicker.css';
+
+const fields = [
+  'name',
+  'email',
+  'phone',
+  'organization',
+  'description',
+  'campus',
+  'type',
+  'deadline',
+  'project',
+  'questions'
+];
 
 const campusTypes = [
   'On campus, as a registered student organization',
@@ -24,7 +40,8 @@ const projectTypes = [
 ];
 
 function submissionIsValid(properties) {
-  const values = _.values(_.remove(properties, 'questions'));
+  _.remove(properties, 'questions');
+  const values = _.values(properties);
   return _.every(values, Boolean);
 }
 
@@ -32,30 +49,23 @@ export default class Index extends React.Component {
   constructor(props) {
     super(props);
 
-    this._generateUnsentFormBodyMarkup = this._generateUnsentFormBodyMarkup.bind(this);
+    this._generateUnsentFormBodyMarkup = ::this._generateUnsentFormBodyMarkup;
+    this._handleChange = ::this._handleChange;
+    this._handleSelect = ::this._handleSelect;
+    this._handleSubmit = ::this._handleSubmit;
+    this._handleSubmissionError = ::this._handleSubmissionError;
+    this._handleSubmissionSuccess = ::this._handleSubmissionSuccess;
 
-    this._handlePhoneChange = this._handlePhoneChange.bind(this);
-    this._handleCampusChange = this._handleCampusChange.bind(this);
-    this._handleProjectTypeChange = this._handleProjectTypeChange.bind(this);
-    this._handleDateChange = this._handleDateChange.bind(this);
-    this._checkValidSubmission = this._checkValidSubmission.bind(this);
+    this.state = {};
 
-    this._handleSubmit = this._handleSubmit.bind(this);
-    this._handleSubmissionError = this._handleSubmissionError.bind(this);
-    this._handleSubmissionSuccess = this._handleSubmissionSuccess.bind(this);
-
+    fields.forEach(field => this.state[field] = '');
     this.state = {
-      canSend: submissionIsValid({
-        name: ''
-      }),
-      enteredPhone: null,
-      selectedDate: null,
+      ...this.state,
+      canSend: false,
       sending: false,
       sent: false,
       sentError: null,
-      selectedCampusType: null,
-      selectedProjectType: null,
-      request: {}
+      deadline: null
     };
   }
 
@@ -86,179 +96,123 @@ export default class Index extends React.Component {
 
     return (
       <form id="request-form" onSubmit={this._handleSubmit} netlify="true" netlify-honeypot="bot-field">
+        <span style={{display: "none"}}>
+          <input name="bot-field" />
+          <input name="campus" />
+          <input name="type" />
+        </span>
+        <Input
+          id="name"
+          value={this.state.name}
+          onChange={this._handleChange}
+        />
+        <Input
+          id="email"
+          type="email"
+          value={this.state.email}
+          onChange={this._handleChange}
+        />
         <div className="input__container input__container--half">
-          <span style={{display: "none"}}>
-            <input name="bot-field" />
-            <input name="campus" />
-            <input name="type" />
-          </span>
-          <input
-            ref="name"
-            id="name"
-            name="name"
-            defaultValue={this.state.request.name}
-            onChange={this._checkValidSubmission}
-            required
-          />
-          <label htmlFor="name">Name</label>
-        </div>
-        <div className="input__container input__container--half last">
-          <input
-            ref="email"
-            type="email"
-            id="email"
-            name="email"
-            defaultValue={this.state.request.email}
-            onChange={this._checkValidSubmission}
-            required
-          />
-          <label htmlFor="email">Email</label>
-        </div>
-        <div className="input__container input__container--half">
-          <MaskedInput id="phone" mask="(111) 111-1111" name="phone" onChange={this._handlePhoneChange}/>
           <label htmlFor="phone">Phone</label>
+          <MaskedInput id="phone" mask="(111) 111-1111" name="phone" onChange={this._handleChange}/>
         </div>
-        <div className="input__container input__container--half last">
-          <input
-            ref="organization"
-            type="organization"
-            id="organization"
-            name="organization"
-            defaultValue={this.state.request.organization}
-            onChange={this._checkValidSubmission}
-            required
-          />
-          <label htmlFor="organization">Organization</label>
-        </div>
-        <div className="input__container">
-          <textarea
-            ref="description"
-            name="description"
-            id="description"
-            defaultValue={this.state.request.description}
-            onChange={this._checkValidSubmission}
-            required
-          ></textarea>
-          <label htmlFor="description">Organization Description</label>
-        </div>
+        <Input
+          id="organization"
+          label="Organization Name"
+          value={this.state.organization}
+          onChange={this._handleChange}
+        />
+        <Input
+          id="description"
+          label="Organization Description"
+          value={this.state.description}
+          onChange={this._handleChange}
+          long={true}
+        />
         <div className="input__container input__container--half">
           <Dropdown
             name="campus"
             options={campusTypes}
-            onChange={this._handleCampusChange}
-            value={this.state.selectedCampusType}
-            placeholder="On or Off Campus Organization"
+            onChange={(selection) => this._handleSelect(selection, "campus")}
+            value={this.state.campus}
+            placeholder="Select your organization type"
           />
         </div>
         <div className="input__container input__container--half last">
           <Dropdown
             name="type"
             options={projectTypes}
-            onChange={this._handleProjectTypeChange}
-            value={this.state.selectedProjectType}
-            placeholder="Project Type"
+            onChange={(selection) => this._handleSelect(selection, "type")}
+            value={this.state.type}
+            placeholder="Select your project type"
           />
         </div>
         <div className="input__container input__container--half">
+          <label htmlFor="phone">Deadline</label>
           <DatePicker
             name="deadline" {...dateProps}
-            placeholderText="deadline" id="deadline"
+            id="deadline"
             minDate={moment().add(14, 'days')}
             maxDate={moment('2018-05-15')}
+            selected={this.state.deadline}
+            onChange={(selection) => this._handleSelect({value: selection}, "deadline")}
           />
         </div>
-        <div className="input__container">
-          <textarea
-            ref="project"
-            name="project"
-            id="project"
-            defaultValue={this.state.request.project}
-            onChange={this._checkValidSubmission}
-            required
-          ></textarea>
-          <label htmlFor="project">Project Description</label>
-        </div>
-        <div className="input__container">
-          <textarea
-            ref="questions"
-            name="questions"
-            id="questions"
-            defaultValue={this.state.request.questions}
-            onChange={this._checkValidSubmission}
-          ></textarea>
-          <label htmlFor="questions">Additional Information</label>
-        </div>
-
+        <Input
+          id="project"
+          label="Project Description"
+          onChange={this._handleChange}
+          value={this.state.project}
+          long={true}
+        />
+        <Input
+          id="questions"
+          label="Additional Information"
+          onChange={this._handleChange}
+          value={this.state.questions}
+          long={true}
+        />
         { formButton }
       </form>
     );
   };
 
-  _checkValidSubmission() {
-    let testPayload = {
-      name: this.refs.name.value,
-      email: this.refs.email.value,
-      phone: this.state.enteredPhone,
-      organization: this.refs.organization.value,
-      description: this.refs.description.value,
-      campus: this.state.selectedCampusType,
-      type: this.state.selectedProjectType,
-      project: this.refs.project.value,
-      questions: this.refs.questions.value
-    };
+  _handleSelect(selection, id) {
+    this._handleChange({
+      target: {
+        name: id,
+        value: selection.value
+      }
+    });
+  }
 
-    if (!this.state.selectedDate) {
-      testPayload.deadline = null;
-    } else {
-      testPayload.deadline = this.state.selectedDate.format("MM/DD/YYYY");
+  _createPayload() {
+    const payload = fields.reduce((curr, next) => {
+      curr[next] = this.state[next];
+      return curr;
+    }, {});
+    
+    if (payload.deadline) {
+      payload.deadline = payload.deadline.format("MM/DD/YYYY");
     }
 
-    this.setState({
-      canSend: submissionIsValid(testPayload)
-    });
+    return payload;
   }
 
-  _handlePhoneChange(e) {
+  _handleChange(ev) {
     this.setState({
-      enteredPhone: e.target.value
-    });
-  }
-
-  _handleCampusChange(campus) {
-    this.setState({
-      selectedCampusType: campus.value
-    });
-  }
-
-  _handleProjectTypeChange(type) {
-    this.setState({
-      selectedProjectType: type.value
-    });
-  }
-
-  _handleDateChange(date) {
-    this.setState({
-      selectedDate: date
+      [ev.target.name]: ev.target.value
+    }, () => {
+      this.setState({
+        canSend: submissionIsValid(this._createPayload())
+      });
     });
   }
 
   _handleSubmit(e) {
     e.preventDefault();
 
-    const jsonPayload = {
-      'form-name': 'request-form',
-      name: this.refs.name.value,
-      email: this.refs.email.value,
-      phone: this.state.enteredPhone,
-      organization: this.refs.organization.value,
-      description: this.refs.description.value,
-      campus: this.state.selectedCampusType,
-      type: this.state.selectedProjectType,
-      deadline: this.state.selectedDate.format("MM/DD/YYYY"),
-      project: this.refs.project.value,
-      questions: this.refs.questions.value
-    };
-
+    const jsonPayload = this._createPayload();
     if (!submissionIsValid(jsonPayload)) {
       return;
     }
@@ -305,8 +259,6 @@ export default class Index extends React.Component {
       sentError: null
     });
   }
-
-  componentDidMount() {}
 
   render () {
     const sentMsgBody = (
