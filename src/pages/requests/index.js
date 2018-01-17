@@ -216,6 +216,7 @@ export default class Index extends React.Component {
     if (!submissionIsValid(jsonPayload)) {
       return;
     }
+    jsonPayload['form-name'] = 'request-form';
 
     this.setState({
       sending: true,
