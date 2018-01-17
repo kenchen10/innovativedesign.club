@@ -1,6 +1,6 @@
 import React from 'react';
 const Input = ({ id, label, long, type, ...props }) => {
-  if (!label) {
+  if (!label && id) {
     label = id[0].toUpperCase() + id.substring(1, id.length);
   }
 
