@@ -40,8 +40,7 @@ const projectTypes = [
 ];
 
 function submissionIsValid(properties) {
-  _.remove(properties, 'questions');
-  const values = _.values(properties);
+  const values = _.values(_.omit(properties, ['questions']));
   return _.every(values, Boolean);
 }
 
