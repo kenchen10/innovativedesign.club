@@ -23,7 +23,7 @@ apply_types:
       develop your creative vision.
     heading: Club
     infosession: |-
-      Jan 31, 8PM
+      Jan 31, **8PM**
 
       Location TBA
     linked_page: home
