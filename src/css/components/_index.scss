@@ -2,3 +2,67 @@
 @import "dropdown";
 @import "nav";
 @import "masonry";
+
+.widget {
+  width: 100%;
+  max-width: $global-max-width;
+  margin: 5% auto 5% auto;
+  padding: 0 50px 0 50px;
+
+  p {
+    color: $grey;
+  }
+}
+
+.widget__container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.widget__block {
+  width: 49.5%;
+  border: 1px solid $light-grey;
+  padding: 0 15px 0 15px;
+
+  h2 {
+    font-weight: 500;
+  }
+
+  h2 > a {
+    color: $grey;
+    margin-left: 10px;
+  }
+
+  p, a {
+    color: $black;
+  }
+}
+
+.widget__table {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget__tablerow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  
+  p {
+    margin: 0;
+  }
+
+  a {
+    margin-top: 15px;
+  }
+
+  > p {
+    width: 50%;
+    margin-top: 15px;
+  }
+}
+
+

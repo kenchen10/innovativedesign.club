@@ -1,25 +1,93 @@
 .index {
   font-family: "Museo Sans";
+  font-weight: 500;
   color: $dark-grey;
   
   .hero {
     max-width: $global-max-width;
     padding: 100px 50px 0px 50px;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 
     h1 {
       font-weight: 300;
-      margin-bottom: 0;
+      margin: 0 0 0 0;
     }
 
     p {
       font-weight: 500;
+      font-size: 16pt;
     }
   }
 
   .hero__left {
-    max-width: 50%;
+    flex: 1;
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
+  .hero__right {
+    flex: 1;
+    max-width: 50%;
+
+    video {
+      width: 70%;
+      float: right;
+    }
+  }
+
+  .row__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .row {
+    width: 100%;
+
+    p {
+      width: 40%;
+    }
+
+    img {
+      width: 70%;
+      max-width: $global-max-width * 0.7;
+    }
+  }
+
+  .row__left {
+    p {
+      margin-left: 5%;
+    }
+  }
+
+  .row__midhalf {
+    width: 40%;
+    margin: 5%;
+
+    p, img {
+      width: 100%;
+    }
+  }
+
+  .row__right {
+
+    p {
+      float: right;
+      margin: 20px 5px 5px 5px;
+      padding-left: 50%;
+      text-align: right;
+      padding-right: 5%;
+      width: 100%;
+    }
+
+    img {
+      width: 70%;
+      float: right;
+    }
+  }
 }
