@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import $ from 'jquery';
 import DocumentTitle from 'react-document-title';
 import { Helmet } from 'react-helmet';
@@ -72,7 +71,7 @@ export default class RootLayout extends React.Component {
         </Helmet>
         <Navbar />
         <div className="content">
-          { this.props.children({ ...this.props }) }
+          { this.props.children({ ...this.props, widgetMeta: this.props.data }) }
         </div>
       </div>
     </DocumentTitle>
@@ -81,7 +80,7 @@ export default class RootLayout extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query WidgetMetaQuery {
     allMarkdownRemark(
       filter: { frontmatter: { templateKey: {regex: "/.*-widget/g"}} }
     ) {
