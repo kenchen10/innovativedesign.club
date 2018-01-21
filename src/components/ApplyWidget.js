@@ -1,9 +1,8 @@
 import React from 'react';
-import * as Showdown from 'showdown';
+const ReactMarkdown = require('react-markdown');
 
 export default class ApplyWidget extends React.Component {
   render() {
-    const converter = new Showdown.Converter();
     const {
       apply_types: applyTypes,
       apply_message: applyMessage
@@ -21,7 +20,7 @@ export default class ApplyWidget extends React.Component {
           <div className="widget__table">
             <div className="widget__tablerow">
               <p>Infosessions for {applyType.heading}:</p>
-              <p dangerouslySetInnerHTML={{__html: converter.makeHtml(applyType.infosession)}} />
+              <p><ReactMarkdown source={applyType.infosession} /></p>
             </div>
             <div className="widget__tablerow">
               <p>Applications due:</p>
