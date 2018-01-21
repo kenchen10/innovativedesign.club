@@ -1,5 +1,40 @@
 // Base styles that can be applied to any element
 
+* {
+  font-family: "Museo Sans";
+  font-weight: 500;
+  color: $dark-grey;
+}
+
+.hero {
+  max-width: $global-max-width;
+  padding: 50px 50px 0px 50px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  h1 {
+    font-weight: 300;
+    margin: 0 0 0 0;
+  }
+
+  p {
+    font-weight: 500;
+  }
+}
+
+.hero__left {
+  flex: 1;
+  margin: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__right {
+  flex: 1;
+}
+
 @-webkit-keyframes blink {
   from {
     opacity: 1.0;
@@ -48,6 +83,7 @@
 }
 
 .page__wrapper {
+
   .section__title {
     text-align: center;
     margin: 48px auto;

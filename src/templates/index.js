@@ -1,5 +1,6 @@
 import React from 'react';
 import Script from 'react-load-script';
+import Hero from '../components/Hero';
 import ApplyWidget from '../components/ApplyWidget';
 
 export default class IndexPage extends React.Component {
@@ -19,8 +20,6 @@ export default class IndexPage extends React.Component {
 
   render() {
     const {
-      hero_heading: heading,
-      hero_subheading: subheading,
       row_slides: rowSlides
     } = this.props.data.markdownRemark.frontmatter;
 
@@ -29,17 +28,11 @@ export default class IndexPage extends React.Component {
         url="https://identity.netlify.com/v1/netlify-identity-widget.js"
         onLoad={() => this._handleNetlifyLoad()}
       />
-      <div className="hero">
-        <div className="hero__left">
-          <h1>{heading}</h1>
-          <p>{subheading}</p>
-        </div>
-        <div className="hero__right">
-          <video src="/img/sather.webm" autoplay={'autoplay'} loop={'loop'}>
-            <img src="/img/hexpp-9784.jpg" />
-          </video>
-        </div>
-      </div>
+      <Hero data={this.props.data}>
+        <video src="/img/sather.webm" autoplay={'autoplay'} loop={'loop'}>
+          <img src="/img/hexpp-9784.jpg" />
+        </video>
+      </Hero>
       <ApplyWidget data={this.props.widgetMeta} />
       <div className="row__container">
         {rowSlides.map((row) => {

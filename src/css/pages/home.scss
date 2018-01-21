@@ -1,36 +1,10 @@
-.index {
-  font-family: "Museo Sans";
-  font-weight: 500;
-  color: $dark-grey;
-  
-  .hero {
-    max-width: $global-max-width;
-    padding: 100px 50px 0px 50px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+.index {  
 
-    h1 {
-      font-weight: 300;
-      margin: 0 0 0 0;
-    }
-
-    p {
-      font-weight: 500;
-      font-size: 16pt;
-    }
-  }
-
-  .hero__left {
-    flex: 1;
-    margin: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .hero p {
+    font-size: 16pt;
   }
 
   .hero__right {
-    flex: 1;
     max-width: 50%;
 
     video {
