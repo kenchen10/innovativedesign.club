@@ -50,6 +50,7 @@
     "react-masonry-component": "^6.0.1",
     "react-responsive-grid": "^0.3.0",
     "react-router": "^4.2.0",
+    "showdown": "^1.8.6",
     "superagent": "^3.8.2",
     "toml-js": "0.0.8",
     "typography": "^0.16.6"
