@@ -72,7 +72,7 @@ export default class RootLayout extends React.Component {
         </Helmet>
         <Navbar />
         <div className="content">
-          { this.props.children() }
+          { this.props.children({ ...this.props }) }
         </div>
       </div>
     </DocumentTitle>
@@ -80,3 +80,26 @@ export default class RootLayout extends React.Component {
   }
 }
 
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark(
+      filter: { frontmatter: { templateKey: {regex: "/.*-widget/g"}} }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            apply_message
+            apply_types {
+              apply_deadline
+              apply_link
+              description
+              heading
+              infosession
+              linked_page
+            }
+          }
+        }
+      }
+    }
+  }
+`;

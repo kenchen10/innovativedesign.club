@@ -1,5 +1,6 @@
 import React from 'react';
 import Script from 'react-load-script';
+import ApplyWidget from '../pages/ApplyWidget';
 
 export default class IndexPage extends React.Component {
   _handleNetlifyLoad() {
@@ -32,29 +33,7 @@ export default class IndexPage extends React.Component {
           </p>
         </div>
       </div>
+      <ApplyWidget data={this.props.data} />
     </div>);
   }
 }
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(
-      filter: { frontmatter: { templateKey: {regex: "/.*-widget/g"}} }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            apply_types {
-              apply_deadline
-              apply_link
-              description
-              heading
-              infosession
-              linked_page
-            }
-          }
-        }
-      }
-    }
-  }
-`;
