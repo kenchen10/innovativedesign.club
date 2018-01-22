@@ -302,7 +302,7 @@ export default class Index extends React.Component {
       <DocumentTitle title="Innovative Design">
         <div>
           <div className="page__wrapper requests">
-            <h1 className="section__title">design requests</h1>
+            <h1 className="header">Design Requests</h1>
             <div className="page__wrapper requests">
               <div
                 className="request__info"
