@@ -15,6 +15,16 @@
   }
 
   .request__form {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.15);
+
+    @media (max-width: 500px) {
+      max-width: 100%;
+    }
 
     span {
       color: #3b4951;
@@ -88,45 +98,29 @@
         }
       }
 
-      input, textarea {
+      label, .Dropdown-placeholder {
+        font-family: 'Raleway';
+        position: relative;
+        display: block;
+        padding: 8px 0 8px 0;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: left;
+        color: darken($light-grey, 35);
+      }
+
+      input, textarea, .Dropdown-control {
         color: darken($grey, 35%);
-        border: 0;
+        border: 2.5px solid $light-grey;
+        border-radius: 5px;
         background: none;
-        padding: 10px 0 10px 0;
+        padding: 10px;
         font-size: 20px;
         outline: 0;
         width: 100%;
         tap-highlight-color: rgba(0,0,0,0);
         touch-callout: none;
-
-        & + label {
-          position: relative;
-          display: block;
-          padding: 8px 0 8px 0;
-          text-transform: uppercase;
-          font-size: 16px;
-          font-weight: 500;
-          text-align: left;
-          color: darken($light-grey, 5);
-
-          &::before, &::after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            content: "";
-            width: 100%;
-            height: 1px;
-          }
-
-          &::before {
-            background-color: rgba(144, 164, 174, .2);
-          }
-
-          &::after {
-            background-color: $light-grey;
-            height: 2px;
-          }
-        }
 
         &::-webkit-input-placeholder {
           color: darken($light-grey, 5);
@@ -151,7 +145,7 @@
 
       &.input__container--half {
         display: block;
-        margin: 48px 0;
+        margin: 24px 0;
         width: 100%;
       }
     }
@@ -163,13 +157,6 @@
 
         &::after {
           background-color: $blue;
-        }
-
-        span::after {
-          background-image: linear-gradient(to right,
-            $blue 50%,
-            rgba(144,164,174,0) 0%);
-          background-position: 0% 50%;
         }
       }
     }
@@ -193,7 +180,7 @@
 
     .button__wrapper {
       height: 80px;
-      margin-top: 64px;
+      margin-top: 32px;
       text-align: center;
 
       .submit__loader {
