@@ -16,7 +16,8 @@
       float: right;
 
       @media (max-width: 640px) {
-        width: 100%; 
+        display: none;
+        width: 100%;
       }
 
     }
