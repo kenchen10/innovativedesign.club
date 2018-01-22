@@ -1,5 +1,13 @@
-.decal {
+.decals {
   margin: 0 auto;
+
+  .hero__right {
+    padding-left: 10%;
+    
+    h2 {
+      color: $light-grey;
+    }
+  }
   
   .section__title { margin: 32px auto; }
   .button__wrapper {

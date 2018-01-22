@@ -1,6 +1,8 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 import Link from 'gatsby-link';
+import Hero from '../components/Hero';
+import ApplyWidget from '../components/ApplyWidget';
 
 import $ from 'jquery';
 import _ from 'lodash';
@@ -112,29 +114,38 @@ export default class Index extends React.Component {
       );
     });
 
-    return (
-      <DocumentTitle title="Innovative Design">
-        <div>
-          <div className="page__wrapper decal">
-            <h1 className="section__title">intro to photoshop and illustrator decal</h1>
-            <div className="description">
-              This course teaches graphic design through the use of Photoshop and Illustrator. Adobe Photoshop and Illustrator CC will be taught in a series of tutorials complemented with exercises to perform during class and at home. These exercises give students the opportunity to practice the tools, create designs, and exercise their creativity. We
+    return (<div className="decals">
+      <Hero data={this.props.data}>
+        <h2>More information and application details coming soon</h2>
+      </Hero>
+      <ApplyWidget data={this.props.widgetMeta} />
+        <div className="page__wrapper decal">
+          <h1 className="section__title">intro to photoshop and illustrator decal</h1>
+          <div className="description">
+            This course teaches graphic design through the use of Photoshop and Illustrator. Adobe Photoshop and Illustrator CC will be taught in a series of tutorials complemented with exercises to perform during class and at home. These exercises give students the opportunity to practice the tools, create designs, and exercise their creativity. We
 will also explore graphic design trends and their applications, and learn to receive and give critiques in order to improve your design work. We hope to make this a fun and rewarding class. Lessons for this decal will be released below.
-            </div>
-            <div className="lessons__wrapper">
-              { lessonElements }
-            </div>
-            <h1 className="section__title">photo decal</h1>
-            <div className="description">
+          </div>
+          <h1 className="section__title">photo decal</h1>
+          <div className="description">
 In this class, students will be introduced to the history, art, and practices of photography in the modern world. Students will learn how to manually operate a digital SLR camera, how to use lighting in conjunction with posing to create compositions, and how to post-process RAW photos. Di erent disciplines will also be taught and include portraiture, landscape, architecture, product, studio and more. Over the semester, students will learn critiques of photos and develop a more artistic eye for photos.
-            </div>
-            <h1 className="section__title">graphic design principles decal</h1>
-            <div className="description">
-              This DeCal is designed for students who are technically proficient and are looking to learn design principles in order to apply their technical skills to projects. This DeCal is not meant to give you all the tools and knowledge to become a professional designer. However, we will provide an essential foundation to start your career in design.
-            </div>
+          </div>
+          <h1 className="section__title">graphic design principles decal</h1>
+          <div className="description">
+            This DeCal is designed for students who are technically proficient and are looking to learn design principles in order to apply their technical skills to projects. This DeCal is not meant to give you all the tools and knowledge to become a professional designer. However, we will provide an essential foundation to start your career in design.
           </div>
         </div>
-      </DocumentTitle>
-    );
+    </div>);
   }
 }
+
+export const pageQuery = graphql`
+  query DecalsQuery($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      frontmatter {
+        hero_heading
+        hero_subheading
+      }
+    }
+  }
+`;

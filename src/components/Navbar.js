@@ -7,22 +7,25 @@ import { Helmet } from 'react-helmet';
 import Logo from '../../static/img/logo__fulltype.svg';
 
 // TODO: Replace with Gatsby source
-const PAGES = [{
+const PAGES = [
+{
   name: 'Club',
   slug: 'club'
 }, {
   name: 'DeCals',
-  slug: 'decals',
-}, {
-  name: 'Our Team',
-  slug: 'about',
-}, {
-  name: 'Resources',
-  slug: 'resources',
-}, {
-  name: 'Contact',
-  slug: 'contact',
-}];
+  slug: 'decals'
+}
+// }, {
+//   name: 'Our Team',
+//   slug: 'about',
+// }, {
+//   name: 'Resources',
+//   slug: 'resources',
+// }, {
+//   name: 'Contact',
+//   slug: 'contact',
+// }
+];
 
 export default class Navbar extends React.Component {
   constructor(props) {

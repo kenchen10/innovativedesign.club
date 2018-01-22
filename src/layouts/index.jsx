@@ -91,6 +91,7 @@ export const pageQuery = graphql`
             apply_types {
               apply_deadline
               apply_link
+              status
               description
               heading
               infosession

@@ -6,10 +6,19 @@
 
   .hero__right {
     max-width: 50%;
+    
+    @media (max-width: 640px) {
+      max-width: 100%;
+    }
 
     video {
       width: 70%;
       float: right;
+
+      @media (max-width: 640px) {
+        width: 100%; 
+      }
+
     }
   }
 

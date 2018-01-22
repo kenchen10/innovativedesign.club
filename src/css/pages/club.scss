@@ -1,13 +1,63 @@
 .club {
+  width: 100%;
+
   .hero__right-cropped {
     height: 250px;
     overflow: hidden;
 
+    @media (max-width: 640px) {
+      height: 100px;
+    }
+
     img {
       float: right;
-      margin-top: -120px;
+      margin-top: -80px;
       margin-right: -120px;
       width: 150%;
     }
+  }
+
+  .team__block {
+    margin-bottom: 10%;
+    max-height: 400px;
+    display: flex;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+    }
+
+    .thumb {
+      display: flex;
+      flex: 4;
+      width: 50%;
+      align-items: center;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+      flex: 3;
+      width: 30%;
+      padding: 5%;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      h1 {
+        margin: 0 0 0 0;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .team__block-left {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .team__block-right {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }

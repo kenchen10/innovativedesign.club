@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'gatsby-link';
+
 const ReactMarkdown = require('react-markdown');
 
 export default class ApplyWidget extends React.Component {
@@ -14,7 +16,7 @@ export default class ApplyWidget extends React.Component {
       {applyTypes.map((applyType) => {
         return (<div className="widget__block">
           <h2>{applyType.heading}
-            <a href={applyType.linked_page}>Learn more &rarr;</a>
+            <Link to={`/${applyType.linked_page}`}>Learn more &rarr;</Link>
           </h2>
           <p>{applyType.description}</p>
           <div className="widget__table">
@@ -28,9 +30,11 @@ export default class ApplyWidget extends React.Component {
             </div>
           </div>
           <p>
-            <a href={applyType.apply_link}>
-              Submit your application for {applyType.heading} here 
-            </a>
+            {applyType.status === 'open' ? 
+              <Link to={`/${applyType.apply_link}`}>
+                Submit your application for {applyType.heading} here 
+              </Link> : <span class="disabled">Applications open soon</span>
+            }
           </p>
         </div>);
       })}

@@ -20,12 +20,29 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+
+
+  @media (max-width: 640px) {
+    flex-direction: column;    
+  }
+
+  .disabled {
+    color: $light-grey;
+    cursor: not-allowed;
+  }
 }
 
 .widget__block {
-  width: 49.5%;
+  flex: 1;
+  max-width: 49.5%;
   border: 1px solid $light-grey;
   padding: 0 15px 0 15px;
+
+  @media (max-width: 640px) {
+    margin-top: 15px;
+    max-width: 100%;
+  }
+
 
   h2 {
     font-weight: 500;
@@ -64,5 +81,3 @@
     margin-top: 15px;
   }
 }
-
-

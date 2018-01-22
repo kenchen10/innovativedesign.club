@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import Script from 'react-load-script';
 import Hero from '../components/Hero';
 import ApplyWidget from '../components/ApplyWidget';
@@ -40,9 +41,9 @@ export default class IndexPage extends React.Component {
             <img src={row.img} />
             <p>{row.caption}</p>
             <p>
-              <a href={row.link}>
+              <Link to={row.link}>
                 {row.link_text} &rarr;
-              </a>
+              </Link>
             </p>
           </div>);
         })}
