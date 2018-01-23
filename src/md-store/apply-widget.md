@@ -11,7 +11,7 @@ apply_types:
       comprehensive foundation in skills applicable to any industry.
     heading: DeCals
     infosession: |-
-      Jan 25, 8PM & 8:30PM
+      Jan 24, 8PM & 8:30PM
 
       Jacobs Hall
     linked_page: decals
