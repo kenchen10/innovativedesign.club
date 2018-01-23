@@ -13,7 +13,7 @@ apply_types:
     infosession: |-
       Jan 24, 8PM & 8:30PM
 
-      Jacobs Hall
+      Jacobs 310
     linked_page: decals
   - apply_deadline: 2018-02-02T00:00:00-08:00
     apply_link: 'https://apply.innovativedesign.club'
@@ -27,7 +27,7 @@ apply_types:
     infosession: |-
       Jan 31, 8PM
 
-      Location TBA
+      Evans 10
     linked_page: club
 ---
 
