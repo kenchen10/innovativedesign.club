@@ -83,6 +83,8 @@ collections:
         fields:
           - {label: "Template Key", name: templateKey, widget: "hidden", default: "decals"}
           - {label: "Path", name: path, widget: "hidden", default: "/decals"}
+          - {label: "Hero Heading", name: hero_heading, widget: "string"}
+          - {label: "Hero Subheading", name: hero_subheading, widget: "markdown"}
           - {label: "DeCals", name: courses, widget: list, fields: [
             {label: "DeCal Title", name: title, widget: string},
             {label: "DeCal Description", name: description, widget: markdown},
