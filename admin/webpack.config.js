@@ -4,7 +4,7 @@ module.exports = {
   entry: './admin.js',
   output: {
     filename: 'admin.bundle.js',
-    path: path.resolve(__dirname, '../static/admin/'),
+    path: path.resolve(__dirname, '../static/'),
   },
   module: {
     rules: [
