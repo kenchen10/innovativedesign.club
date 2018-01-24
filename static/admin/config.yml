@@ -37,15 +37,32 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index"}
           - {label: "Path", name: path, widget: "hidden", default: "/"}
           - {label: "Title", name: title, widget: "string"}
-          - {label: "Body", name: body, widget: "markdown"}
+          - {label: "Hero Heading", name: hero_heading, widget: "string"}
+          - {label: "Hero Subheading", name: hero_subheading, widget: "markdown"}
+          - {label: "Home Page Image Features", name: row_slides, widget: list, fields: [
+              {label: "Feature Image", name: img, widget: image},
+              {label: "Image Caption", name: caption, widget: markdown},
+              {label: "Internal Link Location", name: link, widget: string},
+              {label: "Internal Link Text", name: link_text, widget: string},
+              {label: "Image Feature Position", name: type, widget: select, default: "left", options: [
+                {label: "Left-aligned", value: left},
+                {label: "Mid-aligned, half-block", value: midhalf},
+                {label: "Right-aligned", value: right}
+              ]}
+          ]}
       - file: "src/md-store/club.md"
         label: "Club Page"
         name: "club"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "club"}
           - {label: "Path", name: path, widget: "hidden", default: "/club"}
-          - {label: "Title", name: title, widget: "string"}
-          - {label: "Body", name: body, widget: "markdown"}
+          - {label: "Hero Heading", name: hero_heading, widget: "string"}
+          - {label: "Hero Subheading", name: hero_subheading, widget: "markdown"}
+          - {label: Teams, name: teams, widget: list, fields: [
+              {label: "Team Name", name: name, widget: string},
+              {label: "Team Description", name: description, widget: markdown},
+              {label: "Team Thumbnail", name: image, widget: image}
+          ]}
       - file: "src/md-store/about.md"
         label: "Team Page"
         name: "about"
