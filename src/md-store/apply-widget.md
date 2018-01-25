@@ -3,7 +3,7 @@ templateKey: apply-widget
 apply_message: Interested in joining us? Recruitment is open!
 apply_types:
   - apply_deadline: 2018-01-27T08:00:00.000Z
-    apply_link: 'https://apply.innovativedesign.club'
+    apply_link: 'apply'
     description: >-
       Develop your creative skills and use state-of-the art tools in one of the
       three DeCals we offer in design and photography. Our courses provide a
@@ -14,6 +14,7 @@ apply_types:
 
       Jacobs 310
     linked_page: decals
+    status: open
   - apply_deadline: 2018-02-02T08:00:00.000Z
     apply_link: 'https://apply.innovativedesign.club'
     description: >-
@@ -27,5 +28,6 @@ apply_types:
 
       Evans 10
     linked_page: club
+    status: closed
 ---
 

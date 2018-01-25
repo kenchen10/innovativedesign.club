@@ -1,0 +1,50 @@
+.apply {
+  max-width: $global-max-width;
+  width: 100%;
+  padding: 0 5% 0 5%;
+
+  h1 {
+    text-align: center;
+  }
+
+  .apply__section {
+    border: 1.5px solid $light-grey;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    width: 60%;
+    min-width: 350px;
+
+    h2 {
+      margin: 0 0 0 0;
+    }
+
+    p {
+      margin: 5px 0 0 0;
+      color: $grey;
+    }
+
+    h3 {
+      color: $grey;
+      margin-bottom: 0;
+    }
+
+    .apply__button {
+      display: inline;
+      margin-left: 10px;
+      padding-bottom: 2px;
+      border: none;
+      height: 30px;
+      box-sizing: border-box;
+      outline: none;
+    }
+
+    .apply__button:hover {
+      border-bottom: 2px solid $dark-grey;
+    }
+
+    .apply__message-disabled {
+      margin-top: 10px;
+      color: $light-grey;
+    }
+  }
+}

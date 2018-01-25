@@ -35,7 +35,7 @@
   flex: 1;
   max-width: 49.5%;
   border: 1px solid $light-grey;
-  padding: 0 15px 0 15px;
+  padding: 0 15px 15px 15px;
 
   @media (max-width: 640px) {
     margin-top: 15px;
@@ -53,6 +53,7 @@
   }
 
   p, a {
+    margin-bottom: 0;
     color: $black;
   }
 }
