@@ -21,55 +21,47 @@ export default class Index extends React.Component {
         number: 'Lesson 1',
         title: 'Intro to Illustrator',
         img: '/img/decal/lesson1.png',
-        url: '/decal/lesson-1/'
+        url: '/decals/lesson-1/'
       },
       {
         number: 'Lesson 2',
         title: 'Pen Tool',
         img: '/img/decal/lesson2.png',
-        url: '/decal/lesson-2/'
       },
       {
         number: 'Lesson 3',
         title: 'Color',
         img: '/img/decal/lesson3.png',
-        url: '/decal/lesson-3/'
       },
       {
         number: 'Lesson 4',
         title: 'Brushes, Symbols, and Effects',
         img: '/img/decal/lesson4.png',
-        url: '/decal/lesson-4/'
       },
       {
         number: 'Lesson 5',
         title: 'Typography',
         img: '/img/decal/lesson5.png',
-        url: '/decal/lesson-5/'
       },
       {
         number: 'Lesson 6',
         title: 'Intro to Photoshop',
         img: '/img/decal/lesson6.png',
-        url: '/decal/lesson-6/'
       },
       {
         number: 'Lesson 7',
         title: 'Selection Tools and Masking',
         img: '/img/decal/lesson7.png',
-        url: '/decal/lesson-7/'
       },
       {
         number: 'Lesson 8',
         title: 'Blending, Layer Styles and Filter Effects',
         img: '/img/decal/lesson8.png',
-        url: '/decal/lesson-8/'
       },
       {
         number: 'Lesson 9',
         title: 'Combining Programs',
         img: '/img/decal/lesson9.png',
-        url: '/decal/lesson-9/'
       },
       {
         number: 'Lesson 10',
@@ -91,8 +83,8 @@ export default class Index extends React.Component {
           className="lesson"
         >
           <Link
-            className="lesson__link"
-            to={lesson.url ? lesson.url : '/decal#'}
+            className={`lesson__link${!lesson.url ? ' lesson__link-disabled' : ''}`}
+            to={lesson.url ? lesson.url : '/decals#'}
           >
             <div
               className="lesson__photo"
@@ -116,7 +108,6 @@ export default class Index extends React.Component {
 
     return (<div className="decals">
       <Hero data={this.props.data}>
-        <h2>More information and application details coming soon</h2>
       </Hero>
       <ApplyWidget data={this.props.widgetMeta} />
         <div className="page__wrapper decal">
@@ -124,6 +115,9 @@ export default class Index extends React.Component {
           <div className="description">
             This course teaches graphic design through the use of Photoshop and Illustrator. Adobe Photoshop and Illustrator CC will be taught in a series of tutorials complemented with exercises to perform during class and at home. These exercises give students the opportunity to practice the tools, create designs, and exercise their creativity. We
 will also explore graphic design trends and their applications, and learn to receive and give critiques in order to improve your design work. We hope to make this a fun and rewarding class. Lessons for this decal will be released below.
+          </div>
+          <div className="lessons__wrapper">
+            {lessonElements}
           </div>
           <h1 className="section__title">photo decal</h1>
           <div className="description">

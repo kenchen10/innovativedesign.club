@@ -62,7 +62,6 @@
   .description {
     margin: 0 auto;
     margin-bottom: 48px;
-    font-family: 'Raleway';
     text-align: center;
     max-width: 800px;
     line-height: 1.6;
@@ -80,6 +79,10 @@
       display: inline-block;
       margin-right: 1%;
       margin-bottom: 1%;
+
+      .lesson__link-disabled {
+        cursor: not-allowed;
+      }
 
       .lesson__link {
         width: 100%;
