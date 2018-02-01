@@ -117,8 +117,10 @@ export default class Apply extends React.Component {
       </div>
       <div className="apply__section">
         <h2>Club</h2>
-        <p>Applications for all teams open on Wednesday, January 31 at 9:00 PM and 
-        are due by Friday, February 2 at 11:59 PM.</p>
+        <p>Applications for all teams open on Wednesday, January 31 at 9:00 PM.</p>
+        <p>Blue and Web Team applications are due on Friday, February 2 at 11:59 PM.</p>
+        <p>Gold and Photo Team applications are due on Saturday, February 3 at 11:59 PM.</p>
+        <p>Blue and Web Team applications require interviews; see application for details and scheduling.</p>
         {this.state.loading ? 
           <img src="/img/loading.gif" width={100} /> : 
           applicationComponents.club
