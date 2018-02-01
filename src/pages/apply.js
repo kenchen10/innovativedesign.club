@@ -65,7 +65,7 @@ export default class Apply extends React.Component {
   }
 
   _onClick(app) {
-    if (apps[app] && this.state.links[app]) {
+    if (this.state.links[app]) {
       window.location = this.state.links[app];
     }
   }
