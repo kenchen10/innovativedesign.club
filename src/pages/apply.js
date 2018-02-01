@@ -10,8 +10,8 @@ const apps = {
     photo: 'Photography Principles'
   },
   club: {
-    gold: 'Gold Team',
-    blue: 'Blue Team',
+    gold: 'Gold: Graphic Design Team',
+    blue: 'Blue: Advanced Graphic Design Team',
     web: 'Web Team',
     photo: 'Photo Team'
   }
