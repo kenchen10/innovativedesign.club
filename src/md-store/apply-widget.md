@@ -14,9 +14,9 @@ apply_types:
 
       Jacobs 310
     linked_page: decals
-    status: open
+    status: closed
   - apply_deadline: 2018-02-02T08:00:00.000Z
-    apply_link: 'https://apply.innovativedesign.club'
+    apply_link: 'apply'
     description: >-
       Join our creative agency as a graphic designer, photographer, or web
       designer. We tackle dozens of projects each semester to Make Berkeley
@@ -28,6 +28,6 @@ apply_types:
 
       Evans 10
     linked_page: club
-    status: closed
+    status: open
 ---
 

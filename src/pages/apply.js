@@ -3,10 +3,18 @@ import Input from '../components/Input';
 import Hero from '../components/Hero';
 
 // TODO: Replace with DeCal source GraphQL
-const courses = {
-  intro: 'Introduction to Photoshop and Illustrator',
-  gdp: 'Graphic Design Principles',
-  photo: 'Photography Principles'
+const apps = {
+  decals: {
+    intro: 'Introduction to Photoshop and Illustrator',
+    gdp: 'Graphic Design Principles',
+    photo: 'Photography Principles'
+  },
+  club: {
+    gold: 'Gold Team',
+    blue: 'Blue Team',
+    web: 'Web Team',
+    photo: 'Photo Team'
+  }
 };
 
 export default class Apply extends React.Component {
@@ -15,23 +23,37 @@ export default class Apply extends React.Component {
 
     this.state = {
       loading: true,
-      open: false,
-      closed: false,
+      types: {
+        decals: {},
+        club: {}
+      },
       error: '',
       links: {}
     };
   }
 
   componentDidMount() {
+    let decalStatus;
+    let clubStatus;
     fetch('https://luz22jwsil4w.runkit.sh/status')
       .then(resp => resp.json())
       .then((data) => {
-        const { open, closed, links } = data;
+        decalStatus = data;
+        return fetch('https://1crb6kfpove4.runkit.sh/status');
+      })
+      .then(resp => resp.json())
+      .then((data) => {
+        clubStatus = data;
         this.setState({
-          open,
-          closed,
-          links,
-          loading: false
+          loading: false,
+          types: {
+            decals: decalStatus,
+            club: clubStatus
+          },
+          links: {
+            ...clubStatus.links,
+            ...decalStatus.links
+          }
         });
       })
       .catch((err) => {
@@ -42,14 +64,14 @@ export default class Apply extends React.Component {
       });
   }
 
-  _onClick(course) {
-    if (courses[course] && this.state.links[course]) {
-      window.location = this.state.links[course];
+  _onClick(app) {
+    if (apps[app] && this.state.links[app]) {
+      window.location = this.state.links[app];
     }
   }
 
   render() {
-    let applications;
+    let applicationComponents = {};
     let soonMessage = (<p className="apply__message-disabled">
       Applications opening soon
     </p>);
@@ -57,28 +79,31 @@ export default class Apply extends React.Component {
       Applications have closed. Check back next semester!
     </p>);
 
-    if (this.state.open) {
-      applications = Object.keys(courses).map((course) => {
-        return (<div className="apply__box">
-          <h3>
-            {courses[course]}
-            <button
-              className="apply__button"
-              onClick={() => this._onClick(course)}
-            >
-              Apply &rarr;
-            </button>
-          </h3>
-        </div>);
-      });
-    } else if (this.state.closed) {
-      applications = closedMessage;
-    } else if (this.state.error) {
-      applications = (<p>{this.state.error}</p>);
-    }else {
-      applications = soonMessage;
-    }
-
+    const types = Object.keys(this.state.types);
+    for (let i = 0; i < types.length; i++) {
+      const type = types[i];
+      if (this.state.types[type].open) {
+        applicationComponents[type] = Object.keys(apps[type]).map((app) => {
+          return (<div className="apply__box">
+            <h3>
+              {apps[type][app]}
+              <button
+                className="apply__button"
+                onClick={() => this._onClick(app)}
+              >
+                Apply &rarr;
+              </button>
+            </h3>
+          </div>);
+        });
+      } else if (this.state.types[type].closed) {
+        applicationComponents[type] = closedMessage;
+      } else if (this.state.error) {
+        applicationComponents[type] = (<p>{this.state.error}</p>);
+      } else {
+        applicationComponents[type] = soonMessage;
+      }
+    } 
     return (<div className="apply">
       <h1>Applications</h1>
       <div className="apply__section">
@@ -87,12 +112,17 @@ export default class Apply extends React.Component {
         are due by Saturday, January 27 at 11:59 PM.</p> 
         {this.state.loading ? 
           <img src="/img/loading.gif" width={100} /> : 
-          applications
+          applicationComponents.decals
         }
       </div>
       <div className="apply__section">
         <h2>Club</h2>
-        {soonMessage}
+        <p>Applications for all teams open on Wednesday, January 31 at 9:00 PM and 
+        are due by Friday, February 2 at 11:59 PM.</p>
+        {this.state.loading ? 
+          <img src="/img/loading.gif" width={100} /> : 
+          applicationComponents.club
+        }
       </div>
     </div>);
   }

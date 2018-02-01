@@ -33,7 +33,7 @@ export default class ApplyWidget extends React.Component {
             {applyType.status === 'open' ? 
               <Link to={`/${applyType.apply_link}`}>
                 Submit your application for {applyType.heading} here &rarr;
-              </Link> : <span class="disabled">Applications open soon</span>
+              </Link> : <span className="disabled">Applications closed</span>
             }
           </p>
         </div>);
