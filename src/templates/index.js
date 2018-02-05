@@ -34,7 +34,6 @@ export default class IndexPage extends React.Component {
           <img src="/img/hexpp-9784.jpg" />
         </video>
       </Hero>
-      <ApplyWidget data={this.props.widgetMeta} />
       <div className="row__container">
         {rowSlides.map((row) => {
           return (<div className={`row row__${row.type}`}>
