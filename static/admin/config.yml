@@ -69,8 +69,8 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
           - {label: "Path", name: path, widget: "hidden", default: "/about"}
-          - {label: "Title", name: title, widget: "string"}
-          - {label: "Body", name: body, widget: "markdown"}
+          - {label: "Hero Heading", name: hero_heading, widget: "string"}
+          - {label: "Hero Subheading", name: hero_subheading, widget: "markdown"}
           - {label: "Officers", name: officers, widget: list, fields: [
             {label: "Name", name: name, widget: string},
             {label: "Primary Role", name: role, widget: string},
