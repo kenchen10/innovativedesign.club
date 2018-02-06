@@ -14,11 +14,11 @@ const PAGES = [
 }, {
   name: 'DeCals',
   slug: 'decals'
+}, {
+  name: 'Our Team',
+  slug: 'about',
 }
-// }, {
-//   name: 'Our Team',
-//   slug: 'about',
-// }, {
+// , {
 //   name: 'Resources',
 //   slug: 'resources',
 // }, {

@@ -15,6 +15,7 @@
     "classnames": "^2.2.5",
     "front-matter": "^2.0.6",
     "gatsby": "^1.9.128",
+    "gatsby-image": "^1.0.35",
     "gatsby-link": "^1.6.30",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-react-next": "^1.0.6",

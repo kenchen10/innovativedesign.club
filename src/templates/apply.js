@@ -1,8 +1,4 @@
 import React from 'react';
-import DocumentTitle from 'react-document-title';
-
-import $ from 'jquery';
-import _ from 'lodash';
 
 export default class Index extends React.Component {
   constructor(props) {
