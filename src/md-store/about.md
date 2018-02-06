@@ -13,5 +13,21 @@ officers:
   - image: /img/img_4836.jpg
     name: Nicholas Chiu
     role: President
+  - image: /img/img_4492.jpg
+    name: Elizabeth Zhou
+    role: VP External
+  - image: /img/img_4409.jpg
+    name: Mei Mei
+    role: VP External
+  - image: /img/img_4330.jpg
+    name: Jackie Zou
+    role: VP Internal
+  - image: /img/img_4270.jpg
+    name: Lisa Chen
+    role: VP Internal
+  - image: /img/img_4451.jpg
+    name: Jeffrey Shi
+    role: VP Marketing
+    secondary_role: Advisor
 ---
 
