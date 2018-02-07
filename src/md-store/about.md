@@ -29,5 +29,30 @@ officers:
     name: Jeffrey Shi
     role: VP Marketing
     secondary_role: Advisor
+  - image: /img/img_4656.jpg
+    name: Allison Nguyen
+    role: VP Marketing
+  - image: /img/img_4880.jpg
+    name: Julie Wong
+    role: VP Edu Outreach
+  - image: /img/img_4686.jpg
+    name: Andrew Chang
+    role: VP Edu Coordinator
+  - image: /img/img_4745.jpg
+    name: Christine Qian
+    role: VP Design Services
+  - image: /img/img_4147.jpg
+    name: Soph Li
+    role: VP Photo Services
+    secondary_role: Advisor
+  - image: /img/img_4571.jpg
+    name: Sheryl Chang
+    role: VP Administration
+  - image: /img/img_4381.jpg
+    name: Sunny Young
+    role: VP Publicity
+  - image: /img/img_3832.jpg
+    name: Essie Xu
+    role: VP Recollections
 ---
 
