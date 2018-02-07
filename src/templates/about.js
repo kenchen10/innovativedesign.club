@@ -21,7 +21,7 @@ export default class About extends React.Component {
     return (
       <div className="about">
         <Hero data={this.props.data} />
-        <div>
+        <div className="officer__container">
           {officers.map((officer) => {
             const originalName = officer.image.substring(officer.image.lastIndexOf('/') + 1);
             return (<Officer
@@ -29,6 +29,10 @@ export default class About extends React.Component {
               image={images[originalName]}
             />);
           })}
+          <div className="officer__block officer__block-empty" />
+          <div className="officer__block officer__block-empty" />
+          <div className="officer__block officer__block-empty" />
+          <div className="officer__block officer__block-empty" />
         </div>
       </div>
     );

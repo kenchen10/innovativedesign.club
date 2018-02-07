@@ -2,303 +2,49 @@
 
 .about {
   max-width: $global-max-width;
-  margin: 0 auto;
+  padding: 0 5% 0 5%;
 
-  .icons__container {
-    max-width: $global-max-width;
-    text-align: center;
-    padding: 0 12px;
+  @media (max-width: 640px) {
+    padding: 0 0 0 0;
+  }
 
-    .icon {
-      display: inline-block;
-      width: 100px;
-      height: 100px;
-      margin: 0px 20px;
-      background-position: center center;
-      background-size: cover;
+  .officer__container {
+    padding: 50px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
 
-      @media (max-width: 728px) {
-        margin: 6px 20px;
-      }
-
-      @media (max-width: 400px) {
-        width: 50px;
-        height: 50px;
-        padding-bottom: 48px;
-      }
+    @media (max-width: 800px) {
+      padding: 0 0 0 0;
     }
   }
 
-  .info__container--icons {
-    max-width: 900px;
-    padding: 0 24px;
-    margin: 48px auto;
-    font-size: 18px;
-    font-family: 'Raleway';
+  .officer__block {
+    width: 200px;
+    overflow: hidden;
+    margin-top: 30px;
 
-    b {
-      color: $blue;
+    img {
+      margin-left: -60px;
     }
 
-    a {
-      text-decoration: underline;
-      color: $blue;
+    h3, p {
+      margin: 0 0 0 0;
     }
-  }
-  .officers {
-    padding: 0 2%;
 
-    .officer {
-      position: relative;
-      width: 23.5%;
-      margin-bottom: 1.5%;
-      margin-right: 2%;
-      display: inline-block;
-
-      .officer__photo {
-        width: 100%;
-        height: 100%;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-
-      .officer__details {
-        font-family: "Lato";
-        width: 100%;
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        left: 0;
-        transform: translate(0, -50%);
-        opacity: 0;
-        -webkit-transition: opacity 500ms;
-        -moz-transition: opacity 500ms;
-        -ms-transform: opacity 500ms;
-        transition: opacity 500ms;
-
-        .officer__detail--name {
-          font-size: 1.5rem;
-          margin-bottom: 4px;
-          text-transform: uppercase;
-
-          @media (max-width: 770px) {
-            font-size: 1.25rem;
-          }
-        }
-
-        .officer__detail--tagline {
-          font-size: 1rem;
-          margin-bottom: 4px;
-          padding: 5px;
-
-          @media (max-width: 400px) {
-            font-size: 0.5rem;
-          }
-        }
-
-        .officer__detail--title {
-          font-size: 1.25rem;
-          margin-top: 10px;
-          margin-bottom: 3px;
-
-          @media (max-width: 770px) {
-            font-size: 1rem;
-          }
-
-          @media (max-width: 520px) {
-            font-size: 0.8rem;
-          }
-        }
-
-        .officer__detail--tier {
-          font-size: 1rem;
-
-          @media (max-width: 770px) {
-            font-size: 0.8rem;
-          }
-        }
-      }
-
-      .officer__overlay {
-        position: absolute;
-        top: 0;
-        width: 0;
-        height: 100%;
-        background: $white;
-        opacity: 0.6;
-        -webkit-transition: width 500ms;
-        -moz-transition: width 500ms;
-        -o-transition: width 500ms;
-        transition: width 500ms;
-
-        &.officer__overlay--left {
-          left: 0;
-        }
-
-        &.officer__overlay--right {
-          right: 0;
-        }
-      }
-
-      &:nth-child(4n) {
-        margin-right: 0;
-      }
-
-      &:hover, &:active {
-        .officer__details {
-          opacity: 1;
-        }
-
-        .officer__overlay {
-          width: 100%;
-        }
-      }
-
-      @media (max-width: 1040px) {
-        width: 32%;
-
-        &:nth-child(4n) {
-          margin-right: 2%;
-        }
-
-        &:nth-child(3n) {
-          margin-right: 0;
-        }
-      }
-
-      @media (max-width: 650px) {
-        width: 49%;
-
-        &:nth-child(3n) {
-          margin-right: 2%;
-        }
-
-        &:nth-child(2n) {
-          margin-right: 0;
-        }
-      }
+    h3 {
+      margin-top: 5px;
     }
+
+    p {
+      color: $grey;
+    }
+
   }
 
-  .marketing__wrapper {
-    padding: 0 2%;
-
-    .marketing {
-      position: relative;
-      width: 23.5%;
-      margin-bottom: 1.5%;
-      margin-right: 2%;
-      display: inline-block;
-
-      .marketing__photo {
-        width: 100%;
-        height: 100%;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-
-      .marketing__details {
-        font-family: "Lato";
-        width: 100%;
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        left: 0;
-        transform: translate(0, -50%);
-        opacity: 0;
-        -webkit-transition: opacity 500ms;
-        -moz-transition: opacity 500ms;
-        -ms-transform: opacity 500ms;
-        transition: opacity 500ms;
-
-        .marketing__detail--name {
-          font-size: 1.5rem;
-          margin-bottom: 8px;
-          text-transform: uppercase;
-
-          @media (max-width: 770px) {
-            font-size: 1.25rem;
-          }
-        }
-
-        .marketing__detail--tagline {
-          padding: 5px;
-          margin-bottom: 8px;
-
-          @media (max-width: 770px) {
-            font-size: 1rem;
-          }
-
-          @media (max-width: 400px) {
-            font-size: 0.75rem;
-          }
-        }
-      }
-
-      .marketing__overlay {
-        position: absolute;
-        top: 0;
-        width: 0;
-        height: 100%;
-        background: $white;
-        opacity: 0.6;
-        -webkit-transition: width 500ms;
-        -moz-transition: width 500ms;
-        -o-transition: width 500ms;
-        transition: width 500ms;
-
-        &.marketing__overlay--left {
-          left: 0;
-        }
-
-        &.marketing__overlay--right {
-          right: 0;
-        }
-      }
-
-      &:nth-child(4n) {
-        margin-right: 0;
-      }
-
-      &:hover, &:active {
-        .marketing__details {
-          opacity: 1;
-        }
-
-        .marketing__overlay {
-          width: 100%;
-        }
-      }
-
-      @media (max-width: 1040px) {
-        width: 32%;
-
-        &:nth-child(4n) {
-          margin-right: 2%;
-        }
-
-        &:nth-child(3n) {
-          margin-right: 0;
-        }
-      }
-
-      @media (max-width: 650px) {
-        width: 49%;
-
-        &:nth-child(3n) {
-          margin-right: 2%;
-        }
-
-        &:nth-child(2n) {
-          margin-right: 0;
-        }
-      }
-    }
+  .officer__block-empty {
+    max-height: 0;
   }
 }
