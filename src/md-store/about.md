@@ -54,5 +54,26 @@ officers:
   - image: /img/img_3832.jpg
     name: Essie Xu
     role: VP Recollections
+  - image: /img/copy of img_4707.jpg
+    name: Ethan Lee
+    role: VP Technology
+  - image: /img/img_4312.jpg
+    name: Ashley Chen
+    role: VP Finance
+  - image: /img/img_4098.jpg
+    name: Katharine Jiang
+    role: Web Team Lead
+  - image: /img/img_4611.jpg
+    name: Barbara Yang
+    role: Advisor
+  - image: /img/img_4017_jessica.png
+    name: David Bui
+    role: Advisor
+  - image: /img/img_4017_jessica.png
+    name: Peter Phan
+    role: Advisor
+  - image: /img/img_4084.jpg
+    name: Yudi Sun
+    role: Advisor
 ---
 
