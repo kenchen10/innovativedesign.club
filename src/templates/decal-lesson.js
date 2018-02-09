@@ -51,18 +51,18 @@ export default class Index extends React.Component {
   }
 }
 
-export const pageQuery = graphql`
-  query DecalLessonQuery($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        title
-        downloadLink
-        tutorial
-        homework
-        tutorialImg
-        homeworkImg
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query DecalLessonQuery($path: String!) {
+//     markdownRemark(frontmatter: { path: { eq: $path } }) {
+//       html
+//       frontmatter {
+//         title
+//         downloadLink
+//         tutorial
+//         homework
+//         tutorialImg
+//         homeworkImg
+//       }
+//     }
+//   }
+// `;
