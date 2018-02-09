@@ -9,6 +9,8 @@
   }
 
   .officer__container {
+    // margin-top: 5%;
+    // margin-bottom: 5%;
     padding: 50px;
     display: flex;
     width: 100%;
@@ -22,12 +24,13 @@
   }
 
   .officer__block {
-    width: 200px;
-    overflow: hidden;
+    width: 150px;
+    // overflow: hidden;
     margin-top: 30px;
 
     img {
-      margin-left: -60px;
+      // margin-left: -60px;
+      width: 100%;
     }
 
     h3, p {

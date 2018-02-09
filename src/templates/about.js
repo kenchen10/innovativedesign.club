@@ -57,7 +57,7 @@ export const pageQuery = graphql`
       edges {
         node {
           childImageSharp { 
-            resolutions(width: 300) {
+            resolutions(width: 300, height: 300) {
               ...GatsbyImageSharpResolutions_tracedSVG
               originalName
             }
