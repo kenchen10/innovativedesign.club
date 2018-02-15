@@ -33,6 +33,7 @@ export default class Index extends React.Component {
         number: 'Lesson 3',
         title: 'Color',
         img: '/img/decal/lesson3.png',
+        url: '/decals/lesson-3/'
       },
       {
         number: 'Lesson 4',
