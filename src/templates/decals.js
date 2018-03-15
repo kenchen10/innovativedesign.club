@@ -57,6 +57,7 @@ export default class Index extends React.Component {
         number: 'Lesson 7',
         title: 'Selection Tools and Masking',
         img: '/img/decal/lesson7.png',
+        url: '/decals/lesson-7/'
       },
       {
         number: 'Lesson 8',
