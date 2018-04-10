@@ -34,7 +34,7 @@ const campusTypes = [
 ];
 
 const projectTypes = [
-  'Graphic Design',
+  // 'Graphic Design',
   'Photography',
   'Web Design'
 ];
