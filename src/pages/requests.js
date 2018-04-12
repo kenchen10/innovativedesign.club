@@ -36,7 +36,7 @@ const campusTypes = [
 const projectTypes = [
   // 'Graphic Design',
   'Photography',
-  'Web Design'
+  // 'Web Design'
 ];
 
 function submissionIsValid(properties) {
