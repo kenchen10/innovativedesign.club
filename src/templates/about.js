@@ -73,6 +73,7 @@ export const pageQuery = graphql`
               height
               src
               srcSet
+              tracedSVG
               originalName
             }
           }
