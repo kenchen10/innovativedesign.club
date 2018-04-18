@@ -80,7 +80,8 @@ export default class Index extends React.Component {
       {
         number: 'Lesson 11',
         title: 'Final Showcase',
-        img: '/img/decal/lesson11.png'
+        img: '/img/decal/lesson11.png',
+        url: '/decals/lesson-11/'
       }
     ];
 
