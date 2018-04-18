@@ -2,7 +2,9 @@
 
 .about {
   max-width: $global-max-width;
-  padding: 0 5% 0 5%;
+  // padding: 0 5% 0 5%;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (max-width: 640px) {
     padding: 0 0 0 0;
@@ -15,7 +17,7 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-content: space-between;
     justify-content: space-between;
 
     @media (max-width: 800px) {
@@ -24,9 +26,15 @@
   }
 
   .officer__block {
-    width: 150px;
+    width: 200px;
     // overflow: hidden;
     margin-top: 30px;
+    flex: 1;
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     img {
       // margin-left: -60px;
@@ -49,5 +57,9 @@
 
   .officer__block-empty {
     max-height: 0;
+
+    @media (max-width: 640px) {
+      display: none;
+    }
   }
 }

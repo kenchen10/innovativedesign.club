@@ -4,6 +4,9 @@ import Hero from '../components/Hero';
 
 // TODO: Replace with DeCal source GraphQL
 const apps = {
+  officers: {
+    officers: 'Officer Board Applications',
+  },
   decals: {
     intro: 'Introduction to Photoshop and Illustrator',
     gdp: 'Graphic Design Principles',
@@ -48,7 +51,8 @@ export default class Apply extends React.Component {
           loading: false,
           types: {
             decals: decalStatus,
-            club: clubStatus
+            club: clubStatus,
+            officers: clubStatus,
           },
           links: {
             ...clubStatus.links,
@@ -107,6 +111,15 @@ export default class Apply extends React.Component {
     return (<div className="apply">
       <h1>Applications</h1>
       <div className="apply__section">
+        <h2>Officer Board</h2>
+        <p>Applications for all DeCals open on Wednesday, April 18 at 9:00 PM and 
+        are due by Friday, April 20 at 11:59 PM.</p> 
+        {this.state.loading ? 
+          <img src="/img/loading.gif" width={100} /> : 
+          applicationComponents.officers
+        }
+      </div>
+      {/*<div className="apply__section">
         <h2>DeCals</h2>
         <p>Applications for all DeCals open on Wednesday, January 24 at 9:00 PM and 
         are due by Saturday, January 27 at 11:59 PM.</p> 
@@ -125,7 +138,7 @@ export default class Apply extends React.Component {
           <img src="/img/loading.gif" width={100} /> : 
           applicationComponents.club
         }
-      </div>
+      </div>*/}
     </div>);
   }
 }

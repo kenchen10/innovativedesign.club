@@ -31,8 +31,9 @@ export default class About extends React.Component {
           })}
           <div className="officer__block officer__block-empty" />
           <div className="officer__block officer__block-empty" />
+          {/*<div className="officer__block officer__block-empty" />
           <div className="officer__block officer__block-empty" />
-          <div className="officer__block officer__block-empty" />
+          <div className="officer__block officer__block-empty" />*/}
         </div>
       </div>
     );
@@ -57,7 +58,7 @@ export const pageQuery = graphql`
       edges {
         node {
           childImageSharp { 
-            resolutions(width: 300, height: 300) {
+            resolutions(width: 150, height: 150) {
               ...GatsbyImageSharpResolutions_tracedSVG
               originalName
             }
