@@ -58,18 +58,17 @@ export const pageQuery = graphql`
       edges {
         node {
           childImageSharp { 
-            sizes(
+            resolutions(
               traceSVG: {
                 color: "lightgray"
                 optTolerance: 0.4
                 turdSize: 100
                 turnPolicy: TURNPOLICY_MAJORITY
               },
-              maxWidth: 150,
-              maxHeight: 150,
+              width: 150,
+              height: 150,
               cropFocus: CENTER
             ) {
-              tracedSVG
               width
               height
               src
