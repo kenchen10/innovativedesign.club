@@ -112,7 +112,7 @@ export default class Apply extends React.Component {
       <h1>Applications</h1>
       <div className="apply__section">
         <h2>Officer Board</h2>
-        <p>Applications for all DeCals open on Wednesday, April 18 at 9:00 PM and 
+        <p>Applications for officer board positions open on Wednesday, April 18 at 9:00 PM and 
         are due by Friday, April 20 at 11:59 PM.</p> 
         {this.state.loading ? 
           <img src="/img/loading.gif" width={100} /> : 
