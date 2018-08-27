@@ -22,7 +22,7 @@ officers:
   - image: /img/sheryl 2.jpg
     name: Sheryl Chang
     role: VP Internal
-  - image: /img/img_4270.jpg
+  - image: /img/shenelle 1.jpg
     name: Shenelle Perera
     role: VP Internal
   - image: /img/ruby 4.jpg
@@ -55,7 +55,7 @@ officers:
   - image: /img/nick 1.jpg
     name: Nicholas Chiu
     role: VP Recollections
-  - image: /img/copy of img_4707.jpg
+  - image: /img/ethan 2.jpg
     name: Ethan Lee
     role: VP Technology
   - image: /img/ashley 4.jpg
@@ -74,7 +74,7 @@ officers:
   - image: /img/valerie 2.jpg
     name: Valerie Tan
     role: Intro DeCal Facilitator
-  - image: /img/img_4017_jessica.png
+  - image: /img/sahil 3.jpg
     name: Sahil Sanghvi
     role: Intro DeCal Facilitator
   - image: /img/brandon 2.jpg
