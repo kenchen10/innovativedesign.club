@@ -75,7 +75,8 @@ collections:
             {label: "Name", name: name, widget: string},
             {label: "Primary Role", name: role, widget: string},
             {label: "Secondary Role", name: secondary_role, widget: string, required: false},
-            {label: "Profile Picture", name: image, widget: image}
+            {label: "Profile Picture", name: image, widget: image},
+            {label: "Hover Blurb", name: hover_blurb, widget: string, required: false}
           ]}
       - file: "src/md-store/decals.md"
         label: "DeCals"
