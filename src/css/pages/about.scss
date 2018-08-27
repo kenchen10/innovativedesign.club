@@ -55,6 +55,29 @@
 
   }
 
+  .officer__block:hover .officer__bio {
+    opacity: 1;
+  }
+
+  .officer__bio {
+    height: 98%; // TODO: why?
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s ease all;
+  }
+
+  .officer__bio p {
+    width: 80%;
+    text-align: center;
+    color: white;
+  }
+
   .officer__block-empty {
     max-height: 0;
 

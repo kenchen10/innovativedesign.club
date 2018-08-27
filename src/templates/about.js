@@ -50,6 +50,7 @@ export const pageQuery = graphql`
           name
           role
           image
+          hover_blurb
         }
       }
     }
