@@ -7,73 +7,87 @@ hero_subheading: >-
   aspect of our club’s operation in addition to leading a Design or Photography
   team.
 officers:
-  - image: /img/IMG_4802.jpg
-    name: David Xie
-    role: President
-  - image: /img/img_4836.jpg
-    name: Nicholas Chiu
-    role: President
-  - image: /img/img_4492.jpg
+  - image: /img/elizabeth 2.jpg
     name: Elizabeth Zhou
-    role: VP External
-  - image: /img/img_4409.jpg
-    name: Mei Mei
-    role: VP External
-  - image: /img/img_4330.jpg
+    role: President
+  - image: /img/jackie_zou 4.jpg
     name: Jackie Zou
+    role: President
+  - image: /img/lisa 2.jpg
+    name: Lisa Chen
+    role: VP External
+  - image: /img/allison 2.jpg
+    name: Allison Nguyen
+    role: VP External
+  - image: /img/sheryl 2.jpg
+    name: Sheryl Chang
     role: VP Internal
   - image: /img/img_4270.jpg
-    name: Lisa Chen
+    name: Shenelle Perera
     role: VP Internal
-  - image: /img/img_4451.jpg
-    name: Jeffrey Shi
+  - image: /img/ruby 4.jpg
+    name: Ruby Chen
     role: VP Marketing
-    secondary_role: Advisor
-  - image: /img/img_4656.jpg
-    name: Allison Nguyen
+    secondary_role: ''
+  - image: /img/rachel 1.jpg
+    name: Rachel He
     role: VP Marketing
-  - image: /img/img_4880.jpg
-    name: Julie Wong
+  - image: /img/maggie 1.jpg
+    name: Maggie Chen
     role: VP Edu Outreach
-  - image: /img/img_4686.jpg
-    name: Andrew Chang
+  - image: /img/kiana 3.jpg
+    name: Kiana Aryan
     role: VP Edu Coordinator
-  - image: /img/img_4745.jpg
-    name: Christine Qian
+    secondary_role: GDP DeCal Facilitator
+  - image: /img/iris 2.jpg
+    name: Iris Hou
     role: VP Design Services
-  - image: /img/img_4147.jpg
-    name: Soph Li
-    role: VP Photo Services
-    secondary_role: Advisor
-  - image: /img/img_4571.jpg
-    name: Sheryl Chang
-    role: VP Administration
-  - image: /img/img_4381.jpg
+  - image: /img/sunny 1.jpg
     name: Sunny Young
+    role: VP Photo Services
+    secondary_role: ''
+  - image: /img/joanne 3.jpg
+    name: Joanne Lin
+    role: VP Administration
+  - image: /img/emily 3.jpg
+    name: Emily Gosti
     role: VP Publicity
-  - image: /img/img_3832.jpg
-    name: Essie Xu
+  - image: /img/nick 1.jpg
+    name: Nicholas Chiu
     role: VP Recollections
   - image: /img/copy of img_4707.jpg
     name: Ethan Lee
     role: VP Technology
-  - image: /img/img_4312.jpg
+  - image: /img/ashley 4.jpg
     name: Ashley Chen
     role: VP Finance
-  - image: /img/img_4098.jpg
-    name: Katharine Jiang
-    role: Web Team Lead
-  - image: /img/img_4611.jpg
-    name: Barbara Yang
+  - image: /img/jackie_xu 1.jpg
+    name: Jackie Xu
     role: Advisor
+    secondary_role: Photo DeCal Facilitator
   - image: /img/img_4017_jessica.png
-    name: David Bui
+    name: Jonathan Yang
     role: Advisor
+  - image: /img/julie 2.jpg
+    name: Julie Wong
+    role: Intro DeCal Facilitator
+  - image: /img/valerie 2.jpg
+    name: Valerie Tan
+    role: Intro DeCal Facilitator
   - image: /img/img_4017_jessica.png
-    name: Peter Phan
-    role: Advisor
-  - image: /img/img_4084.jpg
-    name: Yudi Sun
-    role: Advisor
+    name: Sahil Sanghvi
+    role: Intro DeCal Facilitator
+  - image: /img/brandon 2.jpg
+    name: Brandon David
+    role: Intro DeCal Facilitator
+  - image: /img/alan 1.jpg
+    name: Alan Nguyen
+    role: Photo DeCal Facilitator
+  - image: /img/andrew 4.jpg
+    name: Andrew Chi
+    role: Photo DeCal Facilitator
+  - image: /img/cathy 1.jpg
+    name: Cathy Meng
+    role: Photo DeCal Facilitator
 ---
 
