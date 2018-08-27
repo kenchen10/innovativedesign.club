@@ -83,9 +83,6 @@ officers:
     name: Jackie Xu
     role: Advisor
     secondary_role: Photo DeCal Facilitator
-  - image: /img/img_4017_jessica.png
-    name: Jonathan Yang
-    role: Advisor
   - hover_blurb: spends over 2 hours deciding on sauces at safeway
     image: /img/julie 2.jpg
     name: Julie Wong
