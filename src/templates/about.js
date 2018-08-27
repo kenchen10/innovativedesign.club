@@ -32,6 +32,7 @@ export default class About extends React.Component {
           <div className="officer__block officer__block-empty" />
           <div className="officer__block officer__block-empty" />
           <div className="officer__block officer__block-empty" />
+          <div className="officer__block officer__block-empty" />
         </div>
       </div>
     );
