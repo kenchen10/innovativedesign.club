@@ -69,6 +69,20 @@ export default class RootLayout extends React.Component {
           <script src="/pace.js"></script>
           <link href="/pace.css" rel="stylesheet" />
         </Helmet>
+        {this.props.location.pathname === "/" ?
+          <div className="campaign_overlay__container campaign_overlay__container--fall18">
+            <div className="clouds--fall18"></div>
+            <img width={182} src="/img/balloons.png" />
+            <h1>10 years of making Berkeley beautiful</h1>
+            <div className="campaign_overlay__buttons">
+              <a target="_blank" href="https://www.facebook.com/events/1809169995863756/" className="infosession__button infosession__button--blue">DeCal Infosession</a>
+              <a target="_blank" href="https://www.facebook.com/events/1961402217215166/" className="infosession__button infosession__button--yellow">Club Infosession</a>
+            </div>
+            <div className="learn_more--fall18">
+              <img src="/img/mountains-down.png" className="mountains--fall18" />
+            </div>
+          </div>
+        : null}
         <Navbar />
         <div className="content">
           { this.props.children({ ...this.props, widgetMeta: this.props.data }) }

@@ -34,9 +34,9 @@ const campusTypes = [
 ];
 
 const projectTypes = [
-  // 'Graphic Design',
+  'Graphic Design',
   'Photography',
-  // 'Web Design'
+  'Web Design'
 ];
 
 function submissionIsValid(properties) {
@@ -152,7 +152,7 @@ export default class Index extends React.Component {
             name="deadline" {...dateProps}
             id="deadline"
             minDate={moment().add(14, 'days')}
-            maxDate={moment('2018-05-15')}
+            maxDate={moment('2018-12-03')}
             selected={this.state.deadline}
             onChange={(selection) => this._handleSelect({value: selection}, "deadline")}
           />
@@ -318,10 +318,10 @@ export default class Index extends React.Component {
                 </p>
               </div>
               <div className="request__form">
-                <h2 style={{ textAlign: 'center', fontWeight: 400 }}>
+                {/*<h2 style={{ textAlign: 'center', fontWeight: 400 }}>
                   Requests are closed! Please check back next semester.
-                </h2>
-                {/* formBody */}
+                </h2>*/}
+                { formBody }
               </div>
               <div className="request__error">
                 { errorBody }
