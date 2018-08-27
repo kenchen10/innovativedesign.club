@@ -1,4 +1,115 @@
-.index {  
+.campaign_overlay__container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.campaign_overlay__buttons {
+  display: flex;
+  min-width: 300px;
+  width: 50%;
+  justify-content: center;
+}
+
+.campaign_overlay__container--fall18 * {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+.campaign_overlay__container--fall18 {
+  padding-top: 5%;
+  background-image: url(/img/bg_overlay.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  @media (max-width: 700px) {
+    background-image: url(/img/bg_overlay_mobile.png);
+  }
+
+  @media (min-width: 1090px) {
+    background-position: center bottom;
+  }
+}
+
+.campaign_overlay__container--fall18 h1 {
+  width: 50%;
+  min-width: 500px;
+  max-width: 660px;
+  font-weight: 700;
+  font-size: 40pt;
+  text-align: center;
+  margin: 0 0;
+  margin-bottom: 20px;
+
+  @media (max-width: 470px) {
+    font-size: 30pt;
+    min-width: 100%;
+  }
+}
+
+.learn_more--fall18 {
+  position: absolute;
+  bottom: 20px;
+}
+
+.clouds--fall18 {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  height: 300px;
+  background-image: url(/img/clouds.png);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: auto 100%;
+  animation: scroll 500s linear infinite;
+}
+
+.mountains--fall18 {
+  width: 411px;
+
+  @media (max-width: 470px) {
+    width: 100%;
+  }
+}
+
+@keyframes scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.infosession__button {
+  margin: 3px;
+  padding: 15px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: 0.2s ease all;
+}
+
+.infosession__button--blue {
+  background-color: #71BFE7;
+  color: white;
+
+  &:hover {
+    background-color: #508DAC;
+  }
+}
+
+.infosession__button--yellow {
+  background-color: #FADA48;
+  color: black;
+
+  &:hover {
+    background-color: #DDC141;
+  }
+}
+
+.index {
+  .hero {
+    margin-bottom: 10%;
+  }
 
   .hero p {
     font-size: 16pt;

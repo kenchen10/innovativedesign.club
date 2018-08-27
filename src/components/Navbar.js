@@ -45,14 +45,7 @@ export default class Navbar extends React.Component {
   }
 
   render() {
-    return <Headroom
-      wrapperStyle={{
-        maxHeight: 60
-      }}
-      style={{
-        background: 'rgba(255, 255, 255, 0.99)'
-      }}
-    >
+    return (
       <div
         className={classNames("nav", {
           "nav--open": this.state.navOpen
@@ -90,6 +83,6 @@ export default class Navbar extends React.Component {
           </div>
         </div>
       </div>
-    </Headroom>
+    );
   }
 }
