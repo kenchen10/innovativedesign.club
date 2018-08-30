@@ -78,6 +78,10 @@ officers:
     image: /img/ashley 4.jpg
     name: Ashley Chen
     role: VP Finance
+  - hover_blurb: tall child
+    image: /img/melissa 1.jpg
+    name: Melissa Silvers
+    role: Gold Team Lead
   - hover_blurb: who cares about your feed's aesthetic
     image: /img/jackie_xu 1.jpg
     name: Jackie Xu
