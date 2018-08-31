@@ -38,11 +38,11 @@ export default class Apply extends React.Component {
   componentDidMount() {
     let decalStatus;
     let clubStatus;
-    fetch('https://95rvenqe60nj.runkit.sh/status')
+    fetch('https://innod.lib.id/app-opens-api@release/decals/')
       .then(resp => resp.json())
       .then((data) => {
         decalStatus = data;
-        return fetch('https://450u6f6jwab5.runkit.sh/status');
+        return fetch('https://innod.lib.id/app-opens-api@release/club/');
       })
       .then(resp => resp.json())
       .then((data) => {
