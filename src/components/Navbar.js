@@ -4,9 +4,14 @@ import Headroom from 'react-headroom';
 import classNames from 'classnames';
 import { Helmet } from 'react-helmet';
 
-import Logo from '../../static/img/logo__fulltype.svg';
-
 // TODO: Replace with Gatsby source
+// , {
+//   name: 'Resources',
+//   slug: 'resources',
+// }, {
+//   name: 'Contact',
+//   slug: 'contact',
+// }
 const PAGES = [
 {
   name: 'Club',
@@ -16,15 +21,8 @@ const PAGES = [
   slug: 'decals'
 }, {
   name: 'Our Team',
-  slug: 'about',
+  slug: 'about'
 }
-// , {
-//   name: 'Resources',
-//   slug: 'resources',
-// }, {
-//   name: 'Contact',
-//   slug: 'contact',
-// }
 ];
 
 export default class Navbar extends React.Component {
@@ -53,7 +51,7 @@ export default class Navbar extends React.Component {
       >
         <div className="nav__wrapper">
           <Link className="nav__item nav__logo" to='/'>
-            <img src={Logo} />
+            <img src="/img/logo__fulltype.svg" />
           </Link>
           <div
             className={classNames("nav__item", "nav__hamburger", {

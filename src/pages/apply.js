@@ -42,7 +42,7 @@ export default class Apply extends React.Component {
       .then(resp => resp.json())
       .then((data) => {
         decalStatus = data;
-        return fetch('https://1crb6kfpove4.runkit.sh/status');
+        return fetch('https://450u6f6jwab5.runkit.sh/status');
       })
       .then(resp => resp.json())
       .then((data) => {
@@ -110,7 +110,7 @@ export default class Apply extends React.Component {
     } 
     return (<div className="apply">
       <h1>Applications</h1>
-      <div className="apply__section">
+      {/*<div className="apply__section">
         <h2>Officer Board</h2>
         <p>Applications for officer board positions open on Wednesday, April 18 at 9:00 PM and 
         are due by Friday, April 20 at 11:59 PM.</p> 
@@ -118,17 +118,17 @@ export default class Apply extends React.Component {
           <img src="/img/loading.gif" width={100} /> : 
           applicationComponents.officers
         }
-      </div>
-      {/*<div className="apply__section">
+      </div>*/}
+      <div className="apply__section">
         <h2>DeCals</h2>
-        <p>Applications for all DeCals open on Wednesday, January 24 at 9:00 PM and 
-        are due by Saturday, January 27 at 11:59 PM.</p> 
+        <p>Applications for all DeCals open on Thursday, August 30 at 9:00 PM and 
+        are due by Saturday, September 1 at 11:59 PM.</p>
         {this.state.loading ? 
           <img src="/img/loading.gif" width={100} /> : 
           applicationComponents.decals
         }
       </div>
-      <div className="apply__section">
+      {/*<div className="apply__section">
         <h2>Club</h2>
         <p>Applications for all teams open on Wednesday, January 31 at 9:00 PM.</p>
         <p>Blue and Web Team applications are due on Friday, February 2 at 11:59 PM.</p>

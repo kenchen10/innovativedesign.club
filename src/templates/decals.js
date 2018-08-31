@@ -119,6 +119,7 @@ export default class Index extends React.Component {
     return (<div className="decals">
       <Hero data={this.props.data}>
       </Hero>
+      <ApplyWidget data={this.props.widgetMeta} />
         <div className="page__wrapper decal">
           <h1 className="section__title">intro to photoshop and illustrator decal</h1>
           <div className="description">
