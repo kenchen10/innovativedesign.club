@@ -38,7 +38,7 @@ export default class Apply extends React.Component {
   componentDidMount() {
     let decalStatus;
     let clubStatus;
-    fetch('https://luz22jwsil4w.runkit.sh/status')
+    fetch('https://95rvenqe60nj.runkit.sh/status')
       .then(resp => resp.json())
       .then((data) => {
         decalStatus = data;
