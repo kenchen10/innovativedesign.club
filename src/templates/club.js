@@ -21,6 +21,7 @@ export default class ClubPage extends React.Component {
           <img src="/img/cmyk-9781.jpg" />
         </div>
       </Hero>
+      <ApplyWidget data={this.props.widgetMeta} />
       {teams.map((team, i) => {
         const direction = i % 2 == 0 ? 'left' : 'right';
         return (<div className={`team__block team__block-${direction}`}>
