@@ -29,11 +29,11 @@ export default class About extends React.Component {
               image={images[originalName]}
             />);
           })}
-          <div className="officer__block officer__block-empty" />
-          <div className="officer__block officer__block-empty" />
-          <div className="officer__block officer__block-empty" />
-          <div className="officer__block officer__block-empty" />
-          <div className="officer__block officer__block-empty" />
+          {
+            Array(6 - officers.length % 6).fill(0).map(() =>
+              <div className="officer__block officer__block-empty" />
+            )
+          }
         </div>
       </div>
     );
