@@ -2,6 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 import DocumentTitle from 'react-document-title';
 import { Helmet } from 'react-helmet';
+import Link from 'gatsby-link';
 import Navbar from '../components/Navbar';
 
 import '../css/_index.scss';
@@ -75,8 +76,9 @@ export default class RootLayout extends React.Component {
             <img width={182} src="/img/balloons.png" />
             <h1>10 years of making Berkeley beautiful</h1>
             <div className="campaign_overlay__buttons">
-              <a target="_blank" href="https://www.facebook.com/events/1809169995863756/" className="infosession__button infosession__button--blue">DeCal Infosession</a>
-              <a target="_blank" href="https://www.facebook.com/events/1961402217215166/" className="infosession__button infosession__button--yellow">Club Infosession</a>
+              <Link to="/apply" className="infosession__button infosession__button--yellow">
+                Apply now
+              </Link>
             </div>
             <div className="learn_more--fall18">
               <img src="/img/mountains-down.png" className="mountains--fall18" />
