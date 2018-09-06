@@ -15,7 +15,7 @@ apply_types:
       Jacobs 310
     linked_page: decals
     status: open
-  - apply_deadline: 2018-09-09T08:00:00.000Z
+  - apply_deadline: 2018-09-08T08:00:00.000Z
     apply_link: 'apply'
     description: >-
       Join our creative agency as a graphic designer, photographer, or web
@@ -28,6 +28,6 @@ apply_types:
 
       Latimer 120
     linked_page: club
-    status: notopen
+    status: open
 ---
 
