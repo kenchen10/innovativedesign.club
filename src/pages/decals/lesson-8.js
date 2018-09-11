@@ -18,7 +18,7 @@ export default class Index extends React.Component {
           <div className="page__wrapper lesson">
             <h1 className="section__title">Lesson Eight</h1>
             <div className="button__wrapper">
-              <a href="https://www.dropbox.com/sh/493v32pmvh9utya/AACLT2vwOrWYffS9opdmtLE3a?dl=0">
+              <a href="https://drive.google.com/open?id=1NVTj7dltPT5jq3Up9jSw0lJxOf0x9tyT">
                 <button className="download__button">
                   download files
                 </button>
