@@ -318,10 +318,10 @@ export default class Index extends React.Component {
                 </p>
               </div>
               <div className="request__form">
-                {/*<h2 style={{ textAlign: 'center', fontWeight: 400 }}>
+                <h2 style={{ textAlign: 'center', fontWeight: 400 }}>
                   Requests are closed! Please check back next semester.
-                </h2>*/}
-                { formBody }
+                </h2>
+                { /*formBody*/ }
               </div>
               <div className="request__error">
                 { errorBody }
