@@ -72,24 +72,24 @@ export default class RootLayout extends React.Component {
         </Helmet>
 
         {this.props.location.pathname === "/" ?
-          <div>Hi
+
+          <div className="campaign_overlay__container campaign_overlay__container--spring19">
+            <img width={100} src="/img/globes.png" />
+            <h1>Innovative Design</h1>
+            <h2>Graphic Design, Web Design, & Photography</h2>
+            <div className="campaign_overlay__buttons">
+              <Link to="/apply" className="infosession__button infosession__button--white">
+                Apply now
+              </Link>
+            </div>
+
+            <div className="learn_more--fall18">
+              scroll down to learn more
+            </div>
           </div>
-          // <div className="campaign_overlay__container campaign_overlay__container--fall18">
-          //   <div className="clouds--fall18"></div>
-          //   <img width={182} src="/img/balloons.png" />
-          //   <h1>10 years of making Berkeley beautiful</h1>
-          //   <div className="campaign_overlay__buttons">
-          //     <Link to="/apply" className="infosession__button infosession__button--yellow">
-          //       Apply now
-          //     </Link>
-          //   </div>
-          //   <div className="learn_more--fall18">
-          //     <img src="/img/mountains-down.png" className="mountains--fall18" />
-          //   </div>
-          // </div>
         : null
 
-        }
+      }
 
         <Navbar />
         <div className="content">

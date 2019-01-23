@@ -2,7 +2,7 @@
 templateKey: apply-widget
 apply_message: Interested in joining us? Recruitment is open!
 apply_types:
-  - apply_deadline: 2018-09-01T08:00:00.000Z
+  - apply_deadline: 2019-02-02T08:00:00.000Z
     apply_link: 'apply'
     description: >-
       Develop your creative skills and use state-of-the art tools in one of the
@@ -10,12 +10,12 @@ apply_types:
       comprehensive foundation in skills applicable to any industry.
     heading: DeCals
     infosession: |-
-      Aug 31, 8PM & 8:30PM
+      Jan 30, 8PM - 9PM
 
       Jacobs 310
     linked_page: decals
     status: open
-  - apply_deadline: 2018-09-08T08:00:00.000Z
+  - apply_deadline: 2019-02-08T08:00:00.000Z
     apply_link: 'apply'
     description: >-
       Join our creative agency as a graphic designer, photographer, or web
@@ -24,9 +24,9 @@ apply_types:
       develop your creative vision.
     heading: Club
     infosession: |-
-      Sep 5, 8PM
+      Feb 5, 8PM - 9PM
 
-      Latimer 120
+      VLSB 2060
     linked_page: club
     status: open
 ---
