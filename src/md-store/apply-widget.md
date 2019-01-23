@@ -10,7 +10,7 @@ apply_types:
       comprehensive foundation in skills applicable to any industry.
     heading: DeCals
     infosession: |-
-      Jan 30, 8PM - 9PM
+      Jan 30, 8PM
 
       Jacobs 310
     linked_page: decals
@@ -24,7 +24,7 @@ apply_types:
       develop your creative vision.
     heading: Club
     infosession: |-
-      Feb 5, 8PM - 9PM
+      Feb 5, 8PM
 
       VLSB 2060
     linked_page: club
