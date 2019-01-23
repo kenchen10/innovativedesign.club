@@ -10,7 +10,7 @@ apply_types:
       comprehensive foundation in skills applicable to any industry.
     heading: DeCals
     infosession: |-
-      Aug 30, 8PM & 8:30PM
+      Aug 31, 8PM & 8:30PM
 
       Jacobs 310
     linked_page: decals
@@ -30,4 +30,3 @@ apply_types:
     linked_page: club
     status: open
 ---
-
