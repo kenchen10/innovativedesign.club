@@ -190,7 +190,7 @@ export default class Index extends React.Component {
       curr[next] = this.state[next];
       return curr;
     }, {});
-    
+
     if (payload.deadline) {
       payload.deadline = payload.deadline.format("MM/DD/YYYY");
     }
