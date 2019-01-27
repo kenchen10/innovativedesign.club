@@ -13,7 +13,16 @@ const navbarHeight = 60;
 
 export default class RootLayout extends React.Component {
 
+  componentDidUpdate() {
+    this.animateLandingPage(); 
+  }
+
   componentDidMount() {
+    this.animateLandingPage();
+
+  }
+
+  animateLandingPage() {
     if (window.innerWidth > 470) {
       anime({
         targets: ".images__container--left img",
@@ -42,7 +51,6 @@ export default class RootLayout extends React.Component {
         delay: (_, index) => 400 + index * 80,
       });
     }
-
   }
 
   render() {
@@ -179,7 +187,7 @@ export default class RootLayout extends React.Component {
 
       }
 
-      
+
 
 
         <div className="content">

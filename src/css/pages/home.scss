@@ -257,7 +257,9 @@
 .images__container img {
   zoom: 85%;
   position: absolute;
-  // opacity: 0;
+  @media (max-width: 470px) {
+    zoom: 50%;
+  }
 }
 
 .images__container--center {
@@ -293,7 +295,7 @@
 
 .images--mobile {
   @media (max-width: 470px) {
-    // zoom: 10%;
+    zoom: 50%;
     opacity: 1;
   }
 }
