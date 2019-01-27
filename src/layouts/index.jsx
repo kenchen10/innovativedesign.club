@@ -1,15 +1,50 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import DocumentTitle from 'react-document-title';
 import { Helmet } from 'react-helmet';
 import Link from 'gatsby-link';
 import Navbar from '../components/Navbar';
+import anime from "animejs";
 
 import '../css/_index.scss';
 
 const navbarHeight = 60;
 
 export default class RootLayout extends React.Component {
+
+  componentDidMount() {
+    if (window.innerWidth > 470) {
+      anime({
+        targets: ".images__container--left img",
+        translateY: 50,
+        opacity: 1,
+        delay: (_, index) => 300 + index * 100,
+      });
+      anime({
+        targets: ".images__container--right img",
+        translateY: 50,
+        opacity: 1,
+        delay: (_, index) => 400 + index * 80,
+      });
+    } else {
+      // var images_mobile = ReactDOM.findDOMNode(this).getElementsByClassName("images--mobile");
+      // var images_mobile = React.Children.toArray(this.props.children).filter((item) => item.props.className === 'images--mobile')
+      // for (var img in images_mobile) {
+      //   img.style.width = "10%";
+      // }
+
+      anime({
+        targets: ".images--mobile",
+        translateY: 40,
+        zoom: "50%",
+        opacity: 1,
+        delay: (_, index) => 400 + index * 80,
+      });
+    }
+
+  }
+
   render() {
     return (
       <DocumentTitle title='Innovative Design'>
@@ -67,11 +102,64 @@ export default class RootLayout extends React.Component {
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
           />
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
           <script src="/pace.js"></script>
           <link href="/pace.css" rel="stylesheet" />
+
+
+
         </Helmet>
 
+        <Navbar/>
+
         {this.props.location.pathname === "/" ?
+
+          <div className="header__container">
+            <img className="blob__left blob--green" src="img/sp19/blob.svg" />
+            <img className="blob__right blob--green" src="img/sp19/blob.svg" />
+
+            <div className="images__container images__container--left">
+              <img id="brush" className="images--mobile" src="img/sp19/brush.png" />
+              <img id="keyboard" className="images--mobile" src="img/sp19/keyboard.png" />
+              <img id="wacom" className="images--mobile" src="img/sp19/wacom.png" />
+              <img id="plant" className="images--mobile" src="img/sp19/plant.png" />
+              <img id="headphones" src="img/sp19/headphones.png" />
+            </div>
+
+            <div className="images__container images__container--right">
+              <img id="camera1" className="images--mobile" src="img/sp19/camera1.png" />
+              <img id="marker1" className="images--mobile" src="img/sp19/marker1.png" />
+              <img id="marker2" className="images--mobile" src="img/sp19/marker2.png" />
+              <img id="ipad" src="img/sp19/ipad.png" />
+              <img id="camera2" src="img/sp19/camera2.png" />
+            </div>
+
+
+
+            <div className="hero__container">
+              <img width={300} src="/img/logo__fulltype.svg" />
+              <h1>Your creative family at Cal</h1>
+              <p>
+                Innovative Design is UC Berkeley’s premier creative agency. We are designers, photographers, and web developers together in a mission to Make Berkeley Beautiful.
+              </p>
+              <div className="campaign_overlay__buttons">
+                <Link to="/club" className="infosession__button infosession__button--grey">
+                  See our work
+                </Link>
+                <Link to="/apply" className="infosession__button infosession__button--blue">
+                  Apply to join us
+                </Link>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        : null
+        }
+
+        {this.props.location.pathname === "/lol" ?
 
           <div className="campaign_overlay__container campaign_overlay__container--spring19">
             <img width={100} src="/img/globes.png" />
@@ -91,7 +179,9 @@ export default class RootLayout extends React.Component {
 
       }
 
-        <Navbar />
+      
+
+
         <div className="content">
           { this.props.children({ ...this.props, widgetMeta: this.props.data }) }
         </div>

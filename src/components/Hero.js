@@ -7,7 +7,9 @@ export default class Hero extends React.Component {
       hero_subheading: subheading,
     } = this.props.data.markdownRemark.frontmatter;
 
-    return (<div className="hero">
+    return (
+
+      <div className="hero">
         <div className="hero__left">
           <h1>{heading}</h1>
           <p>{subheading}</p>
@@ -15,7 +17,8 @@ export default class Hero extends React.Component {
         <div className="hero__right">
           {this.props.children}
         </div>
-      </div>);
+      </div>
+      
+    );
   }
 }
-

@@ -51,7 +51,7 @@ export default class Navbar extends React.Component {
       >
         <div className="nav__wrapper">
           <Link className="nav__item nav__logo" to='/'>
-            <img src="/img/logo__fulltype.svg" />
+            <img src="/img/logo__icon.svg"/>
           </Link>
           <div
             className={classNames("nav__item", "nav__hamburger", {

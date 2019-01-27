@@ -29,11 +29,16 @@ export default class IndexPage extends React.Component {
         url="https://identity.netlify.com/v1/netlify-identity-widget.js"
         onLoad={() => this._handleNetlifyLoad()}
       />
-      <Hero data={this.props.data}>
-        <video src="/img/sather.webm" autoplay={'autoplay'} loop={'loop'}>
-          <img src="/img/hexpp-9784.jpg" />
-        </video>
-      </Hero>
+
+      <div className="hero">
+        <img className="blob__center blob--yellow" src="img/sp19/blob--yellow.svg" />
+        <div className="images__container images__container--center">
+        </div>
+        <div className="hero__center">
+          <h1>What we do</h1>
+        </div>
+      </div>
+      
     <ApplyWidget data={this.props.widgetMeta} />
       <div className="row__container">
         {rowSlides.map((row) => {

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      * {
+        font-family: "Museo Sans Cyrl", sans-serif;
+      }
+
+      .header__container {
+        display: flex;
+      }
+
+      .images__container {
+        max-width: 300px;
+        position: relative;
+        flex: 1;
+      }
+
+      .images__container img {
+        zoom: 75%;
+        position: absolute;
+        opacity: 0;
+        transform: translateY(-300px);
+      }
+
+      .hero__container {
+        flex: 3;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0 200px;
+      }
+
+      .hero__container h1 {
+        font-weight: 600;
+        font-size: 36pt;
+        margin-bottom: 10px;
+        color: #4A4A4A;
+      }
+
+      .images__container--left {
+        transform: translateX(-100px);
+      }
+
+      .images__container--right {
+        transform: translateX(0px);
+      }
+
+      #brush {
+        top: 20px;
+      }
+
+      #keyboard {
+        top: 150px;
+      }
+
+      #ipad {
+        top: 230px;
+      }
+
+      #plant {
+        top: 450px;
+      }
+
+      #headphones {
+        top: 560px;
+        left: 150px;
+        z-index: -1;
+      }
+
+      #camera1 {
+        top: 40px;
+      }
+
+      #marker1 {
+        top: 180px;
+        left: -80px;
+      }
+
+      #marker2 {
+        top: 200px;
+        left: -100px;
+      }
+
+      #wacom {
+        top: 300px;
+        left: -40px;
+      }
+
+      #camera2 {
+        top: 470px;
+      }
+
+      .blob--green {
+        position: absolute;
+        max-width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header__container">
+      <img class="blob--green" src="blob.svg" />
+      <div class="images__container images__container--left">
+        <img id="brush" src="brush.png" />
+        <img id="keyboard" src="keyboard.png" />
+        <img id="ipad" src="ipad.png" />
+        <img id="plant" src="plant.png" />
+        <img id="headphones" src="headphones.png" />
+      </div>
+      <div class="hero__container">
+        <img src="https://innovativedesign.club/img/logo__fulltype.svg" style="max-width: 300px" />
+        <h1>Your creative family at Cal</h1>
+        <p>
+          Innovative Design is UC Berkeley’s premier creative agency. We are designers, photographers, and web developers together in a mission to Make Berkeley Beautiful.
+        </p>
+      </div>
+      <div class="images__container images__container--right">
+        <img id="camera1" src="camera1.png" />
+        <img id="marker1" src="marker1.png" />
+        <img id="marker2" src="marker2.png" />
+        <img id="wacom" src="wacom.png" />
+        <img id="camera2" src="camera2.png" />
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script type="text/javascript">
+      anime({
+        targets: ".images__container--left img",
+        translateY: 200,
+        opacity: 1,
+        delay: (_, index) => index * 100,
+      });
+      anime({
+        targets: ".images__container--right img",
+        translateY: 200,
+        opacity: 1,
+        delay: (_, index) => 200 + index * 80,
+      });
+    </script>
+  </body>
+</html>
