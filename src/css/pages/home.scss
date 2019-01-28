@@ -135,16 +135,16 @@
   top: 40px;
   left: 50px;
   @media (max-width: 470px) {
-    top: 115vh;
-    left: 75vw;
+    top: 70%;
+    left: 70%;
   }
 }
 
 #keyboard {
   top: 150px;
   @media (max-width: 470px) {
-    top: 120vh;
-    left: 30vw;
+    top: 78%;
+    left: 40%;
   }
 }
 
@@ -157,8 +157,8 @@
   top: 500px;
   left: 50px;
   @media (max-width: 470px) {
-    top: 120vh;
-    left: 210vw;
+    top: 76%;
+    left: 210%;
   }
 }
 
@@ -166,16 +166,13 @@
   top: 570px;
   left: 220px;
   z-index: -1;
-  @media (max-width: 470px) {
-
-  }
 }
 
 #camera1 {
   top: 40px;
   @media (max-width: 470px) {
-    top: 125vh;
-    left: 40vw;
+    top: 78%;
+    left: 140%;
   }
 }
 
@@ -183,8 +180,8 @@
   top: 180px;
   left: -80px;
   @media (max-width: 470px) {
-    top: 145vh;
-    left: 30vw;
+    top: 92%;
+    left: 125%;
   }
 }
 
@@ -192,8 +189,8 @@
   top: 200px;
   left: -100px;
   @media (max-width: 470px) {
-    top: 150vh;
-    left: 20vw;
+    top: 96%;
+    left: 115%;
   }
 }
 
@@ -201,8 +198,8 @@
   top: 300px;
   left: -40px;
   @media (max-width: 470px) {
-    top: 135vh;
-    left: 50vw;
+    top: 90%;
+    left: 40%;
   }
 }
 
@@ -280,12 +277,28 @@
   transform: translateX(-100px);
   @media (max-width: 470px) {
     // transform: translate(-10vw, 80vh);
+    top: 0;
+    bottom: 20%;
+    left: 0;
+    right: 50%;
+
+
   }
 }
 
 .images__container--right {
   transform: translate(-200px, 10vh);
   right: 0px;
+
+  @media (max-width: 470px) {
+    // transform: translate(-10vw, 80vh);
+    top: 0;
+    bottom: 20%;
+    left: 50%;
+    right: 0;
+
+
+  }
 }
 
 .images__container--left img, .images__container--right img {
