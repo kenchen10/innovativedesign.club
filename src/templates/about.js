@@ -58,7 +58,7 @@ export const pageQuery = graphql`
     allFile {
       edges {
         node {
-          childImageSharp { 
+          childImageSharp {
             resolutions(
               traceSVG: {
                 color: "lightgray"
@@ -67,7 +67,7 @@ export const pageQuery = graphql`
                 turnPolicy: TURNPOLICY_MAJORITY
               },
               width: 150,
-              height: 150,
+              height: 219,
               quality: 100,
               cropFocus: CENTER
             ) {
