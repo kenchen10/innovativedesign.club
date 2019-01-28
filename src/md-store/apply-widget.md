@@ -2,7 +2,7 @@
 templateKey: apply-widget
 apply_message: Interested in joining us? Recruitment is open!
 apply_types:
-  - apply_deadline: 2019-02-02T08:00:00.000Z
+  - apply_deadline: 2019-02-01T08:00:00.000Z
     apply_link: 'apply'
     description: >-
       Develop your creative skills and use state-of-the art tools in one of the
