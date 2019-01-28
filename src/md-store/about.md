@@ -53,6 +53,10 @@ officers:
     image: /img/PantoneProfilePic-18.jpg
     name: Cathy Meng
     role: VP Internal
+  - hover_blurb: i could lose weight but i hate losing
+    image: /img/PantoneProfilePic-34.jpg
+    name: Meria Ogawa
+    role: VP Marketing
   - hover_blurb: stress n messy
     image: /img/PantoneProfilePic-28.jpg
     name: Sasha Dimov
@@ -82,7 +86,7 @@ officers:
     name: David Xie
     role: Advisor
     secondary_role: ''
-  - hover_blurb: ''
+  - hover_blurb: i got fired im not even supposed to be on this page
     image: /img/PantoneProfilePic-06.jpg
     name: Ethan Lee
     role: Advisor
@@ -142,9 +146,5 @@ officers:
     image: /img/PantoneProfilePic-01.jpg
     name: Mariel Aquino
     role: Web Team Lead
-  - hover_blurb: i could lose weight but i hate losing
-    image: /img/PantoneProfilePic-34.jpg
-    name: Meria Ogawa
-    role: VP Marketing
 ---
 
