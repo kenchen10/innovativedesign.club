@@ -40,7 +40,7 @@ officers:
     image: /img/PantoneProfilePic-14.jpg
     name: Ruby Chen
     role: VP External
-  - hover_blurb: ''
+  - hover_blurb: you are my dad! (boogie woogie!)
     image: /img/PantoneProfilePic-33.jpg
     name: Rachel He
     role: VP External
@@ -142,5 +142,9 @@ officers:
     image: /img/PantoneProfilePic-01.jpg
     name: Mariel Aquino
     role: Web Team Lead
+  - hover_blurb: i could lose weight but i hate losing
+    image: /img/PantoneProfilePic-34.jpg
+    name: Meria Ogawa
+    role: VP Marketing
 ---
 
