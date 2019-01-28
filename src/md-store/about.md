@@ -8,11 +8,11 @@ hero_subheading: >-
   team.
 officers:
   - hover_blurb: i'll have the flaming yawn
-    image: ''
+    image: /img/PantoneProfilePic-20.jpg
     name: Jackie Zou
     role: President
   - hover_blurb: your local muji dealer
-    image: ''
+    image: /img/PantoneProfilePic-10.jpg
     name: Elizabeth Zhou
     role: President
   - hover_blurb: ''
@@ -20,19 +20,19 @@ officers:
     name: Carolyn Chu
     role: VP Administration
   - hover_blurb: ''
-    image: ''
+    image: /img/PantoneProfilePic-32.jpg
     name: Vivian Zhang
     role: VP Design Services
   - hover_blurb: just wants to die laughing
-    image: ''
+    image: /img/PantoneProfilePic-08.jpg
     name: Renee Utter
     role: VP Photo Services
   - hover_blurb: lemme check my calendar
-    image: ''
+    image: /img/PantoneProfilePic-29.jpg
     name: Joanne Lin
     role: VP Edu Outreach
   - hover_blurb: mega dinkoid
-    image: ''
+    image: /img/PantoneProfilePic-21.jpg
     name: Kiana Aryan
     role: VP Edu Coordinator
     secondary_role: ''
@@ -41,11 +41,11 @@ officers:
     name: Ruby Chen
     role: VP External
   - hover_blurb: ''
-    image: ''
+    image: /img/PantoneProfilePic-33.jpg
     name: Rachel He
     role: VP External
   - hover_blurb: ''
-    image: ''
+    image: /img/PantoneProfilePic-19.jpg
     name: Iris Hou
     role: VP Internal
     secondary_role: ''
@@ -59,7 +59,7 @@ officers:
     role: VP Marketing
     secondary_role: ''
   - hover_blurb: stress n messy
-    image: ''
+    image: /img/PantoneProfilePic-28.jpg
     name: Sasha Dimov
     role: VP Marketing
   - hover_blurb: ''
@@ -75,7 +75,7 @@ officers:
     name: Nicholas Cai
     role: VP Technology
   - hover_blurb: ''
-    image: ''
+    image: /img/PantoneProfilePic-23.jpg
     name: Ashley Chen
     role: VP Finance
   - hover_blurb: hong-konger out of water
@@ -83,7 +83,7 @@ officers:
     name: Nicholas Chiu
     role: Advisor
   - hover_blurb: stan dieter
-    image: ''
+    image: /img/PantoneProfilePic-22.jpg
     name: David Xie
     role: Advisor
     secondary_role: ''
@@ -92,11 +92,11 @@ officers:
     name: Ethan Lee
     role: Advisor
   - hover_blurb: my retirement plan is to become a sushi chef
-    image: ''
+    image: /img/PantoneProfilePic-30.jpg
     name: Lisa Chen
     role: Advisor
   - hover_blurb: ''
-    image: ''
+    image: /img/PantoneProfilePic-25.jpg
     name: Allison Nguyen
     role: Advisor
   - hover_blurb: ''
@@ -112,10 +112,11 @@ officers:
     name: Sahil Sanghvi
     role: Intro DeCal Facilitator
   - hover_blurb: ''
-    image: ''
+    image: /img/PantoneProfilePic-27.jpg
     name: Maggie Chen
     role: Intro DeCal Facilitator
-  - name: Diana Fan
+  - image: /img/PantoneProfilePic-26.jpg
+    name: Diana Fan
     role: Intro DeCal Facilitator
   - hover_blurb: the og wallflower
     name: Jessica Hsiao
@@ -123,7 +124,8 @@ officers:
   - hover_blurb: plant lover that kills plants
     name: Sarah Lee
     role: Photo DeCal Facilitator
-  - name: Cristal Banh
+  - image: /img/PantoneProfilePic-31.jpg
+    name: Cristal Banh
     role: Gold Team Lead
   - hover_blurb: your local ghost-hunting granny
     name: Sharon Pan
