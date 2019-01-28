@@ -85,7 +85,7 @@ export default class Index extends React.Component {
       }
     ];
 
-    // remove lesson link lesson.url ? prefixLink(lesson.url) : '' 
+    // remove lesson link lesson.url ? prefixLink(lesson.url) : ''
     const lessonElements = _.map(lessons, (lesson, index) => {
       return (
         <div
@@ -124,14 +124,16 @@ export default class Index extends React.Component {
           <h1 className="section__title">intro to photoshop and illustrator decal</h1>
           <div className="description">
             This course teaches graphic design through the use of Photoshop and Illustrator. Adobe Photoshop and Illustrator CC will be taught in a series of tutorials complemented with exercises to perform during class and at home. These exercises give students the opportunity to practice the tools, create designs, and exercise their creativity. We
-will also explore graphic design trends and their applications, and learn to receive and give critiques in order to improve your design work. We hope to make this a fun and rewarding class. Lessons for this decal will be released below.
+will also explore graphic design trends and their applications, and learn to receive and give critiques in order to improve your design work. We hope to make this a fun and rewarding class.
+          <br></br><br></br>
+          <a href="https://www.behance.net/innod-decal">
+            Check out past student work here.
+          </a>
           </div>
-          <div className="lessons__wrapper">
-            {lessonElements}
-          </div>
+
           <h1 className="section__title">photo decal</h1>
           <div className="description">
-In this class, students will be introduced to the history, art, and practices of photography in the modern world. Students will learn how to manually operate a digital SLR camera, how to use lighting in conjunction with posing to create compositions, and how to post-process RAW photos. Di erent disciplines will also be taught and include portraiture, landscape, architecture, product, studio and more. Over the semester, students will learn critiques of photos and develop a more artistic eye for photos.
+In this class, students will be introduced to the history, art, and practices of photography in the modern world. Students will learn how to manually operate a digital SLR camera, how to use lighting in conjunction with posing to create compositions, and how to post-process RAW photos. Different disciplines will also be taught and include portraiture, landscape, architecture, product, studio and more. Over the semester, students will learn critiques of photos and develop a more artistic eye for photos.
           </div>
           <h1 className="section__title">graphic design principles decal</h1>
           <div className="description">
@@ -141,6 +143,10 @@ In this class, students will be introduced to the history, art, and practices of
     </div>);
   }
 }
+
+/* <div className="lessons__wrapper">
+  {lessonElements}
+</div> */
 
 export const pageQuery = graphql`
   query DecalsQuery($path: String!) {
