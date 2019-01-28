@@ -9,7 +9,7 @@ hero_subheading: >-
 officers:
   - hover_blurb: 'the chillest bear, ice b'
     image: /img/elizabeth 2.jpg
-    name: Elizabeth Zhou
+    name: Elizabeth Zho
     role: President
   - hover_blurb: the bobfather
     image: /img/jackie_zou 4.jpg
