@@ -19,7 +19,7 @@ officers:
     image: /img/PantoneProfilePic-24.jpg
     name: Carolyn Chu
     role: VP Administration
-  - hover_blurb: ''
+  - hover_blurb: 'my favorite pasta shape is cavatappi hbu :)'
     image: /img/PantoneProfilePic-32.jpg
     name: Vivian Zhang
     role: VP Design Services
@@ -40,7 +40,7 @@ officers:
     image: /img/PantoneProfilePic-14.jpg
     name: Ruby Chen
     role: VP External
-  - hover_blurb: ''
+  - hover_blurb: you are my dad! (boogie woogie!)
     image: /img/PantoneProfilePic-33.jpg
     name: Rachel He
     role: VP External
@@ -53,6 +53,10 @@ officers:
     image: /img/PantoneProfilePic-18.jpg
     name: Cathy Meng
     role: VP Internal
+  - hover_blurb: i could lose weight but i hate losing
+    image: /img/PantoneProfilePic-34.jpg
+    name: Meria Ogawa
+    role: VP Marketing
   - hover_blurb: stress n messy
     image: /img/PantoneProfilePic-28.jpg
     name: Sasha Dimov
@@ -82,7 +86,7 @@ officers:
     name: David Xie
     role: Advisor
     secondary_role: ''
-  - hover_blurb: ''
+  - hover_blurb: i got fired im not even supposed to be on this page
     image: /img/PantoneProfilePic-06.jpg
     name: Ethan Lee
     role: Advisor
@@ -90,7 +94,7 @@ officers:
     image: /img/PantoneProfilePic-30.jpg
     name: Lisa Chen
     role: Advisor
-  - hover_blurb: ''
+  - hover_blurb: it's soup time
     image: /img/PantoneProfilePic-25.jpg
     name: Allison Nguyen
     role: Advisor
