@@ -19,7 +19,7 @@ officers:
     image: /img/PantoneProfilePic-24.jpg
     name: Carolyn Chu
     role: VP Administration
-  - hover_blurb: ''
+  - hover_blurb: 'my favorite pasta shape is cavatappi hbu :)'
     image: /img/PantoneProfilePic-32.jpg
     name: Vivian Zhang
     role: VP Design Services
@@ -90,7 +90,7 @@ officers:
     image: /img/PantoneProfilePic-30.jpg
     name: Lisa Chen
     role: Advisor
-  - hover_blurb: ''
+  - hover_blurb: it's soup time
     image: /img/PantoneProfilePic-25.jpg
     name: Allison Nguyen
     role: Advisor
