@@ -39,6 +39,12 @@ const projectTypes = [
   'Web Design'
 ];
 
+const googleFormsText = [
+  "https://docs.google.com/forms/d/e/1FAIpQLSd_mcdH0YiQSdcLMNTL1VE6YpnAsF0zFjgrTOf1VLOZqdfw4g/viewform?usp=sf_link",
+  "#",
+  "#"
+]
+
 function submissionIsValid(properties) {
   const values = _.values(_.omit(properties, ['questions']));
   return _.every(values, Boolean);
@@ -66,6 +72,18 @@ export default class Index extends React.Component {
       sentError: null,
       deadline: null
     };
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    var type = this.state.type;
+    var idx = projectTypes.indexOf(type);
+    if (idx >= 0) {
+      console.log("valid");
+      var linkText = "Please fill out this supplementary " + type + " form."
+      document.getElementById("google-form-link").href = googleFormsText[idx];
+      document.getElementById("google-form-link").innerHTML = linkText;
+    }
+
   }
 
   _generateUnsentFormBodyMarkup() {
@@ -146,6 +164,9 @@ export default class Index extends React.Component {
             placeholder="Select your project type"
           />
         </div>
+        <div className="input__container input__container--half" style={{ visible: "hidden" }}>
+          <a href="#" target="_blank" id="google-form-link"> Please fill out this supplementary form</a>
+        </div>
         <div className="input__container input__container--half">
           <label htmlFor="phone">Deadline</label>
           <DatePicker
@@ -171,8 +192,13 @@ export default class Index extends React.Component {
           value={this.state.questions}
           long={true}
         />
+
         { formButton }
+
       </form>
+
+
+
     );
   };
 
@@ -319,9 +345,17 @@ export default class Index extends React.Component {
               </div>
               <div className="request__form">
                 {
-                  // <h2 style={{ textAlign: 'center', fontWeight: 400 }}>
+                  // <h4 style={{ textAlign: 'center', fontWeight: 400 }}>
                   //   Requests are closed! Please check back next semester.
-                  // </h2>
+                  // </h4>
+                  <div>
+                    <h3 style={{ textAlign: 'center', fontWeight: 400 }}>
+                      Please note that while our requests are open, we are currently in the process of recruitment - this means our design teams won't be finalized until mid February. Once finalized, our teams will work with a minimum two week turnaround for drafts.
+                    </h3>
+                    <h3 style={{ textAlign: 'center', fontWeight: 400 }}>
+                      We are still more than happy to take your early requests! Please just keep our recruitment timeline and our turnaround rate in mind when considering your project deadline.
+                    </h3>
+                  </div>
                 }
                 {
                   formBody
