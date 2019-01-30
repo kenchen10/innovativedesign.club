@@ -134,7 +134,7 @@ officers:
     image: /img/PantoneProfilePic-09.jpg
     name: Sharon Pan
     role: Gold Team Lead
-  - hover_blurb: 'thank you based god '
+  - hover_blurb: 'soundcloud.com/kadendippe'
     image: /img/PantoneProfilePic-13.jpg
     name: Alan Nguyen
     role: Photo Team Lead
@@ -147,4 +147,3 @@ officers:
     name: Mariel Aquino
     role: Web Team Lead
 ---
-

@@ -77,11 +77,18 @@ export default class Index extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     var type = this.state.type;
     var idx = projectTypes.indexOf(type);
-    if (idx >= 0) {
-      console.log("valid");
-      var linkText = "Please fill out this supplementary " + type + " form."
-      document.getElementById("google-form-link").href = googleFormsText[idx];
-      document.getElementById("google-form-link").innerHTML = linkText;
+    var link = document.getElementById("google-form-link");
+
+    if (idx == 0 || idx == 2) {
+
+      var linkText = "Please fill out this supplementary " + type + " form.";
+      link.target = "_blank";
+      link.href = googleFormsText[idx];
+      link.innerHTML = linkText;
+    } else {
+      link.target = "";
+      link.href = "#";
+      link.innerHTML = "";
     }
 
   }
@@ -165,7 +172,7 @@ export default class Index extends React.Component {
           />
         </div>
         <div className="input__container input__container--half" style={{ visible: "hidden" }}>
-          <a href="#" target="_blank" id="google-form-link"> Please fill out this supplementary form</a>
+          <a href="#" target="" id="google-form-link"></a>
         </div>
         <div className="input__container input__container--half">
           <label htmlFor="phone">Deadline</label>
