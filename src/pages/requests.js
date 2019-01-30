@@ -42,7 +42,7 @@ const projectTypes = [
 const googleFormsText = [
   "https://docs.google.com/forms/d/e/1FAIpQLSd_mcdH0YiQSdcLMNTL1VE6YpnAsF0zFjgrTOf1VLOZqdfw4g/viewform?usp=sf_link",
   "#",
-  "#"
+  "https://docs.google.com/forms/d/e/1FAIpQLSeRzPcLdX2rOHbtXAPZZNriTaIlspqPfFC7brAK6BYJ54TP_Q/viewform?usp=sf_link"
 ]
 
 function submissionIsValid(properties) {
