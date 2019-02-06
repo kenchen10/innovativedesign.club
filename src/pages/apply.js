@@ -131,7 +131,7 @@ export default class Apply extends React.Component {
       <div className="apply__section">
         <h2>Club</h2>
         <p>Blue Team applications are due on Friday, February 8 at 11:59 PM.</p>
-        <p>Web Team applications are due on Friday, February 8 at 11:59 PM.</p>
+        <p>Web Team applications are due on Friday, February 8 at 7:59 PM.</p>
         <p>Gold and Photo Team applications are due on Saturday, February 9 at 11:59 PM.</p>
         <p>Blue and Web Team applications require interviews; see application for details and scheduling.</p>
         {this.state.loading ?
