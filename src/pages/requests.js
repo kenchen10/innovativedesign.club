@@ -180,7 +180,7 @@ export default class Index extends React.Component {
             name="deadline" {...dateProps}
             id="deadline"
             minDate={moment().add(14, 'days')}
-            maxDate={moment('2018-12-03')}
+            maxDate={moment('2019-12-03')}
             selected={this.state.deadline}
             onChange={(selection) => this._handleSelect({value: selection}, "deadline")}
           />
