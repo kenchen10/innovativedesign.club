@@ -18,7 +18,7 @@ export default class Index extends React.Component {
           <div className="page__wrapper lesson">
             <h1 className="section__title">Lesson One</h1>
             <div className="button__wrapper">
-              <a href="https://drive.google.com/open?id=1fS1hvfsvs8Lm3_tFo-vD4IWdAwkHDF3d">
+              <a href="https://drive.google.com/drive/folders/11sQSgsK7tP39Cuw1NLjQUXbw52ien4ya?usp=sharing">
                 <button className="download__button">
                   download files
                 </button>
@@ -31,7 +31,7 @@ export default class Index extends React.Component {
               <div className="lesson__section--description right">
                 <div className="lesson__section--subtitle">tutorial</div>
                 <div className="lesson__section--info">
-                  Learn how to create a cool-looking abstract pattern which you can personalize with your own color choices and initials.
+                  Learn how to create simple yet sleek icons using just basic shape tools in Illustrator
                 </div>
               </div>
             </div>
@@ -42,8 +42,7 @@ export default class Index extends React.Component {
               <div className="lesson__section--description right">
                 <div className="lesson__section--subtitle">homework</div>
                 <div className="lesson__section--info">
-                  This week's homework is to get you comfortable with finding your away around Illustrator on your own!
-                  Follow the tutorial we did in class to make another cool pattern.
+                  Using what you learned from the lesson and tutorial today, create three icons of your favorite foods!
                 </div>
               </div>
             </div>
