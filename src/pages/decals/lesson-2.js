@@ -18,7 +18,7 @@ export default class Index extends React.Component {
           <div className="page__wrapper lesson">
             <h1 className="section__title">Lesson Two</h1>
             <div className="button__wrapper">
-              <a href="https://drive.google.com/open?id=1hO-AB2uVWc--wlsS7KwLTz1vJWFbVgS_">
+              <a href="https://drive.google.com/drive/u/1/folders/1F1s9Ttu-nOrlGa13gFYt9jMVjYCewnvo">
                 <button className="download__button">
                   download files
                 </button>
@@ -42,7 +42,7 @@ export default class Index extends React.Component {
               <div className="lesson__section--description right">
                 <div className="lesson__section--subtitle">homework</div>
                 <div className="lesson__section--info">
-                  Pick a favorite character from a cartoon or animation, lock it underneath, and start tracing away with pen tool! After you have a set of lines you're happy with, be sure to use Live Paint to color it in.
+                Find your favorite real or cartoon character. Copy (do not Place) it into an Illustrator file, and trace the outlines of the character and color it in. Have fun! Choose your favorite character and use what you've learned in class!
                 </div>
               </div>
             </div>

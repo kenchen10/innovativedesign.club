@@ -23,12 +23,12 @@ export default class Index extends React.Component {
         img: '/img/decal/lesson1.png',
         url: '/decals/lesson-1/'
       },
-      // {
-      //   number: 'Lesson 2',
-      //   title: 'Pen Tool',
-      //   img: '/img/decal/lesson2.png',
-      //   url: '/decals/lesson-2/'
-      // },
+      {
+        number: 'Lesson 2',
+        title: 'Pen Tool',
+        img: '/img/decal/lesson2.png',
+        url: '/decals/lesson-2/'
+      },
       // {
       //   number: 'Lesson 3',
       //   title: 'Color',
