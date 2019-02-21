@@ -29,12 +29,12 @@ export default class Index extends React.Component {
         img: '/img/decal/lesson2.png',
         url: '/decals/lesson-2/'
       },
-      // {
-      //   number: 'Lesson 3',
-      //   title: 'Color',
-      //   img: '/img/decal/lesson3.png',
-      //   url: '/decals/lesson-3/'
-      // },
+      {
+        number: 'Lesson 3',
+        title: 'Color',
+        img: '/img/decal/lesson3.png',
+        url: '/decals/lesson-3/'
+      },
       // {
       //   number: 'Lesson 4',
       //   title: 'Brushes, Symbols, and Effects',
@@ -98,12 +98,12 @@ export default class Index extends React.Component {
         img: '/img/decal/gdp/lesson2.png',
         url: '/gdp/lesson-2/'
       },
-      // {
-      //   number: 'Lesson 3',
-      //   title: 'Color',
-      //   img: '/img/decal/lesson3.png',
-      //   url: '/decals/lesson-3/'
-      // },
+      {
+        number: 'Lesson 3',
+        title: 'Color',
+        img: '/img/decal/gdp/lesson3.png',
+        url: '/gdp/lesson-3/'
+      },
       // {
       //   number: 'Lesson 4',
       //   title: 'Brushes, Symbols, and Effects',

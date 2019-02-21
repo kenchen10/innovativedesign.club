@@ -26,7 +26,7 @@ export default class Index extends React.Component {
             </div>
             <div className="lesson__section">
               <div className="lesson__section--description left">
-                <img src="../../img/decal/lesson3.png"/>
+                <img src="../../img/decal/gdp/lesson3.png"/>
               </div>
               <div className="lesson__section--description right">
                 <div className="lesson__section--subtitle">tutorial</div>
@@ -37,7 +37,7 @@ export default class Index extends React.Component {
             </div>
             <div className="lesson__section">
               <div className="lesson__section--description left">
-                <img src="../../img/decal/hw3.png"/>
+
               </div>
               <div className="lesson__section--description right">
                 <div className="lesson__section--subtitle">homework</div>
