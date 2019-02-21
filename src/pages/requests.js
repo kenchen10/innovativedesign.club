@@ -357,10 +357,10 @@ export default class Index extends React.Component {
                   // </h4>
                   <div>
                     <h3 style={{ textAlign: 'center', fontWeight: 400 }}>
-                      Please note that while our requests are open, we are currently in the process of recruitment - this means our design teams won't be finalized until mid February. Once finalized, our teams will work with a minimum two week turnaround for drafts.
+                      Thank you for your interest in working with us! We look forward to receiving your request, but we do ask that you please keep in mind our designers' two week minimum turnaround policy when considering your project deadline.
                     </h3>
                     <h3 style={{ textAlign: 'center', fontWeight: 400 }}>
-                      We are still more than happy to take your early requests! Please just keep our recruitment timeline and our turnaround rate in mind when considering your project deadline.
+                      Innovative Design is proud to offer pro bono services for on campus student organizations and university programs. However, our work for off campus groups is not pro bono. We recommend that off campus organizations submit their design requests through this form and contact innovativedesignatcal@gmail.com for more information on rates.
                     </h3>
                   </div>
                 }
