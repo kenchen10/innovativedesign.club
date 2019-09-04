@@ -26,7 +26,7 @@ export default class ApplyWidget extends React.Component {
             </div>
             <div className="widget__tablerow">
               <p>Applications due:</p>
-              <p>{applyType.apply_deadline === 'TBD' ? 'TBD' : new Date(applyType.apply_deadline).toLocaleDateString()}</p>
+              <p>{new Date(applyType.apply_deadline).getTime() === 0 ? 'TBD' : new Date(applyType.apply_deadline).toLocaleDateString()}</p>
             </div>
           </div>
           <p>
