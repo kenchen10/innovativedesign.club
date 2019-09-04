@@ -120,6 +120,10 @@ export default class Apply extends React.Component {
             applicationComponents.decals
           }
         </div>
+        <div className="apply__section">
+          <h2>Club</h2>
+          <p>Applications for all Gold, Blue, Photo, and Web teams have not opened yet. Please check back later!</p>
+      </div>
       </div>
     );
 
