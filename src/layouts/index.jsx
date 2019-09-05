@@ -106,6 +106,10 @@ export default class RootLayout extends React.Component {
             rel='stylesheet'
             type='text/css'
           />
+          <link 
+            href="https://fonts.googleapis.com/css?family=Rakkas&display=swap" 
+            rel="stylesheet"> 
+          </link>
           <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
@@ -118,77 +122,48 @@ export default class RootLayout extends React.Component {
 
         </Helmet>
 
-        <Navbar/>
-
         {this.props.location.pathname === "/" ?
+          <div>
+            <Navbar type="fa19"/>
+            <div className="header__container">
+              {/* <img className="blob__left blob--green" src="img/sp19/blob.svg" />
+              <img className="blob__right blob--green" src="img/sp19/blob.svg" />
 
-          <div className="header__container">
-            <img className="blob__left blob--green" src="img/sp19/blob.svg" />
-            <img className="blob__right blob--green" src="img/sp19/blob.svg" />
+              <div className="images__container images__container--left">
+                <img id="brush" className="images--mobile" src="img/sp19/brush.png" />
+                <img id="keyboard" className="images--mobile" src="img/sp19/keyboard.png" />
+                <img id="wacom" className="images--mobile" src="img/sp19/wacom.png" />
+                <img id="plant" className="images--mobile" src="img/sp19/plant.png" />
+                <img id="headphones" src="img/sp19/headphones.png" />
+              </div>
 
-            <div className="images__container images__container--left">
-              <img id="brush" className="images--mobile" src="img/sp19/brush.png" />
-              <img id="keyboard" className="images--mobile" src="img/sp19/keyboard.png" />
-              <img id="wacom" className="images--mobile" src="img/sp19/wacom.png" />
-              <img id="plant" className="images--mobile" src="img/sp19/plant.png" />
-              <img id="headphones" src="img/sp19/headphones.png" />
-            </div>
+              <div className="images__container images__container--right">
+                <img id="camera1" className="images--mobile" src="img/sp19/camera1.png" />
+                <img id="marker1" className="images--mobile" src="img/sp19/marker1.png" />
+                <img id="marker2" className="images--mobile" src="img/sp19/marker2.png" />
+                <img id="ipad" src="img/sp19/ipad.png" />
+                <img id="camera2" src="img/sp19/camera2.png" />
+              </div> */}
 
-            <div className="images__container images__container--right">
-              <img id="camera1" className="images--mobile" src="img/sp19/camera1.png" />
-              <img id="marker1" className="images--mobile" src="img/sp19/marker1.png" />
-              <img id="marker2" className="images--mobile" src="img/sp19/marker2.png" />
-              <img id="ipad" src="img/sp19/ipad.png" />
-              <img id="camera2" src="img/sp19/camera2.png" />
-            </div>
-
-
-
-            <div className="hero__container">
-              <img width={300} src="/img/logo__fulltype.svg" />
-              <h1>Your creative family at Cal</h1>
-              <p>
-                Innovative Design is UC Berkeley’s premier creative agency. We are designers, photographers, and web developers together in a mission to Make Berkeley Beautiful.
-              </p>
-              <div className="campaign_overlay__buttons">
-                <Link to="/club" className="infosession__button infosession__button--grey">
-                  See our work
-                </Link>
-                <Link to="/apply" className="infosession__button infosession__button--blue">
-                  Apply to join us
-                </Link>
+              <div className="hero__container">
+                <img width={400} src="/img/fa19/innod-logo.svg" />
+                <h1>Welcome Home.</h1>
+                <p className="subtitle">Find your creative realm at Innovative Design.</p>
+                <p>
+                  Innovative Design is UC Berkeley’s premier creative agency. We are designers, photographers, and web developers together in a mission to Make Berkeley Beautiful.
+                </p>
+                <div className="campaign_overlay__buttons">
+                  <Link to="/club" className="infosession__button infosession__button--grey">
+                    See our work
+                  </Link>
+                  <Link to="/apply" className="infosession__button infosession__button--fa19">
+                    Apply to join us
+                  </Link>
+                </div>
               </div>
             </div>
-
-
-
           </div>
-
-        : null
-        }
-
-        {this.props.location.pathname === "/lol" ?
-
-          <div className="campaign_overlay__container campaign_overlay__container--spring19">
-            <img width={100} src="/img/globes.png" />
-            <h1>Innovative Design</h1>
-            <h2>Graphic Design, Web Design, & Photography</h2>
-            <div className="campaign_overlay__buttons">
-              <Link to="/apply" className="infosession__button infosession__button--white">
-                Apply now
-              </Link>
-            </div>
-
-            <div className="learn_more--fall18">
-              scroll down to learn more
-            </div>
-          </div>
-        : null
-
-      }
-
-
-
+        : <Navbar/> }
 
         <div className="content">
           { this.props.children({ ...this.props, widgetMeta: this.props.data }) }
