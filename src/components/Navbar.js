@@ -43,44 +43,87 @@ export default class Navbar extends React.Component {
   }
 
   render() {
-    return (
-      <div
-        className={classNames("nav", {
-          "nav--open": this.state.navOpen
-        })}
-      >
-        <div className="nav__wrapper">
-          <Link className="nav__item nav__logo" to='/'>
-            <img src="/img/logo__icon.svg"/>
-          </Link>
-          <div
-            className={classNames("nav__item", "nav__hamburger", {
-              "nav__hamburger--active": this.state.navOpen
-            })}
-            onClick={this._handleHamburger}
-          >
-            <div className="hamburger__bar bar--1"></div>
-            <div className="hamburger__bar bar--2"></div>
-          </div>
-          <div className="nav__links">
-            {PAGES.map((page) => {
-              return (
-                <Link
-                  className="nav__item nav__link"
-                  to={`/${page.slug}`}
-                  onClick={() => this._handleHamburger()}
-                  key={page.slug}
-                >
-                  {page.name}
-                </Link>
-              );
-            })}
-            <Link className="nav__item nav__cta" to='/requests/'>
-              Submit a Request
+    const { type } = this.props;
+    if (type === 'fa19') {
+      return (
+        <div
+          className={classNames("nav", "fa19", {
+            "nav--open": this.state.navOpen
+          })}
+        >
+          <div className="nav__wrapper">
+            <Link className="nav__item nav__logo fa19" to='/'>
+              <img src="/img/logo__icon--white.svg"/>
             </Link>
+            <div
+              className={classNames("nav__item", "nav__hamburger", "fa19", {
+                "nav__hamburger--active": this.state.navOpen
+              })}
+              onClick={this._handleHamburger}
+            >
+              <div className="hamburger__bar--fa19 bar--1"></div>
+              <div className="hamburger__bar--fa19 bar--2"></div>
+            </div>
+            <div className="nav__links">
+              {PAGES.map((page) => {
+                return (
+                  <Link
+                    className="nav__item nav__link fa19"
+                    to={`/${page.slug}`}
+                    onClick={() => this._handleHamburger()}
+                    key={page.slug}
+                  >
+                    {page.name}
+                  </Link>
+                );
+              })}
+              <Link className="nav__item nav__cta fa19" to='/requests/'>
+                Submit a Request
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div
+          className={classNames("nav", {
+            "nav--open": this.state.navOpen
+          })}
+        >
+          <div className="nav__wrapper">
+            <Link className="nav__item nav__logo" to='/'>
+              <img src="/img/logo__icon.svg"/>
+            </Link>
+            <div
+              className={classNames("nav__item", "nav__hamburger", {
+                "nav__hamburger--active": this.state.navOpen
+              })}
+              onClick={this._handleHamburger}
+            >
+              <div className="hamburger__bar bar--1"></div>
+              <div className="hamburger__bar bar--2"></div>
+            </div>
+            <div className="nav__links">
+              {PAGES.map((page) => {
+                return (
+                  <Link
+                    className="nav__item nav__link"
+                    to={`/${page.slug}`}
+                    onClick={() => this._handleHamburger()}
+                    key={page.slug}
+                  >
+                    {page.name}
+                  </Link>
+                );
+              })}
+              <Link className="nav__item nav__cta" to='/requests/'>
+                Submit a Request
+              </Link>
+            </div>
+          </div>
+        </div>
+      );
+    }
   }
 }
