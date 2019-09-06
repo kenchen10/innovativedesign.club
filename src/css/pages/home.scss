@@ -103,7 +103,8 @@
   width: 100vw;
   padding: 0 20%;
   // transform: translateY(-10vh);
-  background-image: linear-gradient(#EE2E24 30%, #FFF);
+  background-image: linear-gradient(#EE2E24 40%, #FFF 100%);
+  z-index: -1;
 }
 
 .hero__container p {
@@ -135,6 +136,41 @@
 
 .hero__container .subtitle {
   font-size: 20px;
+}
+
+#stairs {
+  max-width: 500px;
+  top: 360px;
+  left: -300px;
+}
+
+#web {
+  max-width: 360px;
+  top: 80px;
+  left: 140px;
+}
+
+#hole {
+  top: 240px;
+  left: 380px;
+}
+
+#camera-girl {
+  max-width: 520px;
+  top: 500px;
+  left: 180px;
+}
+
+#hanging-person {
+  max-width: 400px;
+  top: -60px;
+  left: -200px;
+}
+
+#lightbulb {
+  max-width: 500px;
+  top: 120px;
+  right: 50px;
 }
 
 #brush {

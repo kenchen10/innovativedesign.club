@@ -145,6 +145,18 @@ export default class RootLayout extends React.Component {
                 <img id="camera2" src="img/sp19/camera2.png" />
               </div> */}
 
+              <div className="images__container images__container--left">
+                <img id="web" src="img/fa19/laptop.png"/>
+                <img id="hole" src="img/fa19/hole.png"/>
+                <img id="camera-girl" src="img/fa19/camera-girl.png"/>
+              </div>
+
+              <div className="images__container images__container--right">
+                <img id="hanging-person" src="img/fa19/hanging-person-2.png"/>
+                <img id="lightbulb" src="img/fa19/lightbulb.gif"/>
+                <img id="stairs" src="img/fa19/stairs.png"/>
+              </div>
+
               <div className="hero__container">
                 <img width={400} src="/img/fa19/innod-logo.svg" />
                 <h1>Welcome Home.</h1>
