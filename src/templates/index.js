@@ -31,7 +31,8 @@ export default class IndexPage extends React.Component {
       />
 
       <div className="hero">
-        <img className="blob__center blob--yellow" src="img/sp19/blob--yellow.svg" />
+        {/* <img className="blob__center blob--yellow" src="img/sp19/blob--yellow.svg" /> */}
+        <img className="blob__center blob--purple" src="img/fa19/blob--purple.svg" />
         <div className="images__container images__container--center">
         </div>
         <div className="hero__center">
