@@ -45,8 +45,8 @@ export default class RootLayout extends React.Component {
 
       anime({
         targets: ".images--mobile",
-        translateY: 40,
-        zoom: "45%",
+        translateY: "40px",
+        // zoom: "45%",
         opacity: 1,
         delay: (_, index) => 400 + index * 80,
       });

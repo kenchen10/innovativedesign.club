@@ -139,7 +139,7 @@
 
 .hero__container img {
   @media (max-width: 470px) {
-    zoom: 0.8;
+    zoom: 80%;
   }
 }
 
@@ -147,6 +147,10 @@
   max-width: 500px;
   top: 360px;
   left: -300px;
+  @media (max-width: 1024px) {
+    left: -160px;
+  }
+
   @media (max-width: 470px) {
     top: 70%;
     left: 90%;
@@ -160,6 +164,12 @@
   @media (max-width: 1440px) {
     left: 100px;
   }
+
+  @media (max-width: 1024px) {
+    top: 80px;
+    left: 140px;
+  }
+
   @media (max-width: 470px) {
     top: 45%;
     left: 20%;
@@ -172,6 +182,12 @@
   @media (max-width: 1440px) {
     left: 280px;
   }
+
+  @media (max-width: 1024px) {
+    top: 280px;
+    left: 260px;
+  }
+
   @media (max-width: 470px) {
     top: 2%;
     left: 10%;
@@ -185,6 +201,12 @@
   @media (max-width: 1440px) {
     left: 140px;
   }
+
+  @media (max-width: 1024px) {
+    top: 560px;
+    left: 140px;
+  }
+
   @media (max-width: 470px) {
     top: 85%;
     left: 20%;
@@ -198,6 +220,12 @@
   @media (max-width: 1440px) {
     left: -160px;
   }
+
+  @media (max-width: 1024px) {
+    top: -100px;
+    left: -60px;
+  }
+
   @media (max-width: 470px) {
     top: -8%;
     left: 140%;
@@ -211,6 +239,12 @@
   @media (max-width: 1440px) {
     right: -50px;
   }
+
+  @media (max-width: 1024px) {
+    top: 160px;
+    left: -300px;
+  }
+
   @media (max-width: 470px) {
     top: 16%;
     left: 128%;
@@ -384,6 +418,10 @@
 .images__container img {
   zoom: 85%;
   position: absolute;
+  @media (max-width: 1024px) {
+    zoom: 60%;
+  }
+
   @media (max-width: 470px) {
     zoom: 50%;
   }
