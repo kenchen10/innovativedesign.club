@@ -126,35 +126,16 @@ export default class RootLayout extends React.Component {
           <div>
             <Navbar type="fa19"/>
             <div className="header__container">
-              {/* <img className="blob__left blob--green" src="img/sp19/blob.svg" />
-              <img className="blob__right blob--green" src="img/sp19/blob.svg" />
-
               <div className="images__container images__container--left">
-                <img id="brush" className="images--mobile" src="img/sp19/brush.png" />
-                <img id="keyboard" className="images--mobile" src="img/sp19/keyboard.png" />
-                <img id="wacom" className="images--mobile" src="img/sp19/wacom.png" />
-                <img id="plant" className="images--mobile" src="img/sp19/plant.png" />
-                <img id="headphones" src="img/sp19/headphones.png" />
+                <img id="web" className="images--mobile" src="img/fa19/laptop.png"/>
+                <img id="hole" className="images--mobile" src="img/fa19/hole.png"/>
+                <img id="camera-girl" className="images--mobile" src="img/fa19/camera-girl.png"/>
               </div>
 
               <div className="images__container images__container--right">
-                <img id="camera1" className="images--mobile" src="img/sp19/camera1.png" />
-                <img id="marker1" className="images--mobile" src="img/sp19/marker1.png" />
-                <img id="marker2" className="images--mobile" src="img/sp19/marker2.png" />
-                <img id="ipad" src="img/sp19/ipad.png" />
-                <img id="camera2" src="img/sp19/camera2.png" />
-              </div> */}
-
-              <div className="images__container images__container--left">
-                <img id="web" src="img/fa19/laptop.png"/>
-                <img id="hole" src="img/fa19/hole.png"/>
-                <img id="camera-girl" src="img/fa19/camera-girl.png"/>
-              </div>
-
-              <div className="images__container images__container--right">
-                <img id="hanging-person" src="img/fa19/hanging-person-2.png"/>
-                <img id="lightbulb" src="img/fa19/lightbulb.gif"/>
-                <img id="stairs" src="img/fa19/stairs.png"/>
+                <img id="hanging-person" className="images--mobile" src="img/fa19/hanging-person.png"/>
+                <img id="lightbulb" className="images--mobile" src="img/fa19/lightbulb.gif"/>
+                <img id="stairs" className="images--mobile" src="img/fa19/stairs.png"/>
               </div>
 
               <div className="hero__container">

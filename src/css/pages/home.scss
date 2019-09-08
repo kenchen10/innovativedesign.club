@@ -86,6 +86,7 @@
   // overflow-x: hidden;
   // overflow-y: visible;
   overflow: hidden; 
+  background-image: linear-gradient(#EE2E24 40%, #FFF 100%);
   @media (max-width: 470px) {
 
   }
@@ -103,8 +104,6 @@
   width: 100vw;
   padding: 0 20%;
   // transform: translateY(-10vh);
-  background-image: linear-gradient(#EE2E24 40%, #FFF 100%);
-  z-index: -1;
 }
 
 .hero__container p {
@@ -142,35 +141,113 @@
   max-width: 500px;
   top: 360px;
   left: -300px;
+  @media (max-width: 470px) {
+    top: 70%;
+    left: 90%;
+  }
 }
 
 #web {
   max-width: 360px;
   top: 80px;
   left: 140px;
+  @media (max-width: 1440px) {
+    left: 100px;
+  }
+  @media (max-width: 470px) {
+    top: 45%;
+    left: 20%;
+  }
 }
 
 #hole {
   top: 240px;
   left: 380px;
+  @media (max-width: 1440px) {
+    left: 280px;
+  }
+  @media (max-width: 470px) {
+    top: 5%;
+    left: 10%;
+  }
 }
 
 #camera-girl {
   max-width: 520px;
   top: 500px;
   left: 180px;
+  @media (max-width: 1440px) {
+    left: 140px;
+  }
+  @media (max-width: 470px) {
+    top: 85%;
+    left: 20%;
+  }
 }
 
 #hanging-person {
   max-width: 400px;
   top: -60px;
   left: -200px;
+  @media (max-width: 1440px) {
+    left: -160px;
+  }
+  @media (max-width: 470px) {
+    top: -10%;
+    left: 140%;
+  }
 }
 
 #lightbulb {
   max-width: 500px;
   top: 120px;
   right: 50px;
+  @media (max-width: 1440px) {
+    right: -50px;
+  }
+  @media (max-width: 470px) {
+    top: 20%;
+    left: 124%;
+  }
+}
+
+#cloud-1 {
+  width: 1000px;
+  top: -400px;
+  z-index: 10;
+}
+
+#cloud-2 {
+  width: 1000px;
+  top: 500px;
+  z-index: 10;
+}
+
+#cloud-3 {
+  width: 1000px;
+  top: 150px;
+  left: -200px;
+  z-index: 9;
+}
+
+#cloud-4 {
+  width: 1000px;
+  top: -400px;
+  left: -500px;
+  z-index: 10;
+}
+
+#cloud-5 {
+  width: 1000px;
+  top: 500px;
+  left: -500px;
+  z-index: 10;
+}
+
+#cloud-6 {
+  width: 1000px;
+  left: -400px;
+  z-index: 9;
 }
 
 #brush {
