@@ -137,6 +137,12 @@
   font-size: 20px;
 }
 
+.hero__container img {
+  @media (max-width: 470px) {
+    zoom: 0.8;
+  }
+}
+
 #stairs {
   max-width: 500px;
   top: 360px;
@@ -167,7 +173,7 @@
     left: 280px;
   }
   @media (max-width: 470px) {
-    top: 5%;
+    top: 2%;
     left: 10%;
   }
 }
@@ -193,7 +199,7 @@
     left: -160px;
   }
   @media (max-width: 470px) {
-    top: -10%;
+    top: -8%;
     left: 140%;
   }
 }
@@ -206,8 +212,8 @@
     right: -50px;
   }
   @media (max-width: 470px) {
-    top: 20%;
-    left: 124%;
+    top: 16%;
+    left: 128%;
   }
 }
 
