@@ -127,9 +127,13 @@
   max-width: 500px;
   min-width: 500px;
   @media (max-width: 470px) {
-    font-size: 30pt;
+    font-size: 40px;
     min-width: 100%;
     width: 80vw;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 32px;
   }
 }
 
@@ -171,7 +175,7 @@
   }
 
   @media (max-width: 470px) {
-    top: 40%;
+    top: 42%;
     left: 20%;
   }
 }
