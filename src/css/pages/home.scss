@@ -86,12 +86,12 @@
   // overflow-x: hidden;
   // overflow-y: visible;
   overflow: hidden; 
+  background-image: linear-gradient(#EE2E24 40%, #FFF 100%);
   @media (max-width: 470px) {
 
   }
 
 }
-
 
 .hero__container {
   flex: 3;
@@ -103,34 +103,205 @@
   height: 100vh;
   width: 100vw;
   padding: 0 20%;
-  transform: translateY(-10vh);
+  // transform: translateY(-10vh);
 }
 
 .hero__container p {
-  color: #4A4A4A;
+  color: #FFF;
   max-width: 500px;
 
   @media (max-width: 470px) {
-    font-size: 8pt;
+    font-size: 14px;
     min-width: 100%;
     width: 80vw;
   }
 }
 
 .hero__container h1 {
-  font-weight: 600;
-  font-size: 45pt;
-  margin-bottom: 10px;
-  color: #4A4A4A;
+  font-family: 'Rakkas', cursive;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 2px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  color: #FFF;
   max-width: 500px;
   min-width: 500px;
   @media (max-width: 470px) {
-    font-size: 30pt;
+    font-size: 40px;
     min-width: 100%;
     width: 80vw;
   }
+
+  @media (max-width: 320px) {
+    font-size: 32px;
+  }
 }
 
+.hero__container .subtitle {
+  font-size: 20px;
+}
+
+.hero__container img {
+  @media (max-width: 470px) {
+    zoom: 80%;
+  }
+}
+
+#stairs {
+  max-width: 500px;
+  top: 360px;
+  left: -300px;
+  @media (max-width: 1440px) {
+    // top: 300px;
+  }
+
+  @media (max-width: 1024px) {
+    left: -160px;
+  }
+
+  @media (max-width: 470px) {
+    top: 65%;
+    left: 90%;
+  }
+}
+
+#web {
+  max-width: 360px;
+  top: 80px;
+  left: 140px;
+  @media (max-width: 1440px) {
+    // top: 0px;
+    left: 180px;
+  }
+
+  @media (max-width: 1024px) {
+    top: 80px;
+    left: 140px;
+  }
+
+  @media (max-width: 470px) {
+    top: 42%;
+    left: 20%;
+  }
+}
+
+#hole {
+  top: 240px;
+  left: 380px;
+  @media (max-width: 1440px) {
+    // top: 160px;
+    left: 400px;
+  }
+
+  @media (max-width: 1024px) {
+    top: 280px;
+    left: 260px;
+  }
+
+  @media (max-width: 470px) {
+    top: 0%;
+    left: 10%;
+  }
+}
+
+#camera-girl {
+  max-width: 520px;
+  top: 500px;
+  left: 180px;
+  @media (max-width: 1440px) {
+    // top: 400px;
+    left: 200px;
+  }
+
+  @media (max-width: 1024px) {
+    top: 560px;
+    left: 140px;
+  }
+
+  @media (max-width: 470px) {
+    top: 80%;
+    left: 20%;
+  }
+}
+
+#hanging-person {
+  max-width: 400px;
+  top: -60px;
+  left: -200px;
+  @media (max-width: 1440px) {
+    // top: -100px;
+    left: -160px;
+  }
+
+  @media (max-width: 1024px) {
+    top: -100px;
+    left: -60px;
+  }
+
+  @media (max-width: 470px) {
+    left: 140%;
+  }
+}
+
+#lightbulb {
+  max-width: 500px;
+  top: 120px;
+  right: 50px;
+  @media (max-width: 1440px) {
+    // top: 80px;
+    right: 0px;
+  }
+
+  @media (max-width: 1024px) {
+    top: 160px;
+    left: -300px;
+  }
+
+  @media (max-width: 470px) {
+    top: 24%;
+    left: 128%;
+  }
+}
+
+#cloud-1 {
+  width: 1000px;
+  top: -400px;
+  z-index: 10;
+}
+
+#cloud-2 {
+  width: 1000px;
+  top: 500px;
+  z-index: 10;
+}
+
+#cloud-3 {
+  width: 1000px;
+  top: 150px;
+  left: -200px;
+  z-index: 9;
+}
+
+#cloud-4 {
+  width: 1000px;
+  top: -400px;
+  left: -500px;
+  z-index: 10;
+}
+
+#cloud-5 {
+  width: 1000px;
+  top: 500px;
+  left: -500px;
+  z-index: 10;
+}
+
+#cloud-6 {
+  width: 1000px;
+  left: -400px;
+  z-index: 9;
+}
 
 #brush {
   top: 40px;
@@ -218,6 +389,11 @@
   max-width: 250px;
 }
 
+.blob--purple {
+  position: absolute;
+  max-width: 250px;
+}
+
 .blob__center {
   transform: translateY(-25vh);
 
@@ -255,6 +431,14 @@
 .images__container img {
   zoom: 85%;
   position: absolute;
+  @media (max-width: 1440px) {
+    zoom: 70%;
+  }
+
+  @media (max-width: 1024px) {
+    zoom: 60%;
+  }
+
   @media (max-width: 470px) {
     zoom: 50%;
   }
@@ -314,11 +498,6 @@
   }
 }
 
-
-
-
-
-
 @keyframes scroll {
   from {
     background-position: 0 0;
@@ -377,6 +556,15 @@
 
   &:hover {
     background-color: #DDDDDD;
+  }
+}
+
+.infosession__button--fa19 {
+  background-color: #787BBA;
+  color: white;
+
+  &:hover {
+    background-color: #555AA8;
   }
 }
 
@@ -464,7 +652,6 @@
   }
 
   .row__right {
-
     p {
       float: right;
       margin: 20px 5px 5px 5px;
