@@ -127,6 +127,8 @@
   max-width: 500px;
   min-width: 500px;
   @media (max-width: 470px) {
+    margin-top: 8px;
+    margin-bottom: 0px;
     font-size: 40px;
     min-width: 100%;
     width: 80vw;
@@ -193,7 +195,7 @@
   }
 
   @media (max-width: 470px) {
-    top: -2%;
+    top: 0%;
     left: 10%;
   }
 }
