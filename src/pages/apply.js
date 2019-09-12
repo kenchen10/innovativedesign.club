@@ -74,6 +74,39 @@ export default class Apply extends React.Component {
     }
   }
 
+  renderLinks(type) {
+    if (type === 'club') {
+      const links = this.state.links;
+      return Object.keys(links).map((app) => {
+        return (<div className="apply__box">
+          <h3>
+            {apps[type][app]}
+            <button
+              className="apply__button"
+              onClick={() => this._onClick(app)}
+            >
+              Apply &rarr;
+            </button>
+          </h3>
+        </div>);
+      });
+    } else {
+      return Object.keys(apps[type]).map((app) => {
+        return (<div className="apply__box">
+          <h3>
+            {apps[type][app]}
+            <button
+              className="apply__button"
+              onClick={() => this._onClick(app)}
+            >
+              Apply &rarr;
+            </button>
+          </h3>
+        </div>);
+        });
+    }
+  }
+
   render() {
     let applicationComponents = {};
     let soonMessage = (<p className="apply__message-disabled">
@@ -87,19 +120,7 @@ export default class Apply extends React.Component {
     for (let i = 0; i < types.length; i++) {
       const type = types[i];
       if (this.state.types[type].open) {
-        applicationComponents[type] = Object.keys(apps[type]).map((app) => {
-          return (<div className="apply__box">
-            <h3>
-              {apps[type][app]}
-              <button
-                className="apply__button"
-                onClick={() => this._onClick(app)}
-              >
-                Apply &rarr;
-              </button>
-            </h3>
-          </div>);
-        });
+        applicationComponents[type] = this.renderLinks(type);
       } else if (this.state.types[type].closed) {
         applicationComponents[type] = closedMessage;
       } else if (this.state.error) {
@@ -122,8 +143,14 @@ export default class Apply extends React.Component {
         </div>
         <div className="apply__section">
           <h2>Club</h2>
-          <p>Applications for all Gold, Blue, Photo, and Web teams have not opened yet. Please check back later!</p>
-      </div>
+          <p>Blue and Web Team applications are due on Friday, September 13 at 7:59 PM.</p>
+          <p>Gold and Photo Team applications are due on Saturday, September 14 at 11:59 PM.</p>
+          <p>Blue and Web Team applications require interviews; see application for details and scheduling.</p>
+          {this.state.loading ?
+            <img src="/img/loading.gif" width={100} /> :
+            applicationComponents.club
+          }
+        </div>
       </div>
     );
 
