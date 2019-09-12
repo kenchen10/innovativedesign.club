@@ -15,7 +15,7 @@ apply_types:
       Jacobs 210
     linked_page: decals
     status: open
-  - apply_deadline: 1970-01-01T00:00:00.000Z
+  - apply_deadline: 2019-09-13T08:00:00.000Z
     apply_link: 'apply'
     description: >-
       Join our creative agency as a graphic designer, photographer, or web
