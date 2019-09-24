@@ -50,6 +50,7 @@ export const pageQuery = graphql`
         officers {
           name
           role
+          secondary_role
           image
           hover_blurb
         }

@@ -19,42 +19,52 @@ officers:
     image: /img/fa19/officers/VALERIE.jpg
     name: Valerie Tan
     role: VP Administration
+    secondary_role: Intro DeCal Facilitator
   - hover_blurb: findtheinvisiblecow.com
     image: /img/fa19/officers/SONIA.jpg
     name: Sonia Uppal
     role: VP Design Services
+    secondary_role: Web Team Lead
   - hover_blurb: haha
     image: /img/fa19/officers/DANNY.jpg
     name: Danny Ha
     role: VP Photo Services
+    secondary_role: Photo Team Lead
   - hover_blurb: dm me for definitive ranking of all pasta shapes
     image: /img/fa19/officers/VIVIAN.jpg
     name: Vivian Zhang
     role: VP Edu Outreach
+    secondary_role: Blue Team Lead
   - hover_blurb: let me retire into pastoral bliss
     image: /img/fa19/officers/IRISW.jpg
     name: Iris Wu
     role: VP Edu Outreach
+    secondary_role: Gold Team Lead
   - hover_blurb: crowd control expert
     image: /img/fa19/officers/SAHIL.jpg
     name: Sahil Sanghvi
     role: VP Edu Coordinator
+    secondary_role: Intro DeCal Facilitator
   - hover_blurb: I am super chill all the time
     image: /img/fa19/officers/CAROLYN.jpg
     name: Carolyn Chu
     role: VP External
+    secondary_role: Gold Team Lead
   - hover_blurb: Oh ,,,, this is a hydroflask,,,, you dont have one,,,, here have mine skskksksksks
     image: /img/fa19/officers/RENEE.jpg
     name: Renee Utter
     role: VP External
+    secondary_role: Photo DeCal Facilitator
   - hover_blurb: it’s yeet or be yeeten 
     image: /img/fa19/officers/JOSH.jpg
     name: Josh Yao
     role: VP Internal
+    secondary_role: Gold Team Lead
   - hover_blurb: i like trees
     image: /img/fa19/officers/NICOLE.jpg
     name: Nicole Kim
     role: VP Internal
+    secondary_role: Gold Team Lead
   - hover_blurb: velvet thunder
     image: /img/fa19/officers/SAMANTHA.jpg
     name: Samantha Sujo
@@ -67,22 +77,27 @@ officers:
     image: /img/fa19/officers/SHARON.jpg
     name: Sharon Pan
     role: VP Publicity
+    secondary_role: Gold Team Lead
   - hover_blurb: im from minnesota
     image: /img/fa19/officers/VALERIE.jpg
     name: Lalyn Yu
     role: VP Recollections
+    secondary_role: Photo DeCal Facilitator
   - hover_blurb: For me, it is the mcchicken. The best fast food sandwich.
     image: /img/fa19/officers/BRIAN.jpg
     name: Brian Ho
     role: VP Technology
+    secondary_role: Web Team Lead
   - hover_blurb: www.web.web
     image: /img/fa19/officers/MARIEL.jpg
     name: Mariel Aquino
     role: VP Finance
+    secondary_role: Web Team Lead
   - hover_blurb: and nani about it
     image: /img/fa19/officers/KIANA.jpg
     name: Kiana Aryan
     role: Advisor
+    secondary_role: GDP DeCal Facilitator
   - hover_blurb: i was fired
     image: /img/fa19/officers/ETHAN.jpg
     name: Ethan Lee
@@ -95,10 +110,12 @@ officers:
     image: /img/fa19/officers/IRISH.jpg
     name: Iris Hou
     role: Advisor
+    secondary_role: Gold Team Lead
   - hover_blurb: c o nsul t in g
     image: /img/fa19/officers/CATHY.jpg
     name: Cathy Meng
     role: Advisor
+    secondary_role: Photo Team Lead
   - hover_blurb: stay caffeinated baby (-;
     image: /img/fa19/officers/JACQUELINE.jpg
     name: Jacqueline Zhang
@@ -110,7 +127,8 @@ officers:
   - hover_blurb: 'ᵗᶦⁿʸ ᵗᵉˣᵗ ᵍᵉⁿᵉʳᵃᵗᵒʳ'
     image: /img/fa19/officers/DIANA.jpg
     name: Diana Fan
-    role: will teach for boba
+    role: Intro DeCal Facilitator
+    secondary_role: Gold Team Lead
   - hover_blurb: will teach for boba
     image: /img/fa19/officers/ARTHUR.jpg
     name: Arthur Yu
