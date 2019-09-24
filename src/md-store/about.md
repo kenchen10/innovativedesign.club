@@ -116,6 +116,10 @@ officers:
     name: Cathy Meng
     role: Advisor
     secondary_role: Photo Team Lead
+  - hover_blurb: last thing a piece of bread sees
+    image: /img/fa19/officers/SASHA.jpg
+    name: Sasha Dimov
+    role: GDP DeCal Facilitator
   - hover_blurb: stay caffeinated baby (-;
     image: /img/fa19/officers/JACQUELINE.jpg
     name: Jacqueline Zhang
@@ -133,10 +137,6 @@ officers:
     image: /img/fa19/officers/ARTHUR.jpg
     name: Arthur Yu
     role: Intro DeCal Facilitator
-  - hover_blurb: last thing a piece of bread sees
-    image: /img/fa19/officers/SASHA.jpg
-    name: Sasha Dimov
-    role: GDP DeCal Facilitator
   - hover_blurb: ikea baby
     image: /img/fa19/officers/FITTY.jpg
     name: Fitty Liu
