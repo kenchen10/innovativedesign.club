@@ -15,7 +15,8 @@ export default class Officer extends React.Component {
         </div>
       </div>
       <h3>{info.name}</h3>
-      <p>{info.role}</p>
+      {info.secondary_role !== null ? <p>{info.role}</p> : <p className="last-child">{info.role}</p>}
+      <p>{info.secondary_role}</p>
     </div>);
   }
 }
