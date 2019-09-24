@@ -79,7 +79,7 @@ officers:
     role: VP Publicity
     secondary_role: Gold Team Lead
   - hover_blurb: im from minnesota
-    image: /img/fa19/officers/VALERIE.jpg
+    image: /img/fa19/officers/LALYN.jpg
     name: Lalyn Yu
     role: VP Recollections
     secondary_role: Photo DeCal Facilitator
