@@ -28,7 +28,8 @@ export default class Apply extends React.Component {
       loading: true,
       types: {
         decals: {},
-        club: {}
+        club: {},
+        officers: {},
       },
       error: '',
       links: {}
@@ -38,7 +39,13 @@ export default class Apply extends React.Component {
   componentDidMount() {
     let decalStatus;
     let clubStatus;
-    fetch('https://innod.lib.id/app-opens-api@release/decals/')
+    let officerStatus;
+    fetch('https://innod.lib.id/app-opens-api@release/officers/')
+      .then(resp => resp.json())
+      .then((data) => {
+        officerStatus = data;
+        return fetch('https://innod.lib.id/app-opens-api@release/decals/');
+      })
       .then(resp => resp.json())
       .then((data) => {
         decalStatus = data;
@@ -52,11 +59,12 @@ export default class Apply extends React.Component {
           types: {
             decals: decalStatus,
             club: clubStatus,
-            officers: clubStatus,
+            officers: officerStatus,
           },
           links: {
             ...clubStatus.links,
-            ...decalStatus.links
+            ...decalStatus.links,
+            ...officerStatus.links
           }
         });
       })
@@ -132,6 +140,15 @@ export default class Apply extends React.Component {
     return (
       <div className="apply">
         <h1>Applications</h1>
+        <div className="apply__section">
+          <h2>Officer Board</h2>
+          <p>Applications for all Officer positions open on Wednesday, November 20 at 9:00 PM and
+          are due by Friday, November 22 at 10:00 PM.</p>
+          {this.state.loading ?
+            <img src="/img/loading.gif" width={100} /> :
+            applicationComponents.officers
+          }
+        </div>
         <div className="apply__section">
           <h2>DeCals</h2>
           <p>Applications for all DeCals open on Wednesday, September 4 at 9:00 PM and
