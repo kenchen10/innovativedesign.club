@@ -2,31 +2,31 @@
 templateKey: apply-widget
 apply_message: Interested in joining us? Recruitment is open!
 apply_types:
-  - apply_deadline: 2019-09-06T08:00:00.000Z
-    apply_link: 'apply'
+  - heading: DeCals
+    linked_page: decals
     description: >-
       Develop your creative skills and use state-of-the art tools in one of the
       three DeCals we offer in design and photography. Our courses provide a
       comprehensive foundation in skills applicable to any industry.
-    heading: DeCals
     infosession: |-
-      Sept 4, 7:15PM - 8:45PM
+      Jan 27, 7:30PM - 9PM
 
-      Jacobs 210
-    linked_page: decals
-    status: open
-  - apply_deadline: 2019-09-13T08:00:00.000Z
+      Jacobs 310
+    apply_deadline: 2020-01-31T08:00:00.000Z
     apply_link: 'apply'
+    status: open
+  - heading: Club
+    linked_page: club
     description: >-
       Join our creative agency as a graphic designer, photographer, or web
       designer. We tackle dozens of projects each semester to Make Berkeley
       Beautiful. You’ll be able to grow your portfolio, work with clients, and
       develop your creative vision.
-    heading: Club
     infosession: |-
-      Sept 11, 8PM - 9PM
+      Feb 5, 8PM - 9PM
 
       VLSB 2040
-    linked_page: club
+    apply_deadline: 2020-02-07T08:00:00.000Z
+    apply_link: 'apply'
     status: open
 ---
