@@ -45,6 +45,30 @@
   // transform: translateY(-10vh);
 }
 
+.hero__container .heading-wrapper {
+  position: relative;
+  width: 440px;
+  height: 322px;
+  @media (max-width: 470px) {
+    width: 352px;
+    height: 380px;
+  }
+}
+
+.hero__container .heading {
+  position: absolute;
+}
+
+.hero__container .bubble-upper {
+  position: absolute;
+  z-index: -1;
+}
+
+.hero__container .bubble-lower {
+  position: absolute;
+  z-index: -1;
+}
+
 .hero__container p {
   color: #2D636D;
   margin-top: 40px;

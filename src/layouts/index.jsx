@@ -24,35 +24,19 @@ export default class RootLayout extends React.Component {
 
   animateLandingPage() {
     if (window.innerWidth > 470) {
-      let heroTimeline = anime.timeline({
-        // easing: 'easeInOutCubic'
-      });
-      heroTimeline
-      .add({
+      anime({
         targets: ".images__container--left img",
         translateX: "50px",
-        opacity: [0, 1],
+        opacity: 1,
         delay: (_, index) => 300 + index * 100,
-        duration: 700,
-      })
-      .add({
+      });
+      anime({
         targets: ".images__container--right img",
         translateX: "-50px",
-        opacity: [0, 1],
-        delay: (_, index) => index * 100,
-      }, "-=700")
-      // anime({
-      //   targets: ".images__container--left img",
-      //   translateY: "50px",
-      //   opacity: 1,
-      //   delay: (_, index) => 300 + index * 100,
-      // });
-      // anime({
-      //   targets: ".images__container--right img",
-      //   translateY: "50px",
-      //   opacity: 1,
-      //   delay: (_, index) => 400 + index * 80,
-      // });
+        opacity: 1,
+        delay: (_, index) => 400 + index * 80,
+      });
+
     } else {
       // var images_mobile = ReactDOM.findDOMNode(this).getElementsByClassName("images--mobile");
       // var images_mobile = React.Children.toArray(this.props.children).filter((item) => item.props.className === 'images--mobile')
@@ -68,6 +52,49 @@ export default class RootLayout extends React.Component {
         delay: (_, index) => 400 + index * 80,
       });
     }
+
+    // heading
+    anime({
+      targets: ".hero__container .bubble-upper",
+      scale: [0, 1],
+      opacity: [0, 1],
+      delay: (_, index) => 500,
+      duration: 800,
+      easing: 'easeInOutCubic',
+    });
+
+    anime({
+      targets: ".hero__container .heading #weird",
+      translateX: [-150, 0],
+      translateY: [30, 0],
+      opacity: [0, 1],
+      delay: (_, index) => 1400,
+    });
+
+    anime({
+      targets: ".hero__container .heading #wacky",
+      translateX: [150, 0],
+      translateY: [-30, 0],
+      opacity: [0, 1],
+      delay: (_, index) => 1900,
+    });
+
+    anime({
+      targets: ".hero__container .heading #creative",
+      translateX: [-150, 0],
+      translateY: [30, 0],
+      opacity: [0, 1],
+      delay: (_, index) => 2400,
+    });
+
+    anime({
+      targets: ".hero__container .bubble-lower",
+      scale: [0, 1],
+      opacity: [0, 1],
+      delay: (_, index) => 2600,
+      duration: 800,
+      easing: 'easeInOutCubic',
+    });
   }
 
   render() {
@@ -157,7 +184,24 @@ export default class RootLayout extends React.Component {
               </div>
 
               <div className="hero__container">
-                <img width={400} src="/img/sp20/call-to-action.png" />
+                <div className="heading-wrapper">
+                  <div className="bubble-upper">
+                    <img width={440} src="/img/sp20/bubble-upper.png" />
+                  </div>
+                  <div className="heading">
+                    <img id="weird" width={440} src="/img/sp20/weird.png" />
+                  </div>
+                  <div className="heading">
+                    <img id="wacky" width={440} src="/img/sp20/wacky.png" />
+                  </div>
+                  <div className="heading">
+                    <img id="creative" width={440} src="/img/sp20/creative.png" />
+                  </div>
+                  <div className="bubble-lower">
+                    <img width={440} src="/img/sp20/bubble-lower.png" />
+                  </div>
+                </div>
+                {/* <img width={400} src="/img/sp20/call-to-action.png" /> */}
                 <p>
                   Innovative Design is UC Berkeley’s premier creative agency. We are designers, photographers, and web developers together in a mission to Make Berkeley Beautiful.
                 </p>
