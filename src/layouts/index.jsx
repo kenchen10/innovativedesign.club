@@ -24,18 +24,35 @@ export default class RootLayout extends React.Component {
 
   animateLandingPage() {
     if (window.innerWidth > 470) {
-      anime({
+      let heroTimeline = anime.timeline({
+        // easing: 'easeInOutCubic'
+      });
+      heroTimeline
+      .add({
         targets: ".images__container--left img",
-        translateY: "50px",
-        opacity: 1,
+        translateX: "50px",
+        opacity: [0, 1],
         delay: (_, index) => 300 + index * 100,
-      });
-      anime({
+        duration: 700,
+      })
+      .add({
         targets: ".images__container--right img",
-        translateY: "50px",
-        opacity: 1,
-        delay: (_, index) => 400 + index * 80,
-      });
+        translateX: "-50px",
+        opacity: [0, 1],
+        delay: (_, index) => index * 100,
+      }, "-=700")
+      // anime({
+      //   targets: ".images__container--left img",
+      //   translateY: "50px",
+      //   opacity: 1,
+      //   delay: (_, index) => 300 + index * 100,
+      // });
+      // anime({
+      //   targets: ".images__container--right img",
+      //   translateY: "50px",
+      //   opacity: 1,
+      //   delay: (_, index) => 400 + index * 80,
+      // });
     } else {
       // var images_mobile = ReactDOM.findDOMNode(this).getElementsByClassName("images--mobile");
       // var images_mobile = React.Children.toArray(this.props.children).filter((item) => item.props.className === 'images--mobile')
@@ -124,24 +141,23 @@ export default class RootLayout extends React.Component {
 
         {this.props.location.pathname === "/" ?
           <div>
-            <Navbar type="fa19"/>
+            <Navbar type="sp20" />
             <div className="header__container">
               <div className="images__container images__container--left">
-                <img id="web" className="images--mobile" src="img/fa19/laptop.png"/>
-                <img id="hole" className="images--mobile" src="img/fa19/hole.png"/>
-                <img id="camera-girl" className="images--mobile" src="img/fa19/camera-girl.png"/>
+                <img id="camera" className="images--mobile" src="img/sp20/camera.png"/>
+                <img id="laptopguy" className="images--mobile" src="img/sp20/laptopguy.png" />
+                <img id="blob2" className="images--mobile" src="img/sp20/blob2.png"/>
               </div>
 
               <div className="images__container images__container--right">
-                <img id="hanging-person" className="images--mobile" src="img/fa19/hanging-person.png"/>
-                <img id="lightbulb" className="images--mobile" src="img/fa19/lightbulb.gif"/>
-                <img id="stairs" className="images--mobile" src="img/fa19/stairs.png"/>
+                <img id="blob3" className="images--mobile" src="img/sp20/blob3.png"/>
+                <img id="pentoolguy" className="images--mobile" src="img/sp20/pentoolguy.png"/>
+                <img id="panel" className="images--mobile" src="img/sp20/panel.png"/>
+                <img id="leg" className="images--mobile" src="img/sp20/leg.png"/>
               </div>
 
               <div className="hero__container">
-                <img width={400} src="/img/fa19/innod-logo.svg" />
-                <h1>Welcome Home.</h1>
-                <p className="subtitle">Find your creative realm at Innovative Design.</p>
+                <img width={400} src="/img/sp20/call-to-action.png" />
                 <p>
                   Innovative Design is UC Berkeley’s premier creative agency. We are designers, photographers, and web developers together in a mission to Make Berkeley Beautiful.
                 </p>
@@ -149,7 +165,7 @@ export default class RootLayout extends React.Component {
                   <Link to="/club" className="infosession__button infosession__button--grey">
                     See our work
                   </Link>
-                  <Link to="/apply" className="infosession__button infosession__button--fa19">
+                  <Link to="/apply" className="infosession__button infosession__button--sp20">
                     Apply to join us
                   </Link>
                 </div>

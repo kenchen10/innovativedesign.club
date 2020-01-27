@@ -44,31 +44,31 @@ export default class Navbar extends React.Component {
 
   render() {
     const { type } = this.props;
-    if (type === 'fa19') {
+    if (type === 'sp20') {
       return (
         <div
-          className={classNames("nav", "fa19", {
+          className={classNames("nav", "sp20", {
             "nav--open": this.state.navOpen
           })}
         >
           <div className="nav__wrapper">
-            <Link className="nav__item nav__logo fa19" to='/'>
-              <img src="/img/logo__icon--white.svg"/>
+            <Link className="nav__item nav__logo sp20" to='/'>
+              <img src="/img/logo__icon--blue.svg"/>
             </Link>
             <div
-              className={classNames("nav__item", "nav__hamburger", "fa19", {
+              className={classNames("nav__item", "nav__hamburger", "sp20", {
                 "nav__hamburger--active": this.state.navOpen
               })}
               onClick={this._handleHamburger}
             >
-              <div className="hamburger__bar--fa19 bar--1"></div>
-              <div className="hamburger__bar--fa19 bar--2"></div>
+              <div className="hamburger__bar--sp20 bar--1"></div>
+              <div className="hamburger__bar--sp20 bar--2"></div>
             </div>
             <div className="nav__links">
               {PAGES.map((page) => {
                 return (
                   <Link
-                    className="nav__item nav__link fa19"
+                    className="nav__item nav__link sp20"
                     to={`/${page.slug}`}
                     onClick={() => this._handleHamburger()}
                     key={page.slug}
@@ -77,7 +77,7 @@ export default class Navbar extends React.Component {
                   </Link>
                 );
               })}
-              <Link className="nav__item nav__cta fa19" to='/requests/'>
+              <Link className="nav__item nav__cta sp20" to='/requests/'>
                 Submit a Request
               </Link>
             </div>
