@@ -41,7 +41,7 @@ export default class RootLayout extends React.Component {
   }
 
   loop() {
-    if (this.autoAddParticle && this.particles.length < this.limit) {
+    if (this.props.location.pathname === "/" && this.autoAddParticle && this.particles.length < this.limit) {
       this.createParticle();
     }
 
@@ -98,8 +98,8 @@ export default class RootLayout extends React.Component {
       transform: rotate(${spinVal}deg);
     `);
 
-    document.getElementById("root").appendChild(particle);
-    console.log(particle);
+    document.getElementById("landing").appendChild(particle);
+    // console.log(particle);
 
     this.particles.push({
       element: particle,
@@ -279,7 +279,7 @@ export default class RootLayout extends React.Component {
         {this.props.location.pathname === "/" ?
           <div>
             <Navbar type="sp20" />
-            <div className="header__container">
+            <div id="landing" className="header__container">
               <div className="images__container images__container--left">
                 <img id="camera" className="images--mobile" src="img/sp20/camera.png"/>
                 <img id="laptopguy" className="images--mobile" src="img/sp20/laptopguy.png" />
