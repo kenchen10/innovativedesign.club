@@ -589,6 +589,15 @@
   }
 }
 
+.infosession__button--sp20grey {
+  background-color: #EAEAEA;
+  color: rgb(18, 84, 98);
+
+  &:hover {
+    background-color: #DDDDDD;
+  }
+}
+
 .infosession__button--sp20 {
   background-color: #F26530;
   color: white;

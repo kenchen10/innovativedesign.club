@@ -316,7 +316,7 @@ export default class RootLayout extends React.Component {
                   Innovative Design is UC Berkeley’s premier creative agency. We are designers, photographers, and web developers together in a mission to Make Berkeley Beautiful.
                 </p>
                 <div className="campaign_overlay__buttons">
-                  <Link to="/club" className="infosession__button infosession__button--grey">
+                  <Link to="/club" className="infosession__button infosession__button--sp20grey">
                     See our work
                   </Link>
                   <Link to="/apply" className="infosession__button infosession__button--sp20">
