@@ -83,7 +83,7 @@ export default class RootLayout extends React.Component {
     const speedUp = Math.random() * 25;
     const spinVal = Math.random() * 360;
     const spinSpeed = ((Math.random() * 35)) * (Math.random() <= .5 ? -1 : 1);
-    const top = (this.mouseY - size / 2);
+    const top = (this.mouseY + size / 2);
     const left = (this.mouseX - size / 2);
     const direction = Math.random() <= .5 ? -1 : 1;
 
