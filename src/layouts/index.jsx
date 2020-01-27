@@ -18,7 +18,6 @@ export default class RootLayout extends React.Component {
     this.limit = 35;
     this.particles = [];
     this.autoAddParticle = false;
-    this.height = document.documentElement.clientHeight;
     this.sizes = [15, 20, 25, 35, 45];
     this.variants = [
       '🍅'
@@ -27,10 +26,10 @@ export default class RootLayout extends React.Component {
 
   componentDidUpdate() {
     this.animateLandingPage();
-    this.mobileHelper();
   }
 
   componentDidMount() {
+    this.height = document.documentElement.clientHeight;
     this.animateLandingPage();
     this.mobileHelper();
     this.addHandlers();
