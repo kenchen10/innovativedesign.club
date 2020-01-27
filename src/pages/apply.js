@@ -140,7 +140,7 @@ export default class Apply extends React.Component {
     return (
       <div className="apply">
         <h1>Applications</h1>
-        <div className="apply__section">
+        {/* <div className="apply__section">
           <h2>Officer Board</h2>
           <p>Applications for all Officer positions open on Wednesday, November 20 at 9:00 PM and
           are due by Friday, November 22 at 10:00 PM.</p>
@@ -148,11 +148,11 @@ export default class Apply extends React.Component {
             <img src="/img/loading.gif" width={100} /> :
             applicationComponents.officers
           }
-        </div>
+        </div> */}
         <div className="apply__section">
           <h2>DeCals</h2>
-          <p>Applications for all DeCals open on Wednesday, September 4 at 9:00 PM and
-          are due by Friday, September 6 at 11:59 PM.</p>
+          <p>Applications for all DeCals open on Monday, January 27 at 9:00 PM and
+          are due by Friday, January 31 at 11:59 PM.</p>
           {this.state.loading ?
             <img src="/img/loading.gif" width={100} /> :
             applicationComponents.decals
@@ -160,9 +160,9 @@ export default class Apply extends React.Component {
         </div>
         <div className="apply__section">
           <h2>Club</h2>
-          <p>All club applications open on Wednesday, September 11 at 9:00 PM.</p>
-          <p>Blue and Web Team applications are due on Friday, September 13 at 7:59 PM.</p>
-          <p>Gold and Photo Team applications are due on Saturday, September 14 at 11:59 PM.</p>
+          <p>All club applications open on Wednesday, February 5 at 9:00 PM.</p>
+          <p>Blue and Web Team applications are due on Friday, February 7 at 7:59 PM.</p>
+          <p>Gold and Photo Team applications are due on Saturday, February 8 at 11:59 PM.</p>
           <p>Blue and Web Team applications require interviews; see application for details and scheduling.</p>
           {this.state.loading ?
             <img src="/img/loading.gif" width={100} /> :

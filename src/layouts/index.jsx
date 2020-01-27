@@ -59,7 +59,7 @@ export default class RootLayout extends React.Component {
       scale: [0, 1],
       opacity: [0, 1],
       delay: (_, index) => 500,
-      duration: 800,
+      duration: 600,
       easing: 'easeInOutCubic',
     });
 
@@ -68,7 +68,7 @@ export default class RootLayout extends React.Component {
       translateX: [-150, 0],
       translateY: [30, 0],
       opacity: [0, 1],
-      delay: (_, index) => 1400,
+      delay: (_, index) => 1200,
     });
 
     anime({
@@ -76,7 +76,7 @@ export default class RootLayout extends React.Component {
       translateX: [150, 0],
       translateY: [-30, 0],
       opacity: [0, 1],
-      delay: (_, index) => 1900,
+      delay: (_, index) => 1700,
     });
 
     anime({
@@ -84,15 +84,15 @@ export default class RootLayout extends React.Component {
       translateX: [-150, 0],
       translateY: [30, 0],
       opacity: [0, 1],
-      delay: (_, index) => 2400,
+      delay: (_, index) => 2200,
     });
 
     anime({
       targets: ".hero__container .bubble-lower",
       scale: [0, 1],
       opacity: [0, 1],
-      delay: (_, index) => 2600,
-      duration: 800,
+      delay: (_, index) => 2400,
+      duration: 600,
       easing: 'easeInOutCubic',
     });
   }
@@ -161,9 +161,6 @@ export default class RootLayout extends React.Component {
           <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
           <script src="/pace.js"></script>
           <link href="/pace.css" rel="stylesheet" />
-
-
-
         </Helmet>
 
         {this.props.location.pathname === "/" ?
