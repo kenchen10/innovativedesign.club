@@ -16,7 +16,8 @@ const apps = {
     gold: 'Gold: Graphic Design Team',
     blue: 'Blue: Advanced Graphic Design Team',
     web: 'Web Team',
-    photo: 'Photo Team'
+    photo: 'Photo Team',
+    bluephoto: 'Blue: Photo Team'
   }
 };
 
