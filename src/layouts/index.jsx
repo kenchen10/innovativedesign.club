@@ -15,6 +15,7 @@ export default class RootLayout extends React.Component {
   constructor(props) {
     super(props);
 
+    // EMOJI FOUNTAIN STUFF
     this.limit = 35;
     this.particles = [];
     this.autoAddParticle = false;
@@ -29,13 +30,17 @@ export default class RootLayout extends React.Component {
   }
 
   componentDidMount() {
-    this.height = document.documentElement.clientHeight;
     this.animateLandingPage();
+
+    // EMOJI FOUNTAIN HELPERS
+    this.height = document.documentElement.clientHeight;
     this.mobileHelper();
     this.addHandlers();
     this.loop();
+    // END EMOJI FOUNTAIN HELPERS
   }
 
+  // EMOJI FOUNTAIN HELPERS
   mobileHelper() {
     document.addEventListener("touchstart", function(){}, true);
   }
@@ -134,6 +139,7 @@ export default class RootLayout extends React.Component {
       `);
     });
   }
+  // END EMOJI FOUNTAIN HELPERS
 
   animateLandingPage() {
     if (window.innerWidth > 470) {
