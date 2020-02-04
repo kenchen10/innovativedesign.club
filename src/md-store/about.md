@@ -114,7 +114,7 @@ officers:
     hover_blurb: very pale and eats a lot of pasta
   - name: Gloria Fung
     role: Intro DeCal Facilitator
-    image: /img/sp20/officers/ethan.png
+    image: /img/sp20/officers/gloria.png
     hover_blurb: oui oui baguette 
   - name: Valerie Tan
     role: GDP DeCal Facilitator
