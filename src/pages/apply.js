@@ -141,15 +141,15 @@ export default class Apply extends React.Component {
     return (
       <div className="apply">
         <h1>Applications</h1>
-        {/* <div className="apply__section">
+        <div className="apply__section">
           <h2>Officer Board</h2>
-          <p>Applications for all Officer positions open on Wednesday, November 20 at 9:00 PM and
-          are due by Friday, November 22 at 10:00 PM.</p>
+          <p>Applications for all Officer positions open on Wednesday, April 22 at 9:00 PM and
+          are due by Friday, April 24 at 11:59 PM.</p>
           {this.state.loading ?
             <img src="/img/loading.gif" width={100} /> :
             applicationComponents.officers
           }
-        </div> */}
+        </div>
         <div className="apply__section">
           <h2>DeCals</h2>
           <p>Applications for all DeCals open on Monday, January 27 at 9:00 PM and
