@@ -22,7 +22,7 @@ export default class ApplyWidget extends React.Component {
           <div className="widget__table">
             <div className="widget__tablerow">
               <p>Infosessions for {applyType.heading}:</p>
-              <p><ReactMarkdown source={applyType.infosession} /></p>
+              <Link to="/watch"><ReactMarkdown source={applyType.infosession} /></Link>
             </div>
             <div className="widget__tablerow">
               <p>Applications due:</p>
