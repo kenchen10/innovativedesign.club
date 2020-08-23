@@ -72,6 +72,8 @@
 
 .hero__container .bubble-lower {
   position: absolute;
+  top: 100px;
+  left: 220px;
   z-index: -1;
 }
 
@@ -121,15 +123,16 @@
 }
 
 #camera {
-  max-width: 360px;
-  top: 80px;
+  z-index: 10;
+  max-width: 100px;
+  top: 280px;
   left: 50px;
   @media (max-width: 1440px) {
-    left: 80px;
+    left: 280px;
   }
 
   @media (max-width: 1024px) {
-    left: 100px;
+    left: 300px;
   }
 
   @media (max-width: 470px) {
@@ -157,9 +160,9 @@
 }
 
 #pentoolguy {
-  max-width: 300px;
-  top: 400px;
-  left: -280px;
+  max-width: 200px;
+  top: 500px;
+  left: -290px;
   @media (max-width: 1440px) {
     left: -220px;
   }
@@ -177,13 +180,13 @@
 #laptopguy {
   max-width: 400px;
   top: 400px;
-  left: 240px;
+  left: 200px;
   @media (max-width: 1440px) {
-    left: 280px;
+    left: 240px;
   }
 
   @media (max-width: 1024px) {
-    left: 240px;
+    left: 200px;
   }
 
   @media (max-width: 470px) {
@@ -211,8 +214,8 @@
 
 #blob2 {
   max-width: 500px;
-  top: 600px;
-  left: -80px;
+  top: 500px;
+  left: 0px;
   @media (max-width: 1440px) {
     left: -54px;
   }
@@ -229,7 +232,7 @@
 
 #blob3 {
   max-width: 500px;
-  top: -100px;
+  top: -200px;
   right: -370px;
   @media (max-width: 1440px) {
     right: -420px;
