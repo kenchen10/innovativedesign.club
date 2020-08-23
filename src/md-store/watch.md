@@ -7,9 +7,7 @@ hero_subheading: >-
   Hub for all webcasts
 groups:
   - heading: Decals
-    description: hi
-    linked_page: bye
+    linked_page: Check back later for link
   - heading: Club
-    description: a
-    linked_page: b
+    linked_page: Check back later for link
 ---
