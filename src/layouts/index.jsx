@@ -56,30 +56,30 @@ export default class RootLayout extends React.Component {
   }
 
   addHandlers() {
-    const isTouchInteraction = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+    // const isTouchInteraction = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 
-    const tap = isTouchInteraction ? 'touchstart' : 'mousedown';
-    const tapEnd = isTouchInteraction ? 'touchend' : 'mouseup';
-    const move = isTouchInteraction ? 'touchmove' : 'mousemove';
+    // const tap = isTouchInteraction ? 'touchstart' : 'mousedown';
+    // const tapEnd = isTouchInteraction ? 'touchend' : 'mouseup';
+    // const move = isTouchInteraction ? 'touchmove' : 'mousemove';
 
-    document.addEventListener(move, (e) => {
-      this.mouseX = e.pageX || e.touches[0].pageX;
-      this.mouseY = e.pageY || e.touches[0].pageY;
-    }, {passive: false});
+    // document.addEventListener(move, (e) => {
+    //   this.mouseX = e.pageX || e.touches[0].pageX;
+    //   this.mouseY = e.pageY || e.touches[0].pageY;
+    // }, {passive: false});
 
-    document.addEventListener(tap, (e) => {
-      this.mouseX = e.pageX || e.touches[0].pageX;
-      this.mouseY = e.pageY || e.touches[0].pageY;
-      this.autoAddParticle = true;
-    });
+    // document.addEventListener(tap, (e) => {
+    //   this.mouseX = e.pageX || e.touches[0].pageX;
+    //   this.mouseY = e.pageY || e.touches[0].pageY;
+    //   this.autoAddParticle = true;
+    // });
 
-    document.addEventListener(tapEnd, () => {
-      this.autoAddParticle = false;
-    });
+    // document.addEventListener(tapEnd, () => {
+    //   this.autoAddParticle = false;
+    // });
 
-    document.addEventListener('mouseleave', () => {
-      this.autoAddParticle = false;
-    });
+    // document.addEventListener('mouseleave', () => {
+    //   this.autoAddParticle = false;
+    // });
   }
 
   createParticle() {
