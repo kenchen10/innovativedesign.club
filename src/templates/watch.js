@@ -17,7 +17,6 @@ export default class WatchPage extends React.Component {
             return (
               <div className="apply__section">
                 <h2>{group.heading}</h2>
-                <p>{group.description}</p>
                 <p>{group.linked_page}</p>
               </div>
             );
@@ -37,7 +36,6 @@ export const pageQuery = graphql`
         hero_subheading
         groups {
           heading
-          description
           linked_page
         }
       }
