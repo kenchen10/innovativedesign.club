@@ -6,8 +6,8 @@ hero_heading: Watch
 hero_subheading: >-
   Hub for all webcasts
 groups:
-  - heading: Decals
+  - heading: Decal Info Session
     linked_page: Check back later for link
-  - heading: Club
+  - heading: Club Info Session
     linked_page: Check back later for link
 ---
