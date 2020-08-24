@@ -9,10 +9,10 @@ apply_types:
       three DeCals we offer in design and photography. Our courses provide a
       comprehensive foundation in skills applicable to any industry.
     infosession: |-
-      Jan 27, 7:30PM - 9PM
+      Aug 29, 5PM
 
-      Jacobs 310
-    apply_deadline: 2020-01-31T08:00:00.000Z
+      Online Event
+    apply_deadline: 2020-9-04T08:00:00.000Z
     apply_link: 'apply'
     status: open
   - heading: Club
@@ -23,10 +23,10 @@ apply_types:
       Beautiful. You’ll be able to grow your portfolio, work with clients, and
       develop your creative vision.
     infosession: |-
-      Feb 5, 8PM - 9PM
+      Sep 2, 7PM - 8PM
 
-      VLSB 2040
-    apply_deadline: 2020-02-07T08:00:00.000Z
+      Online Event
+    apply_deadline: 2020-9-11T08:00:00.000Z
     apply_link: 'apply'
     status: open
 ---
