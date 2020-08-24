@@ -141,7 +141,7 @@ export default class Apply extends React.Component {
     return (
       <div className="apply">
         <h1>Applications</h1>
-        <div className="apply__section">
+        {/* <div className="apply__section">
           <h2>Officer Board</h2>
           <p>Applications for all Officer positions open on Wednesday, April 22 at 9:00 PM and
           are due by Friday, April 24 at 11:59 PM.</p>
@@ -149,11 +149,11 @@ export default class Apply extends React.Component {
             <img src="/img/loading.gif" width={100} /> :
             applicationComponents.officers
           }
-        </div>
+        </div> */}
         <div className="apply__section">
           <h2>DeCals</h2>
-          <p>Applications for all DeCals open on Monday, January 27 at 9:00 PM and
-          are due by Friday, January 31 at 11:59 PM.</p>
+          <p>Applications for all DeCals open on Saturday, August 29 at 5:00 PM PSt and
+          are due by September 4th at 11:59 PM.</p>
           {this.state.loading ?
             <img src="/img/loading.gif" width={100} /> :
             applicationComponents.decals
@@ -161,10 +161,9 @@ export default class Apply extends React.Component {
         </div>
         <div className="apply__section">
           <h2>Club</h2>
-          <p>All club applications open on Monday, February 3 at 9:00 PM.</p>
-          <p>Blue (Graphics/Photo) and Web Team applications are due on Friday, February 7 at 7:59 PM.</p>
-          <p>Gold and Photo Team applications are due on Saturday, February 8 at 11:59 PM.</p>
-          <p>Blue (Graphics/Photo) and Web Team applications require interviews; see application for details and scheduling.</p>
+          <p>All club applications open on Wednesday, September 7th.</p>
+          <p>All applications are due Friday, September 11.</p>
+          <p>Blue (Graphics/Photo) and Web Team applications require interviews on September 12th.</p>
           {this.state.loading ?
             <img src="/img/loading.gif" width={100} /> :
             applicationComponents.club
