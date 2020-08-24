@@ -56,30 +56,30 @@ export default class RootLayout extends React.Component {
   }
 
   addHandlers() {
-    const isTouchInteraction = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+    // const isTouchInteraction = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 
-    const tap = isTouchInteraction ? 'touchstart' : 'mousedown';
-    const tapEnd = isTouchInteraction ? 'touchend' : 'mouseup';
-    const move = isTouchInteraction ? 'touchmove' : 'mousemove';
+    // const tap = isTouchInteraction ? 'touchstart' : 'mousedown';
+    // const tapEnd = isTouchInteraction ? 'touchend' : 'mouseup';
+    // const move = isTouchInteraction ? 'touchmove' : 'mousemove';
 
-    document.addEventListener(move, (e) => {
-      this.mouseX = e.pageX || e.touches[0].pageX;
-      this.mouseY = e.pageY || e.touches[0].pageY;
-    }, {passive: false});
+    // document.addEventListener(move, (e) => {
+    //   this.mouseX = e.pageX || e.touches[0].pageX;
+    //   this.mouseY = e.pageY || e.touches[0].pageY;
+    // }, {passive: false});
 
-    document.addEventListener(tap, (e) => {
-      this.mouseX = e.pageX || e.touches[0].pageX;
-      this.mouseY = e.pageY || e.touches[0].pageY;
-      this.autoAddParticle = true;
-    });
+    // document.addEventListener(tap, (e) => {
+    //   this.mouseX = e.pageX || e.touches[0].pageX;
+    //   this.mouseY = e.pageY || e.touches[0].pageY;
+    //   this.autoAddParticle = true;
+    // });
 
-    document.addEventListener(tapEnd, () => {
-      this.autoAddParticle = false;
-    });
+    // document.addEventListener(tapEnd, () => {
+    //   this.autoAddParticle = false;
+    // });
 
-    document.addEventListener('mouseleave', () => {
-      this.autoAddParticle = false;
-    });
+    // document.addEventListener('mouseleave', () => {
+    //   this.autoAddParticle = false;
+    // });
   }
 
   createParticle() {
@@ -287,34 +287,34 @@ export default class RootLayout extends React.Component {
             <Navbar type="sp20" />
             <div id="landing" className="header__container">
               <div className="images__container images__container--left">
-                <img id="camera" className="images--mobile" src="img/sp20/camera.png"/>
-                <img id="laptopguy" className="images--mobile" src="img/sp20/laptopguy.png" />
-                <img id="blob2" className="images--mobile" src="img/sp20/blob2.png"/>
+                <img id="camera" className="images--mobile" src="img/fa20/web assets/music notes.png"/>
+                <img id="laptopguy" className="images--mobile" src="img/fa20/web assets/window 3.png" />
+                <img id="blob2" className="images--mobile" src="img/fa20/web assets/photos.png"/>
               </div>
 
               <div className="images__container images__container--right">
-                <img id="blob3" className="images--mobile" src="img/sp20/blob3.png"/>
-                <img id="pentoolguy" className="images--mobile" src="img/sp20/pentoolguy.png"/>
-                <img id="panel" className="images--mobile" src="img/sp20/panel.png"/>
-                <img id="leg" className="images--mobile" src="img/sp20/leg.png"/>
+                <img id="blob3" className="images--mobile" src="img/fa20/web assets/swirl 1.png"/>
+                <img id="pentoolguy" className="images--mobile" src="img/fa20/web assets/guy with camera.png"/>
+                {/* <img id="panel" className="images--mobile" src="img/sp20/panel.png"/> */}
+                <img id="leg" className="images--mobile" src="img/fa20/web assets/plant.png"/>
               </div>
 
               <div className="hero__container">
                 <div className="heading-wrapper">
-                  <div className="bubble-upper">
+                  {/* <div className="bubble-upper">
                     <img width={440} src="/img/sp20/bubble-upper.png" />
+                  </div> */}
+                  <div className="heading">
+                    <img id="weird" width={300} src="/img/fa20/web assets/connect.png" />
                   </div>
                   <div className="heading">
-                    <img id="weird" width={440} src="/img/sp20/weird.png" />
+                    <img id="wacky" width={300} src="/img/fa20/web assets/create.png" />
                   </div>
                   <div className="heading">
-                    <img id="wacky" width={440} src="/img/sp20/wacky.png" />
-                  </div>
-                  <div className="heading">
-                    <img id="creative" width={440} src="/img/sp20/creative.png" />
+                    <img id="creative" width={300} src="/img/fa20/web assets/explore.png" />
                   </div>
                   <div className="bubble-lower">
-                    <img width={440} src="/img/sp20/bubble-lower.png" />
+                    <img width={340} src="/img/fa20/web assets/window 1 with girl.png" />
                   </div>
                 </div>
                 {/* <img width={400} src="/img/sp20/call-to-action.png" /> */}
