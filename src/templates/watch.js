@@ -14,10 +14,14 @@ export default class WatchPage extends React.Component {
         <Hero data={this.props.data} />
         <div className="apply">
           {groups.map(group => {
+            let link = <a href={group.linked_page} target="__blank">{group.description}</a>;
+            if (!group.linked_page) {
+              link = <p>{group.description}</p>;
+            }
             return (
               <div className="apply__section">
                 <h2>{group.heading}</h2>
-                <p>{group.linked_page}</p>
+                {link}
               </div>
             );
           })}
@@ -37,6 +41,7 @@ export const pageQuery = graphql`
         groups {
           heading
           linked_page
+          description
         }
       }
     }

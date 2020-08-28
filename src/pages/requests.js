@@ -75,21 +75,21 @@ export default class Index extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    var type = this.state.type;
-    var idx = projectTypes.indexOf(type);
-    var link = document.getElementById("google-form-link");
+    // var type = this.state.type;
+    // var idx = projectTypes.indexOf(type);
+    // var link = document.getElementById("google-form-link");
 
-    if (idx == 0 || idx == 2) {
+    // if (idx == 0 || idx == 2) {
 
-      var linkText = "Please fill out this supplementary " + type + " form.";
-      link.target = "_blank";
-      link.href = googleFormsText[idx];
-      link.innerHTML = linkText;
-    } else {
-      link.target = "";
-      link.href = "#";
-      link.innerHTML = "";
-    }
+    //   var linkText = "Please fill out this supplementary " + type + " form.";
+    //   link.target = "_blank";
+    //   link.href = googleFormsText[idx];
+    //   link.innerHTML = linkText;
+    // } else {
+    //   link.target = "";
+    //   link.href = "#";
+    //   link.innerHTML = "";
+    // }
 
   }
 
@@ -302,7 +302,7 @@ export default class Index extends React.Component {
           Due to the large volume of requests, an officer should be reaching out to you within 2 weeks to discuss the details of the project.
         </p>
         <p>
-          Feel free to reach out to <a href="mailto:innovativedesignatcal@gmail.com">innovativedesignatcal@gmail.com</a> with additional questions.
+          Feel free to reach out to <a href="mailto:designservices.innod@gmail.com">designservices.innod@gmail.com</a> with additional questions.
         </p>
         <p
           style={{
@@ -360,7 +360,7 @@ export default class Index extends React.Component {
                       Thank you for your interest in working with us! We look forward to receiving your request, but we do ask that you please keep in mind our designers' two week minimum turnaround policy when considering your project deadline.
                     </h3>
                     <h3 style={{ textAlign: 'center', fontWeight: 400 }}>
-                      Innovative Design is proud to offer pro bono services for on campus student organizations and university programs. However, our work for off campus groups is not pro bono. We recommend that off campus organizations submit their design requests through this form and contact innovativedesignatcal@gmail.com for more information on rates.
+                      Innovative Design is proud to offer pro bono services for on campus student organizations and university programs. However, our work for off campus groups is not pro bono. We recommend that off campus organizations submit their design requests through this form and contact designservices.innod@gmail.com for more information on rates.
                     </h3>
                   </div>
                 }
