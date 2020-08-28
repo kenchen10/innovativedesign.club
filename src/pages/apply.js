@@ -152,7 +152,7 @@ export default class Apply extends React.Component {
         </div> */}
         <div className="apply__section">
           <h2>DeCals</h2>
-          <p>Applications for all DeCals open on Saturday, August 29 at 5:00 PM PSt and
+          <p>Applications for all DeCals open on Saturday, August 29 at 5:00 PM PST and
           are due by September 4th at 11:59 PM.</p>
           {this.state.loading ?
             <img src="/img/loading.gif" width={100} /> :
@@ -161,7 +161,7 @@ export default class Apply extends React.Component {
         </div>
         <div className="apply__section">
           <h2>Club</h2>
-          <p>All club applications open on Wednesday, September 7th.</p>
+          <p>All club applications open on Monday, September 7th.</p>
           <p>All applications are due Friday, September 11.</p>
           <p>Blue (Graphics/Photo) and Web Team applications require interviews on September 12th.</p>
           {this.state.loading ?
