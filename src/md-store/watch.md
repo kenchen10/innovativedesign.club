@@ -6,6 +6,9 @@ hero_heading: Watch
 hero_subheading: >-
   Hub for all webcasts
 groups:
+  - heading: Illustrator Workshop
+    linked_page: https://berkeley.zoom.us/j/92767313296
+    description: Learn about Adobe Illustrator!
   - heading: Decal Info Session
     linked_page: "https://youtu.be/V9aYmkrs6PI"
     description: Innovative Design FA20 Decal Info Session
