@@ -161,7 +161,6 @@ officers:
     hover_blurb: just a 21 year old girl who looks 12
   - name: Kevin Li
     role: Advisor
-    secondary_role: Gold Team Lead
     image: /img/sp20/officers/kevin.jpg
     hover_blurb: just poopin you know how I be
   - name: Danny Ha
