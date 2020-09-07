@@ -328,6 +328,9 @@ export default class RootLayout extends React.Component {
                   <Link to="/apply" className="infosession__button infosession__button--sp20">
                     Apply to join us
                   </Link>
+                  <Link to="/watch" className="infosession__button infosession__button--sp20grey">
+                    Watch
+                  </Link>
                 </div>
               </div>
             </div>
