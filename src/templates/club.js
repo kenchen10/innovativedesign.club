@@ -18,7 +18,7 @@ export default class ClubPage extends React.Component {
     return (<div className="club">
       <Hero data={this.props.data}>
         <div className="hero__right-cropped">
-          <img src="/img/cmyk-9781.jpg" />
+          <img src="/img/hexpp-9766.jpg" />
         </div>
       </Hero>
       <ApplyWidget data={this.props.widgetMeta} />
