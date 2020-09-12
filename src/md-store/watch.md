@@ -13,6 +13,6 @@ groups:
     linked_page: "https://youtu.be/V9aYmkrs6PI"
     description: Innovative Design FA20 Decal Info Session
   - heading: Club Info Session
-    linked_page: https://youtu.be/9cnXg43PJrc
+    linked_page: https://youtu.be/QVoIInTZkkI
     description: Innovative Design FA20 Club Info Session
 ---
