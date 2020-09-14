@@ -22,6 +22,9 @@ const PAGES = [
 }, {
   name: 'Our Team',
   slug: 'about'
+}, {
+  name: 'Extension',
+  slug: 'extension'
 }
 ];
 
