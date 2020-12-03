@@ -6,6 +6,7 @@ import Hero from '../components/Hero';
 const apps = {
   officers: {
     officers: 'Officer Board Applications',
+    advisors: 'Advisor Applications'
   },
   decals: {
     intro: 'Introduction to Photoshop and Illustrator',
@@ -138,18 +139,19 @@ export default class Apply extends React.Component {
         applicationComponents[type] = soonMessage;
       }
     }
+
     return (
       <div className="apply">
         <h1>Applications</h1>
-        {/* <div className="apply__section">
+        <div className="apply__section">
           <h2>Officer Board</h2>
-          <p>Applications for all Officer positions open on Wednesday, April 22 at 9:00 PM and
-          are due by Friday, April 24 at 11:59 PM.</p>
+          <p>Applications for all Officer positions open on Wednesday, December 2 at 8:30 PM and
+          are due by Friday, December 4 at 11:59 PM.</p>
           {this.state.loading ?
             <img src="/img/loading.gif" width={100} /> :
             applicationComponents.officers
           }
-        </div> */}
+        </div>
         <div className="apply__section">
           <h2>DeCals</h2>
           <p>Applications for all DeCals open on Saturday, August 29 at 5:00 PM PST and
